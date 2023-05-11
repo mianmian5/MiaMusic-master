@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary">
+
+        <include
+            layout="@layout/common_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginTop="@dimen/dp_30" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="298dp"
+        android:layout_height="244dp"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+
+    <!--    <ScrollView-->
+<!--        android:id="@+id/scroll_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/rl_title"-->
+<!--        android:layout_above="@id/bottom_controller"-->
+<!--        android:overScrollMode="always">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_rubbish_bin"-->
+<!--                android:layout_width="@dimen/dp_20"-->
+<!--                android:layout_height="@dimen/dp_20"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginTop="@dimen/dp_20"-->
+<!--                android:layout_marginEnd="@dimen/dp_20"-->
+<!--                android:src="@drawable/ic_rubish_bin" />-->
+
+
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/hot_search"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/tl_searchhistory"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="@dimen/dp_20"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="@dimen/dp_20"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/hot_search"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="#333333"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="@dimen/sp_17"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <android.support.v7.widget.RecyclerView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/rv_hotsearch"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/hot_search"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="@dimen/dp_10" />&ndash;&gt;-->
+<!--        </RelativeLayout>-->
+<!--    </ScrollView>-->
+
+
+
+<!--    <com.rikkathewrold.rikkamusic.widget.BottomSongPlayBar-->
+<!--        android:id="@+id/bottom_controller"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_40"-->
+<!--        android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
+//        jcenter {
+//            url "https://jcenter.bintray.com"
+//            content {
+//                // Include Maven metadata in the search results to find the latest version faster
+//                includeGroupByRegex "com\\.android\\..+"
+//                includeGroupByRegex "androidx\\..+"
+//                includeGroupByRegex "com\\.google\\..+"
+//                includeGroupByRegex "org\\.jetbrains\\.kotlin\\..+"
+//            }
+//        }
+    }
+}
+rootProject.name = "MiaMusic-master"
+include ':app'
