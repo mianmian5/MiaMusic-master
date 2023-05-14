@@ -38,6 +38,7 @@ public class FindPresenter extends WowContract.Presenter {
                     public void onSubscribe(Disposable d) {
 //                        LogUtil.d(TAG, "getBanner onSubscribe");
                         System.out.println("getBanner onSubscribe");
+
                     }
 
                     @Override

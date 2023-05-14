@@ -13,12 +13,12 @@ import com.example.miamusic_master.bean.TopListBean;
 import com.example.miamusic_master.contract.WowContract;
 //import com.example.miamusic_master.manager.bean.MusicCanPlayBean;
 
-//import io.reactivex.Observable;
+import io.reactivex.*;
 
 public class WowModel implements WowContract.Model {
     @Override
     public io.reactivex.Observable<BannerBean> getBanner() {
-        return ApiEngine.getInstance().getApiService().getBanner("1");
+        return ApiEngine.getInstance().getApiService().getBanner();
     }
 
     @Override

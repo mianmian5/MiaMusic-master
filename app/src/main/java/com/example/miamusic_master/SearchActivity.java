@@ -1,5 +1,7 @@
 package com.example.miamusic_master;
 
+import static com.example.miamusic_master.App.getContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -125,7 +127,7 @@ public class SearchActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
             RequestQueue queue = Volley.newRequestQueue(getApplication());
-            JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, "http://127.0.0.1:3000/search?keywords=cry1", null,new com.android.volley.Response.Listener<JSONArray>() {
+            JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, "https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/search?keywords=cry1", null,new com.android.volley.Response.Listener<JSONArray>() {
 
                 @Override
                 public void onResponse(JSONArray response) {
@@ -134,7 +136,7 @@ public class SearchActivity extends AppCompatActivity {
                         for (int i = 0; i < response.length(); i++) {
                             JSONObject object = response.getJSONObject(i);
                             System.out.println(object);
-//                        Toast.makeText(MainActivity.this, text, Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(), "请求成功!", Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -153,15 +155,7 @@ public class SearchActivity extends AppCompatActivity {
 
 
             })
-            {
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String, String> headers = new HashMap<>();
-                    headers.put("Content-Type", "application/json"); // 设置请求头
-                    headers.put("Authorization", "Bearer your-auth-token"); // 设置 Authorization 请求头
-                    return headers;
-                }
-            };
+            ;
 
             queue.add(jsonArrayRequest);
 

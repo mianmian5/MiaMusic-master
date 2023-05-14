@@ -1,10 +1,10 @@
 package com.example.miamusic_master;
 
-import static com.example.miamusic_master.App.getContext;
+import static com.example.miamusic_master.api.ApiService.BASE_URL;
 
-import android.content.Intent;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,15 +31,12 @@ import android.widget.Toast;
 //import com.example.miamusic_master.main.mvp.view.RankActivity;
 //import com.example.miamusic_master.manager.bean.MusicCanPlayBean;
 //import com.example.miamusic_master.util.BannerGlideImageLoader;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.miamusic_master.App;
-import com.example.miamusic_master.R;
 //import com.example.miamusic_master.adapter.PlayListAdapter;
 import com.example.miamusic_master.adapter.PlayListAdapter;
-import com.example.miamusic_master.bean.AlbumSublistBean;
+import com.example.miamusic_master.api.ApiService;
 import com.example.miamusic_master.bean.BannerBean;
 import com.example.miamusic_master.bean.DailyRecommendBean;
 import com.example.miamusic_master.bean.HighQualityPlayListBean;
@@ -54,9 +51,7 @@ import com.example.miamusic_master.base.BaseFragment;
 import com.example.miamusic_master.util.ClickUtil;
 
 import com.youth.banner.Banner;
-import com.youth.banner.*;
-import com.youth.banner.config.BannerConfig;
-import com.youth.banner.indicator.CircleIndicator;
+import com.youth.banner.adapter.BannerAdapter;
 
 
 import java.net.MalformedURLException;
@@ -67,6 +62,11 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FindFragment extends BaseFragment<FindPresenter> implements WowContract.View {
     private static final String TAG = "WowFragment";
@@ -85,6 +85,7 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
     private PlayListAdapter recommendPlayListAdapter;
     //banner的图片集合
     List<URL> bannerImageList = new ArrayList<>();
+//    private List<BannerItem> bannerItems;
     //banner集合
     List<BannerBean.BannersBean> banners = new ArrayList<>();
     //推荐歌单集合
@@ -96,16 +97,68 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
     }
 
 
+
     protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        LogUtil.d(TAG, "initView  isPrepared：" + isPrepared() + " isFragmentVisible：" + isFragmentVisible());
         View rootView = inflater.inflate(R.layout.fragment_find, container, false);
         ButterKnife.bind(this, rootView);
-//        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR)
-//                .setDelayTime(4000)
-//                .setImageLoader(new BannerGlideImageLoader())
-//                .isAutoPlay(true);
+        Banner banner = rootView.findViewById(R.id.wow_banner);
+        // 创建Retrofit实例
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        // 创建API接口实例
+        BannerService bannerService = retrofit.create(BannerService.class);
+
+//         发送网络请求
+//        Call<BannerData> call = bannerService.getBanners();
+
+        Call<BannerBean> call = bannerService.getBanner();
+        call.enqueue(new Callback<BannerBean>() {
+            @Override
+            public void onResponse(Call<BannerBean> call, Response<BannerBean> response) {
+                Toast.makeText(getContext(), "请求成功,棒绵绵", Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onFailure(Call<BannerBean> call, Throwable t) {
+
+                Log.e(TAG, "onFailure: " + t.getMessage());
+            }
+
+//            @Override
+//            public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
+//                if (response.isSuccessful()) {
+//                    MyResponse myResponse = response.body();
+//                    mBannerList = myResponse.getBanners();
+//                    BannerAdapter adapter = new BannerAdapter(mBannerList, MainActivity.this);
+//                    mRecyclerView.setAdapter(adapter);
+//                } else {
+//                    Log.e(TAG, "onResponse: " + response.code());
+//                }
+//            }
+
+
+        });
         return rootView;
     }
+
+//    private void setBanner(List<Banner> banners) {
+//        List<String> imageUrls = new ArrayList<>();
+//        for (Banner banner : banners) {
+//            imageUrls.add(banner.getImageUrl());
+//        }
+//        banner.setImages(imageUrls)
+//                .start();
+//    }
+
+
+//    }
+
+
+
 
 
     protected void initData() {
@@ -120,9 +173,11 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         rvRecommendPlayList.setAdapter(recommendPlayListAdapter);
 //        showDialog();
         if (mPresenter != null) {
-            mPresenter.getBanner();
-            mPresenter.getRecommendPlayList();
+//            mPresenter.getBanner();
+
+//            mPresenter.getRecommendPlayList();
         }
+//        mPresenter.getBanner();
 //        mPresenter.getBanner();
 
     }
@@ -143,7 +198,8 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 
         banners.addAll(bean.getBanners());
         loadImageToList();
-//        banner.setImages(bannerImageList).start();
+        banner.setDatas(bannerImageList).start();
+        Toast.makeText(getContext(), "请求成功", Toast.LENGTH_SHORT).show();
 
 
     }
@@ -194,6 +250,7 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
     @Override
     public void onGetBannerFail(String e) {
         Toast.makeText(banner.getContext(), e, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "请求失败", Toast.LENGTH_SHORT).show();
 //        LogUtil.e(TAG, "onGetBannerFail : " + e);
     }
 

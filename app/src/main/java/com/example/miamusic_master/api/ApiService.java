@@ -8,23 +8,21 @@ import com.example.miamusic_master.bean.MainRecommendPlayListBean;
 import com.example.miamusic_master.bean.RecommendPlayListBean;
 import com.example.miamusic_master.bean.TopListBean;
 
+import java.util.List;
+
 import io.reactivex.Observable;
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ApiService {
 
-    String BASE_URL = "http://127.0.0.1:3000";
-
-//    @GET("login/cellphone")
-//    Observable<LoginBean> login(@Query("phone") String phone, @Query("password") String password);
-//
-//    @GET("logout")
-//    Observable<LogoutBean> logout();
+    String BASE_URL = "https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/";
 
     @GET("banner")
-//    Observable<BannerBean> getBanner();
-    Observable<BannerBean> getBanner(@Query("type") String type);
+//    Call<List<BannerBean>> getBanner();
+    Observable<BannerBean> getBanner();
+//    Observable<BannerBean> getBanner(@Query("type") String type);
 
     @GET("recommend/resource")
     Observable<MainRecommendPlayListBean> getRecommendPlayList();
