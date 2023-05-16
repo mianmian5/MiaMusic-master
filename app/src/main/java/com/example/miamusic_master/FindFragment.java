@@ -1,7 +1,7 @@
 package com.example.miamusic_master;
+//import static com.example.miamusic_master.api.ApiService.BASE_URL;
 
-import static com.example.miamusic_master.api.ApiService.BASE_URL;
-
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -31,67 +31,96 @@ import android.widget.Toast;
 //import com.example.miamusic_master.main.mvp.view.RankActivity;
 //import com.example.miamusic_master.manager.bean.MusicCanPlayBean;
 //import com.example.miamusic_master.util.BannerGlideImageLoader;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 //import com.example.miamusic_master.adapter.PlayListAdapter;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
+import com.example.miamusic_master.adapter.MyPagerAdapter;
 import com.example.miamusic_master.adapter.PlayListAdapter;
-import com.example.miamusic_master.api.ApiService;
+//import com.example.miamusic_master.api.ApiService;
 import com.example.miamusic_master.bean.BannerBean;
 import com.example.miamusic_master.bean.DailyRecommendBean;
 import com.example.miamusic_master.bean.HighQualityPlayListBean;
+import com.example.miamusic_master.bean.MainRecomListBean;
 import com.example.miamusic_master.bean.MainRecommendPlayListBean;
 import com.example.miamusic_master.bean.PlaylistBean;
 import com.example.miamusic_master.bean.PlaylistDetailBean;
 import com.example.miamusic_master.bean.RecommendPlayListBean;
 import com.example.miamusic_master.bean.TopListBean;
 import com.example.miamusic_master.contract.WowContract;
-import com.example.miamusic_master.presenter.FindPresenter;
+//import com.example.miamusic_master.presenter.FindPresenter;
 import com.example.miamusic_master.base.BaseFragment;
+import com.example.miamusic_master.presenter.FindPresenter;
 import com.example.miamusic_master.util.ClickUtil;
 
+import com.google.androidgamesdk.gametextinput.Listener;
 import com.youth.banner.Banner;
 import com.youth.banner.adapter.BannerAdapter;
+import com.youth.banner.adapter.BannerImageAdapter;
+import com.youth.banner.holder.BannerImageHolder;
+import com.youth.banner.indicator.CircleIndicator;
 
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
+import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FindFragment extends BaseFragment<FindPresenter> implements WowContract.View {
     private static final String TAG = "WowFragment";
-
+    String BASE_URL = "https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/";
     public static final String PLAYLIST_NAME = "playlistName";
     public static final String PLAYLIST_PICURL = "playlistPicUrl";
     public static final String PLAYLIST_CREATOR_NICKNAME = "playlistCreatorNickname";
     public static final String PLAYLIST_CREATOR_AVATARURL = "playlistCreatorAvatarUrl";
     public static final String PLAYLIST_ID = "playlistId";
-
+    private RequestQueue mRequestQueue;
     @BindView(R.id.wow_banner)
     Banner banner;
     @BindView(R.id.rv_recommend_playlist)
     RecyclerView rvRecommendPlayList;
 
+
     private PlayListAdapter recommendPlayListAdapter;
     //banner的图片集合
-    List<URL> bannerImageList = new ArrayList<>();
+    List bannerImageList = new ArrayList<>();
 //    private List<BannerItem> bannerItems;
     //banner集合
     List<BannerBean.BannersBean> banners = new ArrayList<>();
     //推荐歌单集合
-    List<MainRecommendPlayListBean.RecommendBean> recommends = new ArrayList<>();
+    List<MainRecomListBean.ResultBean> recommends = new ArrayList<>();
     List<PlaylistBean> list = new ArrayList<>();
-
+//    private static ApiService apiService;
+    private ViewPager mViewPager;
     public FindFragment() {
         setFragmentTitle("发现");
     }
@@ -103,24 +132,55 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         View rootView = inflater.inflate(R.layout.fragment_find, container, false);
         ButterKnife.bind(this, rootView);
         Banner banner = rootView.findViewById(R.id.wow_banner);
-        // 创建Retrofit实例
+        mViewPager = rootView.findViewById(R.id.view_pager);
+
+
+//        // 创建Retrofit实例
+        OkHttpClient client = new OkHttpClient.Builder()
+                .connectTimeout(20, TimeUnit.SECONDS)
+                .readTimeout(20, TimeUnit.SECONDS)
+                .writeTimeout(20, TimeUnit.SECONDS)
+
+//                .cache(cache)
+                .build();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+                .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
         // 创建API接口实例
         BannerService bannerService = retrofit.create(BannerService.class);
-
-//         发送网络请求
-//        Call<BannerData> call = bannerService.getBanners();
+        RecommendService recommendService = retrofit.create(RecommendService.class);
 
         Call<BannerBean> call = bannerService.getBanner();
+        Call<MainRecomListBean> call2 = recommendService.getRecommendPlayList();
+
         call.enqueue(new Callback<BannerBean>() {
             @Override
             public void onResponse(Call<BannerBean> call, Response<BannerBean> response) {
-                Toast.makeText(getContext(), "请求成功,棒绵绵", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "轮播图请求成功！", Toast.LENGTH_SHORT).show();
+//                List<BannerBean.BannersBean> bannersnew = new ArrayList<>();
+                System.out.println(response.body().getBanners());
+                banners.addAll(response.body().getBanners());
+//                for (int i = 0; i < banners.size(); i++) {
+//                    try {
+//                        URL url = new URL(banners.get(i).getPic());
+//                        bannerImageList.add(url);
+//                    } catch (MalformedURLException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+                loadImageToList();
+                System.out.println(bannerImageList);
+                MyPagerAdapter adapter = new MyPagerAdapter(getContext(), bannerImageList);
+                mViewPager.setAdapter(adapter);
+                mViewPager.setCurrentItem(0); // 设置当前要显示的图片的位置
+
+
 
             }
+
 
             @Override
             public void onFailure(Call<BannerBean> call, Throwable t) {
@@ -128,37 +188,71 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
                 Log.e(TAG, "onFailure: " + t.getMessage());
             }
 
-//            @Override
-//            public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
-//                if (response.isSuccessful()) {
-//                    MyResponse myResponse = response.body();
-//                    mBannerList = myResponse.getBanners();
-//                    BannerAdapter adapter = new BannerAdapter(mBannerList, MainActivity.this);
-//                    mRecyclerView.setAdapter(adapter);
-//                } else {
-//                    Log.e(TAG, "onResponse: " + response.code());
-//                }
-//            }
+
+        });
+        call2.enqueue(new Callback<MainRecomListBean>() {
+            @Override
+            public void onResponse(Call<MainRecomListBean> call2, Response<MainRecomListBean> response) {
+                Toast.makeText(getContext(), "推荐歌单请求成功！", Toast.LENGTH_SHORT).show();
+//                List<BannerBean.BannersBean> bannersnew = new ArrayList<>();
+                System.out.println(response.body());
+                recommends.addAll(response.body().getResult());
+                System.out.println(recommends);
+                for (int i = 0; i < recommends.size(); i++) {
+                    PlaylistBean beanInfo = new PlaylistBean();
+                    beanInfo.setPlaylistName(recommends.get(i).getName());
+                    beanInfo.setPlaylistCoverUrl(recommends.get(i).getPicUrl());
+                    list.add(beanInfo);
+                }
+                recommendPlayListAdapter.setListener(listClickListener);
+                recommendPlayListAdapter.notifyDataSetChanged(list);
+
+
+            }
+
+
+            @Override
+            public void onFailure(Call<MainRecomListBean> call2, Throwable t) {
+
+                Log.e(TAG, "onFailure: " + t.getMessage());
+            }
 
 
         });
         return rootView;
     }
 
-//    private void setBanner(List<Banner> banners) {
-//        List<String> imageUrls = new ArrayList<>();
-//        for (Banner banner : banners) {
-//            imageUrls.add(banner.getImageUrl());
+
+
+
+
+//    }
+//使用Volley从服务端获取轮播图url
+//private void fetchImagesWithVolley() {
+//    JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, BASE_URL + "banner", null, new Response.Listener<JSONArray>() {
+//
+//        public void onResponse(JSONArray response) {
+//            //获取成功，输出轮播图url
+//            for (int i = 0; i < response.length(); i++) {
+//                try {
+//                    Log.d("Volley", response.getJSONObject(i).getString("url"));
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//            }
 //        }
-//        banner.setImages(imageUrls)
-//                .start();
-//    }
+//    });
+//
+//    // 设置重试策略
+//    jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(
+//            5000,
+//            DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+//            DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+//
+//    mRequestQueue.add(jsonArrayRequest);
+//}
 
-
-//    }
-
-
-
+    //使用Retrofit2从服务端获取轮播图url
 
 
     protected void initData() {
@@ -171,16 +265,28 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         rvRecommendPlayList.setLayoutManager(manager);
         rvRecommendPlayList.setHasFixedSize(true);
         rvRecommendPlayList.setAdapter(recommendPlayListAdapter);
-//        showDialog();
-        if (mPresenter != null) {
-//            mPresenter.getBanner();
+//        fetchImagesWithRetrofit();
 
-//            mPresenter.getRecommendPlayList();
-        }
-//        mPresenter.getBanner();
-//        mPresenter.getBanner();
 
     }
+    private PlayListAdapter.OnPlayListClickListener listClickListener = position -> {
+        if (recommends != null && !recommends.isEmpty()) {
+            //进入歌单详情页面
+            Intent intent = new Intent(getActivity(), PlayListActivity.class);
+            MainRecomListBean.ResultBean bean = recommends.get(position);
+            String playlistName = bean.getName();
+            intent.putExtra(PLAYLIST_NAME, playlistName);
+            String playlistPicUrl = bean.getPicUrl();
+            intent.putExtra(PLAYLIST_PICURL, playlistPicUrl);
+//            String playlistCreatorNickname = bean.getCopywriter();
+//            intent.putExtra(PLAYLIST_CREATOR_NICKNAME, playlistCreatorNickname);
+//            String playlistCreatorAvatarUrl = bean.getCreator().getAvatarUrl();
+//            intent.putExtra(PLAYLIST_CREATOR_AVATARURL, playlistCreatorAvatarUrl);
+            Long playlistId = bean.getId();
+            intent.putExtra(PLAYLIST_ID, playlistId);
+            startActivity(intent);
+        }
+    };
 
     @Override
     public FindPresenter onCreatePresenter() {
@@ -200,6 +306,8 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         loadImageToList();
         banner.setDatas(bannerImageList).start();
         Toast.makeText(getContext(), "请求成功", Toast.LENGTH_SHORT).show();
+//        loadImageToList();
+        System.out.println(bannerImageList);
 
 
     }
@@ -263,13 +371,13 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
     public void onGetRecommendPlayListSuccess(MainRecommendPlayListBean bean) {
 //        hideDialog();
 //        LogUtil.d(TAG, "onGetRecommendPlayListSuccess" + bean);
-        recommends.addAll(bean.getRecommend());
-        for (int i = 0; i < recommends.size(); i++) {
-            PlaylistBean beanInfo = new PlaylistBean();
-            beanInfo.setPlaylistName(recommends.get(i).getName());
-            beanInfo.setPlaylistCoverUrl(recommends.get(i).getPicUrl());
-            list.add(beanInfo);
-        }
+//        recommends.addAll(bean.getRecommend());
+//        for (int i = 0; i < recommends.size(); i++) {
+//            PlaylistBean beanInfo = new PlaylistBean();
+//            beanInfo.setPlaylistName(recommends.get(i).getName());
+//            beanInfo.setPlaylistCoverUrl(recommends.get(i).getPicUrl());
+//            list.add(beanInfo);
+//        }
 //        recommendPlayListAdapter.setListener(listClickListener);
 //        recommendPlayListAdapter.notifyDataSetChanged(list);
     }

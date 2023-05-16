@@ -8,14 +8,44 @@ import java.util.List;
 public class PlaylistDetailBean {
 
     /**
-     * playlist : {"subscribers":[{"defaultAvatar":false,"province":440000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/S0eMy4iPCsUF3ExOHQhc8w==/109951164198686079.jpg","accountStatus":0,"gender":1,"city":440500,"birthday":1036373671290,"userId":556581045,"userType":0,"nickname":"LE-TRIOMPHANT","signature":"","description":"","detailDescription":"","avatarImgId":109951164198686080,"backgroundImgId":109951164198676500,"backgroundUrl":"http://p1.music.126.net/njFf4NliyjkcQoRL_FBi4Q==/109951164198676497.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951164198686079","backgroundImgIdStr":"109951164198676497","avatarImgId_str":"109951164198686079"},{"defaultAvatar":false,"province":460000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/61OswjC8Qh3FqPeRJSw39A==/109951163449478697.jpg","accountStatus":0,"gender":2,"city":460100,"birthday":-2209017600000,"userId":452268583,"userType":0,"nickname":"光盐可颂","signature":"好听的遇上了也是三生有幸","description":"","detailDescription":"","avatarImgId":109951163449478700,"backgroundImgId":109951163007008960,"backgroundUrl":"http://p1.music.126.net/BkB32BMot5QZBSd9irUZOg==/109951163007008959.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951163449478697","backgroundImgIdStr":"109951163007008959","avatarImgId_str":"109951163449478697"},{"defaultAvatar":false,"province":500000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/pwORf7nZcpo0M8Sba0Zhxw==/3245758326597684.jpg","accountStatus":0,"gender":0,"city":500101,"birthday":631123200000,"userId":48288417,"userType":0,"nickname":"阿阿阿阿超","signature":"","description":"","detailDescription":"","avatarImgId":3245758326597684,"backgroundImgId":2002210674180201,"backgroundUrl":"http://p1.music.126.net/o3G7lWrGBQAvSRt3UuApTw==/2002210674180201.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"3245758326597684","backgroundImgIdStr":"2002210674180201"},{"defaultAvatar":false,"province":1000000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/6nZjaVGt8KtHNgDOrh5Fkg==/109951163471310891.jpg","accountStatus":0,"gender":1,"city":1003100,"birthday":980784000000,"userId":104844666,"userType":0,"nickname":"源于极光的梦","signature":"等你 回来💓","description":"","detailDescription":"","avatarImgId":109951163471310900,"backgroundImgId":109951163471331700,"backgroundUrl":"http://p1.music.126.net/difVXdfwjlCJCy3BnQC5XA==/109951163471331692.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":11,"remarkName":null,"avatarImgIdStr":"109951163471310891","backgroundImgIdStr":"109951163471331692","avatarImgId_str":"109951163471310891"},{"defaultAvatar":false,"province":320000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/YZpRn5Wha5-Z9tJvWOr5YQ==/109951164187138711.jpg","accountStatus":0,"gender":2,"city":320500,"birthday":1002890550260,"userId":1529625206,"userType":0,"nickname":"生于俗世","signature":"","description":"","detailDescription":"","avatarImgId":109951164187138700,"backgroundImgId":109951164187129310,"backgroundUrl":"http://p1.music.126.net/HScBdyIFUOLSEoXoWWHJzA==/109951164187129312.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951164187138711","backgroundImgIdStr":"109951164187129312","avatarImgId_str":"109951164187138711"},{"defaultAvatar":false,"province":520000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/Z8kxNC1VHBAZeCyQLNrhxA==/109951163799162022.jpg","accountStatus":0,"gender":2,"city":520100,"birthday":-2209017600000,"userId":1462180599,"userType":0,"nickname":"梦里梦见梦不见的180519","signature":"","description":"","detailDescription":"","avatarImgId":109951163799162020,"backgroundImgId":109951162868128400,"backgroundUrl":"http://p1.music.126.net/2zSNIqTcpHL2jIvU6hG0EA==/109951162868128395.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951163799162022","backgroundImgIdStr":"109951162868128395","avatarImgId_str":"109951163799162022"},{"defaultAvatar":false,"province":440000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/6MikfYCvRgZ7axP0EXRY3g==/109951163949560568.jpg","accountStatus":0,"gender":2,"city":441800,"birthday":1002043998842,"userId":1348658944,"userType":0,"nickname":"余生想请你指教呀","signature":"","description":"","detailDescription":"","avatarImgId":109951163949560580,"backgroundImgId":109951164084159380,"backgroundUrl":"http://p1.music.126.net/KOsXd33xtiAkxCDQ8QZIAQ==/109951164084159379.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951163949560568","backgroundImgIdStr":"109951164084159379","avatarImgId_str":"109951163949560568"},{"defaultAvatar":false,"province":650000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/1rk9_Vn4xjtLZ58ozMtxOA==/18713687906674662.jpg","accountStatus":0,"gender":0,"city":650100,"birthday":-2209017600000,"userId":588367284,"userType":0,"nickname":"知无不为","signature":"","description":"","detailDescription":"","avatarImgId":18713687906674664,"backgroundImgId":109951162868128400,"backgroundUrl":"http://p1.music.126.net/2zSNIqTcpHL2jIvU6hG0EA==/109951162868128395.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"18713687906674662","backgroundImgIdStr":"109951162868128395","avatarImgId_str":"18713687906674662"}],"subscribed":false,"creator":{"defaultAvatar":false,"province":110000,"authStatus":1,"followed":false,"avatarUrl":"http://p1.music.126.net/QWMV-Ru_6149AKe0mCBXKg==/1420569024374784.jpg","accountStatus":0,"gender":1,"city":110101,"birthday":-2209017600000,"userId":1,"userType":2,"nickname":"网易云音乐","signature":"网易云音乐是6亿人都在使用的音乐平台，致力于帮助用户发现音乐惊喜，帮助音乐人实现梦想。客服@云音乐客服 在线时间：9：00 - 24：00，如您在使用过程中遇到任何问题，欢迎私信咨询，我们会尽快回复。如果仍然不能解决您的问题，与活动相关的疑问请私信@云音乐客服","description":"网易云音乐官方账号","detailDescription":"网易云音乐官方账号","avatarImgId":1420569024374784,"backgroundImgId":2002210674180202,"backgroundUrl":"http://p1.music.126.net/pmHS4fcQtcNEGewNb5HRhg==/2002210674180202.jpg","authority":3,"mutual":false,"expertTags":null,"experts":null,"djStatus":10,"vipType":11,"remarkName":null,"avatarImgIdStr":"1420569024374784","backgroundImgIdStr":"2002210674180202"},"tracks":[{"name":"dark HORSE","id":1234301,"pst":0,"t":0,"ar":[{"id":31286,"name":"The Shanghai Restoration Project","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":8,"v":10,"crbt":null,"cf":"","al":{"id":127441,"name":"Zodiac","picUrl":"http://p2.music.126.net/2UGeR7vME216HNPmKK-pxw==/816937139480821.jpg","tns":[],"pic":816937139480821},"dt":264661,"h":{"br":320000,"fid":0,"size":10586950,"vd":-0.27},"m":{"br":160000,"fid":0,"size":5293498,"vd":-2.65076E-4},"l":{"br":96000,"fid":0,"size":3176116,"vd":-2.65076E-4},"a":null,"cd":"1","no":6,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":412011,"mv":0,"publishTime":1232380800007,"alg":"alg_tag_based"},{"name":"Si Tu Vois Ma Mère","id":3781876,"pst":0,"t":0,"ar":[{"id":83170,"name":"Tina May","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":7,"crbt":null,"cf":"","al":{"id":382615,"name":"Jazz Piquant","picUrl":"http://p2.music.126.net/xGlZt7fSwKmAdinDvONuOQ==/644313813919894.jpg","tns":[],"pic":644313813919894},"dt":256000,"h":null,"m":{"br":192000,"fid":0,"size":6167239,"vd":15648},"l":{"br":128000,"fid":0,"size":4111507,"vd":16650},"a":null,"cd":"1","no":8,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":992275200007,"alg":"alg_tag_based"},{"name":"☁","id":863949788,"pst":0,"t":0,"ar":[{"id":12235146,"name":"FAT TIGER","tns":[],"alias":[]},{"id":12771007,"name":"Steve Tist","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":6,"crbt":null,"cf":"","al":{"id":71714657,"name":"☁","picUrl":"http://p2.music.126.net/9MDnkZmWi5SEJ1LPfa86oQ==/109951163386797534.jpg","tns":[],"pic_str":"109951163386797534","pic":109951163386797540},"dt":157455,"h":{"br":320000,"fid":0,"size":6300778,"vd":-14400},"m":{"br":192000,"fid":0,"size":3780484,"vd":-11900},"l":{"br":128000,"fid":0,"size":2520337,"vd":-10300},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1530489600000,"alg":"alg_tag_based"},{"name":"申请加入你的被窝","id":513193769,"pst":0,"t":0,"ar":[{"id":12395338,"name":"RRAN","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":8,"v":15,"crbt":null,"cf":"","al":{"id":36569425,"name":"申请加入你的被窝","picUrl":"http://p2.music.126.net/Pd94O0KOMBvqfZRIdYfM8w==/109951163043922920.jpg","tns":[],"pic_str":"109951163043922920","pic":109951163043922910},"dt":177293,"h":{"br":320000,"fid":0,"size":7093856,"vd":-2},"m":{"br":192000,"fid":0,"size":4256331,"vd":-2},"l":{"br":128000,"fid":0,"size":2837568,"vd":-2},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":1382818,"mv":0,"publishTime":1508061160772,"alg":"alg_tag_based"},{"name":"嘉 禾 天 橙 国 际 大 影 院","id":441437222,"pst":0,"t":0,"ar":[{"id":768266,"name":"ギャラクシー・騎士","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":15,"crbt":null,"cf":"","al":{"id":34993762,"name":"她 ，就 是 东 京","picUrl":"http://p2.music.126.net/M3ieCBkTn-bYYXvZLzcj-Q==/109951162809695511.jpg","tns":[],"pic_str":"109951162809695511","pic":109951162809695500},"dt":107075,"h":{"br":320000,"fid":0,"size":4285170,"vd":-8400},"m":{"br":192000,"fid":0,"size":2571120,"vd":-5700},"l":{"br":128000,"fid":0,"size":1714094,"vd":-4000},"a":null,"cd":"1","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1479228564980,"alg":"alg_tag_based"},{"name":"Wound Up","id":466126415,"pst":0,"t":0,"ar":[{"id":12273052,"name":"Jordyn Edmonds","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":4,"crbt":null,"cf":"","al":{"id":35287327,"name":"Wound Up","picUrl":"http://p2.music.126.net/tO-tTUqM2Pvbk7cA9uWnNg==/18784056650757999.jpg","tns":[],"pic_str":"18784056650757999","pic":18784056650758000},"dt":155245,"h":{"br":320000,"fid":0,"size":6210917,"vd":-3},"m":{"br":192000,"fid":0,"size":3726568,"vd":-2},"l":{"br":128000,"fid":0,"size":2484393,"vd":-2},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1473264000007,"alg":"alg_tag_based"},{"name":"陈光荣 - First Date俩少无猜(allenvee Bootleg)","id":492256479,"pst":0,"t":0,"ar":[{"id":12259217,"name":"allenvee","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":26,"crbt":null,"cf":"","al":{"id":35810025,"name":"夜班车.(summer night in nanning)","picUrl":"http://p2.music.126.net/yo4vj2z8jJjyxJQsJM1VpA==/109951163060152521.jpg","tns":[],"pic_str":"109951163060152521","pic":109951163060152530},"dt":194514,"h":{"br":320000,"fid":0,"size":7783489,"vd":66800},"m":{"br":192000,"fid":0,"size":4670111,"vd":69300},"l":{"br":128000,"fid":0,"size":3113422,"vd":64018},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1500644498838,"alg":"alg_tag_based"},{"name":"So Cute~","id":433107530,"pst":0,"t":0,"ar":[{"id":12027465,"name":"Lopu$","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":10,"crbt":null,"cf":"","al":{"id":34901157,"name":"So Cute~（当山瞳-Cathy Lopurmx）","picUrl":"http://p2.music.126.net/yFCpD3GrgmcInAbVvVaFUg==/17999005346907556.jpg","tns":[],"pic_str":"17999005346907556","pic":17999005346907556},"dt":184267,"h":{"br":320000,"fid":0,"size":7372844,"vd":0},"m":{"br":192000,"fid":0,"size":4423724,"vd":0},"l":{"br":128000,"fid":0,"size":2949164,"vd":0},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1475515536761,"alg":"alg_tag_based"},{"name":"Espresso","id":547033571,"pst":0,"t":0,"ar":[{"id":12441401,"name":"Jazzinuf","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":8,"v":6,"crbt":null,"cf":"","al":{"id":38003212,"name":"The Harlem Barber Swing","picUrl":"http://p2.music.126.net/NQbd676jeFbse3HB6wKyaw==/109951163201374587.jpg","tns":[],"pic_str":"109951163201374587","pic":109951163201374600},"dt":91500,"h":{"br":320000,"fid":0,"size":3662411,"vd":-23599},"m":{"br":192000,"fid":0,"size":2197464,"vd":-20900},"l":{"br":128000,"fid":0,"size":1464991,"vd":-19100},"a":null,"cd":"1","no":9,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":1416200,"mv":0,"publishTime":1503676800007,"alg":"alg_tag_based"},{"name":"Tea For Two (feat. Beegie Adair)","id":22210176,"pst":0,"t":0,"ar":[{"id":155083,"name":"Jack Jezzro And Friends","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":2,"crbt":null,"cf":"","al":{"id":2042459,"name":"Rio Nights","picUrl":"http://p2.music.126.net/cI-YnYLuOtZ6qaSqRuZzHg==/885106860382035.jpg","tns":[],"pic":885106860382035},"dt":225000,"h":{"br":320000,"fid":0,"size":8989606,"vd":0.041984},"m":{"br":160000,"fid":0,"size":4513787,"vd":0.395072},"l":{"br":96000,"fid":0,"size":2723041,"vd":-2.65076E-4},"a":null,"cd":"1","no":10,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":5003,"mv":0,"publishTime":1266854400007,"alg":"alg_tag_based"},{"name":"Girlfriend","id":27672135,"pst":0,"t":0,"ar":[{"id":812023,"name":"Triathalon","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":0,"v":4,"crbt":null,"cf":"","al":{"id":2652842,"name":"Vibes","picUrl":"http://p2.music.126.net/8WpjmaMxRSsBTO9ifc8Gug==/109951164103571377.jpg","tns":[],"pic_str":"109951164103571377","pic":109951164103571380},"dt":253000,"h":null,"m":{"br":192000,"fid":0,"size":6073915,"vd":-8900},"l":{"br":128000,"fid":0,"size":4049321,"vd":-7100},"a":null,"cd":"1","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1362758400007,"alg":"alg_tag_based"},{"name":"Mondo Bongo","id":5048932,"pst":0,"t":0,"ar":[{"id":136571,"name":"Joe Strummer & The Mescaleros","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":8,"v":39,"crbt":null,"cf":"","al":{"id":501057,"name":"Mr. & Mrs. Smith","picUrl":"http://p2.music.126.net/cqE_grxwx5V21ggoUrEs3w==/2544269907750724.jpg","tns":[],"pic":2544269907750724},"dt":374000,"h":{"br":320000,"fid":0,"size":15019508,"vd":2.23603},"m":{"br":160000,"fid":0,"size":7520799,"vd":2.65615},"l":{"br":96000,"fid":0,"size":4520897,"vd":2.14088},"a":null,"cd":"1","no":6,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":7002,"mv":394082,"publishTime":1118332800007,"alg":"alg_tag_based"},{"name":"你 向 我 索 求 的 都 會 給 你","id":537001563,"pst":0,"t":0,"ar":[{"id":12853998,"name":"别网恋","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":null,"fee":8,"v":10,"crbt":null,"cf":"","al":{"id":37543988,"name":"i'm in love with you sᴀᴇɴ. ʀᴇᴍɪx","picUrl":"http://p2.music.126.net/RIrKMaNKx4zTruk4hFYafA==/109951163139708223.jpg","tns":[],"pic_str":"109951163139708223","pic":109951163139708220},"dt":172408,"h":{"br":320000,"fid":0,"size":6898460,"vd":1794},"m":{"br":192000,"fid":0,"size":4139093,"vd":3582},"l":{"br":128000,"fid":0,"size":2759410,"vd":6096},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1518180647176,"alg":"alg_tag_based"},{"name":"Sex on the Beach","id":40249165,"pst":0,"t":0,"ar":[{"id":1185054,"name":"尚先生","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":8,"v":34,"crbt":null,"cf":"","al":{"id":3440062,"name":"不打烊的小酒馆 壹","picUrl":"http://p2.music.126.net/k46cY96XTg2s539IHKjobw==/17698838672405377.jpg","tns":[],"pic_str":"17698838672405377","pic":17698838672405376},"dt":184058,"h":{"br":320000,"fid":0,"size":7364485,"vd":2.63},"m":{"br":160000,"fid":0,"size":3682265,"vd":3.05155},"l":{"br":96000,"fid":0,"size":2209377,"vd":1.62662},"a":null,"cd":"1","no":8,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1449936000000,"alg":"alg_tag_based"},{"name":"And The Winner Is","id":1383639,"pst":0,"t":0,"ar":[{"id":33899,"name":"Gérard Darmon","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":8,"v":14,"crbt":null,"cf":"","al":{"id":141875,"name":"On S'Aime","picUrl":"http://p2.music.126.net/u9bYfwafB5JfJz0p-Kcd2g==/6664139976155607.jpg","tns":[],"pic":6664139976155607},"dt":232724,"h":{"br":320000,"fid":0,"size":9311129,"vd":-1},"m":{"br":192000,"fid":0,"size":5586695,"vd":-1},"l":{"br":128000,"fid":0,"size":3724478,"vd":-1},"a":null,"cd":"1","no":10,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":8192,"rtype":0,"rurl":null,"mst":9,"cp":7003,"mv":0,"publishTime":1228752000007,"alg":"alg_tag_based"},{"name":"as i sat alone","id":482636135,"pst":0,"t":0,"ar":[{"id":12040094,"name":"Vbnd","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":8,"v":36,"crbt":null,"cf":"","al":{"id":35590037,"name":"colors compilation","picUrl":"http://p2.music.126.net/Cvz4EeFDS9NU00eHwIFstA==/109951163463111510.jpg","tns":[],"pic_str":"109951163463111510","pic":109951163463111500},"dt":125184,"h":{"br":320000,"fid":0,"size":5010329,"vd":0},"m":{"br":192000,"fid":0,"size":3006215,"vd":0},"l":{"br":128000,"fid":0,"size":2004158,"vd":0},"a":null,"cd":"1","no":6,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":8320,"rtype":0,"rurl":null,"mst":9,"cp":743010,"mv":0,"publishTime":1510012800000,"alg":"alg_tag_based"},{"name":"@_@","id":461124107,"pst":0,"t":0,"ar":[{"id":12108345,"name":"IOAH","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":2,"crbt":null,"cf":"","al":{"id":35188431,"name":"@_@","picUrl":"http://p2.music.126.net/5R70EdQJ6dms-8ftIpeg0A==/18814842976297331.jpg","tns":[],"pic_str":"18814842976297331","pic":18814842976297332},"dt":164597,"h":null,"m":null,"l":{"br":96000,"fid":0,"size":1975529,"vd":-2.65076E-4},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1456675200007,"alg":"alg_tag_based"},{"name":"Sunny Day","id":2786189,"pst":0,"t":0,"ar":[{"id":61047,"name":"Joy Williams","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":4,"crbt":null,"cf":"","al":{"id":280872,"name":"Songs from This - EP","picUrl":"http://p2.music.126.net/DuT0q1Y9XtN5lCQoy6t9Bw==/1708641069569258.jpg","tns":[],"pic":1708641069569258},"dt":158929,"h":{"br":320000,"fid":0,"size":6393274,"vd":-1.83},"m":{"br":160000,"fid":0,"size":3217830,"vd":-1.4},"l":{"br":96000,"fid":0,"size":1947234,"vd":-1.48},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":5003,"mv":0,"publishTime":1252944000007,"alg":"alg_tag_based"},{"name":"if","id":557244721,"pst":0,"t":0,"ar":[{"id":12020017,"name":"阿克江Akin","tns":[],"alias":[]},{"id":789949,"name":"VISUDY","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":17,"crbt":null,"cf":"","al":{"id":38534820,"name":"心碎男孩俱乐部","picUrl":"http://p2.music.126.net/5Rlyg7hXYuywrI3dwGheaA==/109951163279429355.jpg","tns":[],"pic_str":"109951163279429355","pic":109951163279429360},"dt":338000,"h":{"br":320000,"fid":0,"size":13523113,"vd":-9200},"m":{"br":192000,"fid":0,"size":8113885,"vd":-6500},"l":{"br":128000,"fid":0,"size":5409271,"vd":-4600},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":5903039,"publishTime":1525305600000,"alg":"alg_tag_based"},{"name":"午夜心碎俱乐部2.0","id":565794655,"pst":0,"t":0,"ar":[{"id":12114249,"name":"大D(DLyn)","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":8,"v":13,"crbt":null,"cf":"","al":{"id":39112625,"name":"午夜心碎俱乐部2.0","picUrl":"http://p2.music.126.net/NSg1X6Qpc-oi5WAMg3U3ag==/109951163311151254.jpg","tns":[],"pic_str":"109951163311151254","pic":109951163311151250},"dt":154174,"h":{"br":320000,"fid":0,"size":6169121,"vd":-2},"m":{"br":192000,"fid":0,"size":3701490,"vd":-2},"l":{"br":128000,"fid":0,"size":2467675,"vd":-2},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1526918400000,"alg":"alg_tag_based"}],"trackIds":[{"id":1234301,"v":-10000,"alg":"alg_tag_based"},{"id":3781876,"v":-10000,"alg":"alg_tag_based"},{"id":863949788,"v":-10000,"alg":"alg_tag_based"},{"id":513193769,"v":-10000,"alg":"alg_tag_based"},{"id":441437222,"v":-10000,"alg":"alg_tag_based"},{"id":466126415,"v":-10000,"alg":"alg_tag_based"},{"id":492256479,"v":-10000,"alg":"alg_tag_based"},{"id":433107530,"v":-10000,"alg":"alg_tag_based"},{"id":547033571,"v":-10000,"alg":"alg_tag_based"},{"id":22210176,"v":-10000,"alg":"alg_tag_based"},{"id":27672135,"v":-10000,"alg":"alg_tag_based"},{"id":5048932,"v":-10000,"alg":"alg_tag_based"},{"id":537001563,"v":-10000,"alg":"alg_tag_based"},{"id":40249165,"v":-10000,"alg":"alg_tag_based"},{"id":1383639,"v":-10000,"alg":"alg_tag_based"},{"id":482636135,"v":-10000,"alg":"alg_tag_based"},{"id":461124107,"v":-10000,"alg":"alg_tag_based"},{"id":2786189,"v":-10000,"alg":"alg_tag_based"},{"id":557244721,"v":-10000,"alg":"alg_tag_based"},{"id":565794655,"v":-10000,"alg":"alg_tag_based"}],"updateFrequency":"每日更新","backgroundCoverId":109951164173101600,"backgroundCoverUrl":"http://p1.music.126.net/fLUeGxU2ybh2zImBiFfHBA==/109951164173101598.jpg","cloudTrackCount":0,"subscribedCount":4056,"trackNumberUpdateTime":1563400800000,"createTime":1559732650146,"highQuality":false,"userId":1,"updateTime":0,"coverImgId":109951164170712420,"coverImgUrl":"http://p2.music.126.net/xKyXkJ9ZIqov2Frl8C6qwg==/109951164170712411.jpg","specialType":100,"trackCount":20,"commentThreadId":"A_PL_0_2829827274","trackUpdateTime":1563415480405,"privacy":0,"newImported":false,"playCount":403895,"adType":0,"tags":["下午茶"],"ordered":false,"description":"一杯茶，一块甜点\n搭配着闲适的音乐\n都是生活中触手可及的小确幸\n收藏一下午的好时光，来杯下午茶，每日更新～","status":0,"name":"[来杯下午茶] 忙碌之余来点音乐犒劳自己","id":2829827274,"shareCount":44,"commentCount":32}
      * code : 200
-     * privileges : [{"id":1234301,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":0,"preSell":false},{"id":3781876,"fee":0,"payed":0,"st":0,"pl":192000,"dl":192000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":192000,"fl":999000,"toast":false,"flag":128,"preSell":false},{"id":863949788,"fee":0,"payed":0,"st":0,"pl":999000,"dl":999000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":999000,"toast":false,"flag":130,"preSell":false},{"id":513193769,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":2,"preSell":false},{"id":441437222,"fee":0,"payed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":999000,"toast":false,"flag":2,"preSell":false},{"id":466126415,"fee":0,"payed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":999000,"toast":false,"flag":128,"preSell":false},{"id":492256479,"fee":0,"payed":0,"st":0,"pl":999000,"dl":999000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":999000,"toast":false,"flag":130,"preSell":false},{"id":433107530,"fee":0,"payed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":999000,"toast":false,"flag":130,"preSell":false},{"id":547033571,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"toast":false,"flag":64,"preSell":false},{"id":22210176,"fee":0,"payed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":999000,"toast":false,"flag":128,"preSell":false},{"id":27672135,"fee":0,"payed":0,"st":0,"pl":192000,"dl":192000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":192000,"fl":999000,"toast":false,"flag":128,"preSell":false},{"id":5048932,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":256,"preSell":false},{"id":537001563,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":66,"preSell":false},{"id":40249165,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":64,"preSell":false},{"id":1383639,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":4,"preSell":false},{"id":482636135,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"toast":false,"flag":5,"preSell":false},{"id":461124107,"fee":0,"payed":0,"st":0,"pl":128000,"dl":128000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":128000,"fl":999000,"toast":false,"flag":128,"preSell":false},{"id":2786189,"fee":0,"payed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":999000,"toast":false,"flag":128,"preSell":false},{"id":557244721,"fee":0,"payed":0,"st":0,"pl":999000,"dl":999000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":999000,"toast":false,"flag":66,"preSell":false},{"id":565794655,"fee":8,"payed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"toast":false,"flag":64,"preSell":false}]
+     * relatedVideos : null
+     * playlist : {"id":6913945516,"name":"运动","coverImgId":109951165420630240,"coverImgUrl":"https://p1.music.126.net/tNeDhj72b3sdZRU7_6eTBA==/109951165420630236.jpg","coverImgId_str":"109951165420630236","adType":0,"userId":446942908,"createTime":1628745786933,"status":0,"opRecommend":false,"highQuality":false,"newImported":false,"updateTime":1635399785633,"trackCount":194,"specialType":0,"privacy":0,"trackUpdateTime":1684170956378,"commentThreadId":"A_PL_0_6913945516","playCount":15,"trackNumberUpdateTime":1635399785633,"subscribedCount":0,"cloudTrackCount":0,"ordered":false,"description":null,"tags":[],"updateFrequency":null,"backgroundCoverId":0,"backgroundCoverUrl":null,"titleImage":0,"titleImageUrl":null,"englishTitle":null,"officialPlaylistType":null,"copied":false,"relateResType":null,"subscribers":[],"subscribed":false,"creator":{"defaultAvatar":false,"province":140000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/1HqOas-NCtKtjEyZg1dn1w==/109951163778944334.jpg","accountStatus":0,"gender":2,"city":141100,"birthday":0,"userId":446942908,"userType":0,"nickname":"一大只瘦砸","signature":"","description":"","detailDescription":"","avatarImgId":109951163778944340,"backgroundImgId":109951162868126480,"backgroundUrl":"http://p1.music.126.net/_f8R60U9mZ42sSNvdPn2sQ==/109951162868126486.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":10,"vipType":0,"remarkName":null,"authenticationTypes":0,"avatarDetail":null,"anchor":false,"backgroundImgIdStr":"109951162868126486","avatarImgIdStr":"109951163778944334","avatarImgId_str":"109951163778944334"},"tracks":[{"name":"夜に駆ける","id":1490617551,"pst":0,"t":0,"ar":[{"id":12085569,"name":"李蚊香","tns":[],"alias":[]}],"alia":[],"pop":25,"st":0,"rt":"","fee":0,"v":12,"crbt":null,"cf":"","al":{"id":97410890,"name":"夜に駆ける","picUrl":"http://p4.music.126.net/tNeDhj72b3sdZRU7_6eTBA==/109951165420630236.jpg","tns":[],"pic_str":"109951165420630236","pic":109951165420630240},"dt":261851,"h":{"br":320000,"fid":0,"size":10477236,"vd":-56229},"m":{"br":192000,"fid":0,"size":6286359,"vd":-53733},"l":{"br":128000,"fid":0,"size":4190920,"vd":-52220},"sq":{"br":1732707,"fid":0,"size":56714031,"vd":-56205},"hr":null,"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":262272,"originCoverType":2,"originSongSimpleData":{"songId":1409311773,"name":"夜に駆ける","artists":[{"id":33927412,"name":"YOASOBI"}],"albumMeta":{"id":84072830,"name":"夜に駆ける"}},"tagPicList":null,"resourceState":true,"version":12,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":0,"mv":0,"rtype":0,"rurl":null,"publishTime":0},{"name":"ALIVE（Cover RAM WIRE）","id":525574478,"pst":0,"t":0,"ar":[{"id":12085569,"name":"李蚊香","tns":[],"alias":[]},{"id":12345258,"name":"山竹Mez","tns":[],"alias":[]}],"alia":[],"pop":25,"st":0,"rt":null,"fee":0,"v":11,"crbt":null,"cf":"","al":{"id":37013738,"name":"ALIVE","picUrl":"http://p3.music.126.net/dxp3COJ3HQl4lvr4M5uxUQ==/109951163090123063.jpg","tns":[],"pic_str":"109951163090123063","pic":109951163090123060},"dt":264620,"h":{"br":320000,"fid":0,"size":10585905,"vd":-41002},"m":{"br":192000,"fid":0,"size":6351560,"vd":-41002},"l":{"br":128000,"fid":0,"size":4234388,"vd":-41002},"sq":null,"hr":null,"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":262144,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":11,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":663018,"mv":0,"rtype":0,"rurl":null,"publishTime":1513936960253},{"name":"Mr. & Mrs. (I Do This For You)","id":19885534,"pst":0,"t":0,"ar":[{"id":58020,"name":"Group 1 Crew","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":8,"v":40,"crbt":null,"cf":"","al":{"id":1837440,"name":"Fearless","picUrl":"http://p3.music.126.net/EuMHFdwsyU0xbm45rBq-kg==/109951163353091401.jpg","tns":[],"pic_str":"109951163353091401","pic":109951163353091410},"dt":207666,"h":{"br":320000,"fid":0,"size":8309072,"vd":-55506},"m":{"br":192000,"fid":0,"size":4985461,"vd":-52945},"l":{"br":128000,"fid":0,"size":3323655,"vd":-51306},"sq":{"br":971323,"fid":0,"size":25213927,"vd":-13500},"hr":null,"a":null,"cd":"1","no":7,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":270464,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":40,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":743010,"mv":5308233,"rtype":0,"rurl":null,"publishTime":1347235200000},{"name":"In My Foreign","id":454698347,"pst":0,"t":0,"ar":[{"id":12073387,"name":"The Americanos","tns":[],"alias":[]},{"id":789235,"name":"Ty Dolla $ign","tns":[],"alias":[]},{"id":12029208,"name":"Lil Yachty","tns":[],"alias":[]},{"id":69608,"name":"Nicky Jam","tns":[],"alias":[]},{"id":33795,"name":"French Montana","tns":[],"alias":[]}],"alia":["电影《极限特工：终极回归》插曲"],"pop":95,"st":0,"rt":null,"fee":1,"v":20,"crbt":null,"cf":"","al":{"id":35120790,"name":"xXx: Return of Xander Cage (Music from the Motion Picture)","picUrl":"http://p4.music.126.net/QmsW6R3AAFFFyVK4t6cHfw==/18741175697163830.jpg","tns":[],"pic_str":"18741175697163830","pic":18741175697163830},"dt":219098,"h":{"br":320000,"fid":0,"size":8732256,"vd":-72109},"m":{"br":192000,"fid":0,"size":5239371,"vd":-72109},"l":{"br":128000,"fid":0,"size":3492928,"vd":-72109},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":794624,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":20,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5433040,"rtype":0,"rurl":null,"publishTime":1484841600007},{"name":"Give Me Your Love","id":409031711,"pst":0,"t":0,"ar":[{"id":1124282,"name":"Sigala","tns":[],"alias":[]},{"id":195302,"name":"John Newman","tns":[],"alias":[]},{"id":69491,"name":"Nile Rodgers","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":18,"crbt":null,"cf":"","al":{"id":34604123,"name":"Give Me Your Love","picUrl":"http://p4.music.126.net/qfeQAc7muMCh5vVBawdD_Q==/1406275377164557.jpg","tns":[],"pic":1406275377164557},"dt":209057,"h":{"br":320002,"fid":0,"size":8363407,"vd":-82754},"m":{"br":192002,"fid":0,"size":5018062,"vd":-80339},"l":{"br":128002,"fid":0,"size":3345389,"vd":-78983},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":18,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7001,"mv":5323166,"rtype":0,"rurl":null,"publishTime":1460044646469},{"name":"Cloud 9","id":459063003,"pst":0,"t":0,"ar":[{"id":60935,"name":"Jamiroquai","tns":[],"alias":[]}],"alia":[],"pop":85,"st":0,"rt":null,"fee":8,"v":34,"crbt":null,"cf":"","al":{"id":35176109,"name":"Automaton","picUrl":"http://p3.music.126.net/QNPtDMiOEnN5-sS4gO6dsA==/109951163412050621.jpg","tns":[],"pic_str":"109951163412050621","pic":109951163412050620},"dt":236946,"h":{"br":320000,"fid":0,"size":9480403,"vd":-47065},"m":{"br":192000,"fid":0,"size":5688259,"vd":-47065},"l":{"br":128000,"fid":0,"size":3792187,"vd":-47065},"sq":{"br":887280,"fid":0,"size":26279764,"vd":-47065},"hr":null,"a":null,"cd":"01","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":34,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":5496218,"rtype":0,"rurl":null,"publishTime":1490889600000},{"name":"Kiss the Sky","id":423227337,"pst":0,"t":0,"ar":[{"id":35511,"name":"Jason Derulo","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":29,"crbt":null,"cf":"","al":{"id":34796287,"name":"Platinum Hits","picUrl":"http://p3.music.126.net/ETSRurGSYjzJqhYhXTi2PA==/109951166468782835.jpg","tns":[],"pic_str":"109951166468782835","pic":109951166468782830},"dt":222386,"h":{"br":320000,"fid":0,"size":8898395,"vd":-66926},"m":{"br":192000,"fid":0,"size":5339054,"vd":-64479},"l":{"br":128000,"fid":0,"size":3559384,"vd":-63128},"sq":{"br":1011660,"fid":0,"size":28122480,"vd":-66924},"hr":null,"a":null,"cd":"1","no":12,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":29,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5353042,"rtype":0,"rurl":null,"publishTime":1469721600000},{"name":"Delicious","id":451520805,"pst":0,"t":0,"ar":[{"id":31187,"name":"Daniel Powter","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":null,"fee":8,"v":10,"crbt":null,"cf":"","al":{"id":35113153,"name":"Delicious","picUrl":"http://p3.music.126.net/B0NULOAxvP59tFVwHoFCbA==/18754369836667287.jpg","tns":[],"pic_str":"18754369836667287","pic":18754369836667290},"dt":145867,"h":{"br":320000,"fid":0,"size":5835799,"vd":-56888},"m":{"br":192000,"fid":0,"size":3501497,"vd":-56888},"l":{"br":128000,"fid":0,"size":2334346,"vd":-56888},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":10,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7001,"mv":0,"rtype":0,"rurl":null,"publishTime":1483632000007},{"name":"Best Of My Love","id":34898373,"pst":0,"t":0,"ar":[{"id":860517,"name":"Ella Eyre","tns":[],"alias":[]}],"alia":[],"pop":85,"st":0,"rt":null,"fee":1,"v":10,"crbt":null,"cf":"","al":{"id":3304034,"name":"Best Of My Love","picUrl":"http://p3.music.126.net/FKEyyRDVlH58s_AXJ6YRJw==/18348650044355578.jpg","tns":[],"pic_str":"18348650044355578","pic":18348650044355576},"dt":212584,"h":{"br":320000,"fid":0,"size":8505512,"vd":-61520},"m":{"br":192000,"fid":0,"size":5103324,"vd":-61520},"l":{"br":128000,"fid":0,"size":3402230,"vd":-61520},"sq":null,"hr":null,"a":null,"cd":"A","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":10,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":0,"rtype":0,"rurl":null,"publishTime":1443369600000},{"name":"Love You Like A Love Song","id":19192372,"pst":0,"t":0,"ar":[{"id":100213,"name":"Selena Gomez & The Scene","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"600902000009123571","fee":8,"v":17,"crbt":null,"cf":"","al":{"id":1760178,"name":"Love You Like A Love Song","picUrl":"http://p3.music.126.net/PhGkqkZEPm2oygVN0r72dA==/6639950721071543.jpg","tns":[],"pic":6639950721071543},"dt":188453,"h":{"br":320000,"fid":0,"size":7541072,"vd":-68142},"m":{"br":192000,"fid":0,"size":4524661,"vd":-65619},"l":{"br":128000,"fid":0,"size":3016455,"vd":-63969},"sq":{"br":1050972,"fid":0,"size":24757414,"vd":-68133},"hr":null,"a":null,"cd":"1","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":17,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":14263205,"rtype":0,"rurl":null,"publishTime":1313942400000},{"name":"Done for Me (feat. Kehlani)","id":544199008,"pst":0,"t":0,"ar":[{"id":90331,"name":"Charlie Puth","tns":[],"alias":[]},{"id":1060155,"name":"Kehlani","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":1,"v":362,"crbt":null,"cf":"","al":{"id":38530129,"name":"Voicenotes","picUrl":"http://p3.music.126.net/RNl__JslenVhRoOvGmdZAg==/109951165991701088.jpg","tns":[],"pic_str":"109951165991701088","pic":109951165991701090},"dt":180493,"h":{"br":320000,"fid":0,"size":7222378,"vd":-70320},"m":{"br":192000,"fid":0,"size":4333444,"vd":-67824},"l":{"br":128000,"fid":0,"size":2888977,"vd":-66343},"sq":{"br":977668,"fid":0,"size":22057835,"vd":-70303},"hr":null,"a":null,"cd":"1","no":5,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":362,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5897033,"rtype":0,"rurl":null,"publishTime":1525968000000},{"name":"Somebody","id":29950506,"pst":0,"t":0,"ar":[{"id":1046073,"name":"Natalie La Rose","tns":[],"alias":[]},{"id":60972,"name":"Jeremih","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":23,"crbt":null,"cf":"","al":{"id":3089052,"name":"Somebody","picUrl":"http://p3.music.126.net/oiFRkZyKYydgx4isr1R6MQ==/2528876746878002.jpg","tns":[],"pic":2528876746878002},"dt":190066,"h":{"br":320002,"fid":0,"size":7604811,"vd":-39776},"m":{"br":192002,"fid":0,"size":4562904,"vd":-37194},"l":{"br":128002,"fid":0,"size":3041951,"vd":-35539},"sq":{"br":860972,"fid":0,"size":20455273,"vd":-39769},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":23,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":385273,"rtype":0,"rurl":null,"publishTime":1420473600000},{"name":"Green grass","id":4125814,"pst":0,"t":0,"ar":[{"id":94649,"name":"I Am Arrows","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":"","fee":0,"v":6,"crbt":null,"cf":"","al":{"id":417220,"name":"Sun Comes Up Again","picUrl":"http://p4.music.126.net/Er6cUOMYQANJAKPOx-ecKQ==/2567359650876192.jpg","tns":[],"pic":2567359650876192},"dt":224000,"h":{"br":320000,"fid":0,"size":8985256,"vd":-2},"m":{"br":192000,"fid":0,"size":5391225,"vd":-2},"l":{"br":128000,"fid":0,"size":3594210,"vd":-2},"sq":null,"hr":null,"a":null,"cd":"1","no":2,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":262144,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":6,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":5003,"mv":0,"rtype":0,"rurl":null,"publishTime":1281888000007},{"name":"GQ","id":410654865,"pst":0,"t":0,"ar":[{"id":12040030,"name":"Lola Coca","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":8,"v":37,"crbt":null,"cf":"","al":{"id":34609808,"name":"GQ","picUrl":"http://p4.music.126.net/dMWLKIfPcX5xOkRPtts4iw==/109951163291357023.jpg","tns":[],"pic_str":"109951163291357023","pic":109951163291357020},"dt":162923,"h":{"br":320000,"fid":0,"size":6519162,"vd":-62102},"m":{"br":192000,"fid":0,"size":3911515,"vd":-62102},"l":{"br":128000,"fid":0,"size":2607691,"vd":-62102},"sq":{"br":945253,"fid":0,"size":19250452,"vd":-62102},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":37,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":1416177,"mv":0,"rtype":0,"rurl":null,"publishTime":1461283200000},{"name":"All Stars","id":484700147,"pst":0,"t":0,"ar":[{"id":39337,"name":"Martin Solveig","tns":[],"alias":[]},{"id":12049098,"name":"ALMA","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":null,"fee":1,"v":26,"crbt":null,"cf":"","al":{"id":35558972,"name":"All Stars","picUrl":"http://p3.music.126.net/Tfe2WLCu9COphdGPqMWuMg==/18350849068324921.jpg","tns":[],"pic_str":"18350849068324921","pic":18350849068324920},"dt":170322,"h":null,"m":null,"l":{"br":128000,"fid":0,"size":2726391,"vd":-70606},"sq":{"br":985243,"fid":0,"size":20976158,"vd":-74743},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":26,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":5588090,"rtype":0,"rurl":null,"publishTime":1497542400000},{"name":"Human","id":422073136,"pst":0,"t":0,"ar":[{"id":1053202,"name":"Rag'N'Bone Man","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":1,"v":21,"crbt":null,"cf":"","al":{"id":34784269,"name":"Human","picUrl":"http://p3.music.126.net/30DSPtCnerqQ37iIXcWHTw==/109951165970635437.jpg","tns":[],"pic_str":"109951165970635437","pic":109951165970635440},"dt":199471,"h":{"br":320000,"fid":0,"size":7978885,"vd":-69540},"m":{"br":192000,"fid":0,"size":4787348,"vd":-66981},"l":{"br":128000,"fid":0,"size":3191580,"vd":-65331},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":21,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7001,"mv":14354849,"rtype":0,"rurl":null,"publishTime":1469030400000},{"name":"All Goes Wrong","id":431085766,"pst":0,"t":0,"ar":[{"id":185237,"name":"Chase & Status","tns":[],"alias":[]},{"id":12098162,"name":"Tom Grennan","tns":[],"alias":[]}],"alia":[],"pop":80,"st":0,"rt":null,"fee":1,"v":25,"crbt":null,"cf":"","al":{"id":34880280,"name":"All Goes Wrong","picUrl":"http://p3.music.126.net/JUQ1LwWgw1oaFSFjmcgxSA==/18570751394599191.jpg","tns":[],"pic_str":"18570751394599191","pic":18570751394599190},"dt":205253,"h":{"br":320000,"fid":0,"size":8212942,"vd":-65782},"m":{"br":192000,"fid":0,"size":4927782,"vd":-63233},"l":{"br":128000,"fid":0,"size":3285203,"vd":-61621},"sq":{"br":1013693,"fid":0,"size":26008009,"vd":-65814},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":25,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":5436663,"rtype":0,"rurl":null,"publishTime":1474473600007},{"name":"Get Out","id":2758398,"pst":0,"t":0,"ar":[{"id":60521,"name":"I Nine","tns":[],"alias":[]}],"alia":[],"pop":85,"st":0,"rt":"","fee":0,"v":5,"crbt":null,"cf":"","al":{"id":278288,"name":"Heavy Weighs The King","picUrl":"http://p4.music.126.net/2cp8BEnO_0Ke2Q4VUmtsBQ==/1764716162585718.jpg","tns":[],"pic":1764716162585718},"dt":215000,"h":{"br":320000,"fid":0,"size":8634165,"vd":-43000},"m":{"br":192000,"fid":0,"size":5180568,"vd":-40500},"l":{"br":128000,"fid":0,"size":3453769,"vd":-39200},"sq":null,"hr":null,"a":null,"cd":"1","no":4,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":262144,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":5,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":0,"mv":0,"rtype":0,"rurl":null,"publishTime":1209571200007},{"name":"California","id":3159053,"pst":0,"t":0,"ar":[{"id":69005,"name":"Mindy Gledhill","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":8,"v":63,"crbt":null,"cf":"","al":{"id":319676,"name":"Anchor","picUrl":"http://p4.music.126.net/CRZ6x3e85IVr9ipDx5TBpw==/109951164889195255.jpg","tns":[],"pic_str":"109951164889195255","pic":109951164889195250},"dt":180333,"h":{"br":320000,"fid":0,"size":7216109,"vd":-61993},"m":{"br":192000,"fid":0,"size":4329683,"vd":-59413},"l":{"br":128000,"fid":0,"size":2886470,"vd":-57751},"sq":{"br":952634,"fid":0,"size":21473965,"vd":-62006},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":63,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":1416336,"mv":0,"rtype":0,"rurl":null,"publishTime":1281398400000},{"name":"IDGAF","id":481537713,"pst":0,"t":0,"ar":[{"id":1135086,"name":"Dua Lipa","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":55,"crbt":null,"cf":"","al":{"id":35423216,"name":"Dua Lipa (Deluxe)","picUrl":"http://p4.music.126.net/npiYf9PQiOQSWelNNKYlhg==/109951166052415639.jpg","tns":[],"pic_str":"109951166052415639","pic":109951166052415630},"dt":217946,"h":{"br":320000,"fid":0,"size":8720762,"vd":-56014},"m":{"br":192000,"fid":0,"size":5232475,"vd":-53479},"l":{"br":128000,"fid":0,"size":3488331,"vd":-52035},"sq":{"br":960494,"fid":0,"size":26167062,"vd":-56014},"hr":null,"a":null,"cd":"1","no":5,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":1318912,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":55,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5808058,"rtype":0,"rurl":null,"publishTime":1496332800000}],"videoIds":null,"videos":null,"trackIds":[{"id":1490617551,"v":12,"t":0,"at":1635399785634,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":525574478,"v":11,"t":0,"at":1635399785633,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":19885534,"v":40,"t":0,"at":1635398380681,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":454698347,"v":20,"t":0,"at":1635398380680,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":409031711,"v":18,"t":0,"at":1635398380679,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459063003,"v":34,"t":0,"at":1635398380678,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":423227337,"v":29,"t":0,"at":1635398380677,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":451520805,"v":10,"t":0,"at":1635398380676,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34898373,"v":10,"t":0,"at":1635398380675,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":19192372,"v":17,"t":0,"at":1635398380674,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":544199008,"v":362,"t":0,"at":1635398380673,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29950506,"v":23,"t":0,"at":1635398380672,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4125814,"v":6,"t":0,"at":1635398380671,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":410654865,"v":37,"t":0,"at":1635398380670,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":484700147,"v":26,"t":0,"at":1635398380669,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":422073136,"v":21,"t":0,"at":1635398380668,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":431085766,"v":25,"t":0,"at":1635398380667,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2758398,"v":5,"t":0,"at":1635398380666,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":3159053,"v":63,"t":0,"at":1635398380665,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":481537713,"v":55,"t":0,"at":1635398380664,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":420125898,"v":9,"t":0,"at":1635398380663,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":553904964,"v":16,"t":0,"at":1635398380662,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28191722,"v":143,"t":0,"at":1635398380661,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":442991436,"v":10,"t":0,"at":1635398380660,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":453185808,"v":40,"t":0,"at":1635398380659,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28920011,"v":5,"t":0,"at":1635398380658,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":38014595,"v":22,"t":0,"at":1635398380657,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":478269695,"v":85,"t":0,"at":1635398380656,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17793698,"v":34,"t":0,"at":1635398380655,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":515223490,"v":13,"t":0,"at":1635398380654,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":475597835,"v":19,"t":0,"at":1635398380653,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29592099,"v":30,"t":0,"at":1635398380652,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34248355,"v":19,"t":0,"at":1635398380651,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":509728806,"v":396,"t":0,"at":1635398380650,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":5100769,"v":156,"t":0,"at":1635398380649,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21253806,"v":42,"t":0,"at":1635398380648,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":518895654,"v":378,"t":0,"at":1635398380647,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":521558853,"v":22,"t":0,"at":1635398380646,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":409931611,"v":15,"t":0,"at":1635398380645,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31477363,"v":9,"t":0,"at":1635398380644,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26060065,"v":175,"t":0,"at":1635398380643,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":467344119,"v":24,"t":0,"at":1635398380642,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29343743,"v":33,"t":0,"at":1635398380641,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32341765,"v":24,"t":0,"at":1635398380640,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4199688,"v":8,"t":0,"at":1635398380639,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":16306512,"v":5,"t":0,"at":1635398380638,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29561039,"v":29,"t":0,"at":1635398380637,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1872247,"v":23,"t":0,"at":1635398380636,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":441491080,"v":43,"t":0,"at":1635398380635,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26933374,"v":147,"t":0,"at":1635398380634,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":494865824,"v":52,"t":0,"at":1635398380633,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21563184,"v":45,"t":0,"at":1635398380632,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2122749,"v":17,"t":0,"at":1635398380631,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":410846246,"v":21,"t":0,"at":1635398380630,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4164331,"v":21,"t":0,"at":1635398380629,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31477257,"v":7,"t":0,"at":1635398380628,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1453308606,"v":13,"t":0,"at":1635393677372,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1843950108,"v":8,"t":0,"at":1635393677371,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1857614547,"v":6,"t":0,"at":1635393677370,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1885826111,"v":22,"t":0,"at":1635393677369,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1873780272,"v":15,"t":0,"at":1635393677368,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1314777725,"v":18,"t":0,"at":1635393677367,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34144145,"v":28,"t":0,"at":1635393677366,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":546722490,"v":19,"t":0,"at":1635393677365,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":33891204,"v":8,"t":0,"at":1635393677364,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":499384441,"v":26,"t":0,"at":1635393677363,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":506092035,"v":110,"t":0,"at":1635393677362,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":552145020,"v":10,"t":0,"at":1635393677361,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":570244389,"v":20,"t":0,"at":1635393677360,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":406072775,"v":16,"t":0,"at":1635393677359,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29737541,"v":10,"t":0,"at":1635393677358,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30474546,"v":29,"t":0,"at":1635393677357,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":534540558,"v":26,"t":0,"at":1635393677356,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":40915135,"v":17,"t":0,"at":1635393677355,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":545947135,"v":10,"t":0,"at":1635393677354,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28315618,"v":22,"t":0,"at":1635393677353,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30987703,"v":19,"t":0,"at":1635393677352,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":25704014,"v":35,"t":0,"at":1635393677351,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":557148288,"v":358,"t":0,"at":1635393677350,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":491271737,"v":19,"t":0,"at":1635393677349,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":467953113,"v":14,"t":0,"at":1635393677348,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":511921537,"v":10,"t":0,"at":1635393677347,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":505449407,"v":41,"t":0,"at":1635393677346,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":518895684,"v":22,"t":0,"at":1635393677345,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28649860,"v":139,"t":0,"at":1635393677344,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":444269135,"v":116,"t":0,"at":1635393677343,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":407839677,"v":180,"t":0,"at":1635393677342,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":528270690,"v":9,"t":0,"at":1635393677341,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":529557738,"v":26,"t":0,"at":1635393677340,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":518076434,"v":24,"t":0,"at":1635393677339,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2113299,"v":16,"t":0,"at":1635393677338,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":432457819,"v":11,"t":0,"at":1635393677337,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":453268471,"v":13,"t":0,"at":1635393677336,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29910080,"v":29,"t":0,"at":1635393677335,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":417859039,"v":20,"t":0,"at":1635393677334,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32019002,"v":122,"t":0,"at":1635393677333,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":504717728,"v":12,"t":0,"at":1635393677332,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":451520430,"v":6,"t":0,"at":1635393677330,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":516750031,"v":31,"t":0,"at":1635393677329,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34999489,"v":30,"t":0,"at":1635393677328,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":492144657,"v":13,"t":0,"at":1635393677327,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":466794276,"v":5,"t":0,"at":1635393677326,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":424155394,"v":20,"t":0,"at":1635393677325,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459159098,"v":18,"t":0,"at":1635393677324,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1069265,"v":6,"t":0,"at":1635393677323,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":491271500,"v":16,"t":0,"at":1635393677322,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":412187573,"v":17,"t":0,"at":1635393677321,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31053306,"v":45,"t":0,"at":1635393677320,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":476323620,"v":38,"t":0,"at":1635393677319,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":441612076,"v":9,"t":0,"at":1635393677318,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1491585,"v":19,"t":0,"at":1635393677317,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":430208102,"v":5,"t":0,"at":1635393677316,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":487210825,"v":27,"t":0,"at":1635393677315,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4109336,"v":24,"t":0,"at":1635393677314,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":473940940,"v":13,"t":0,"at":1635393677313,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28143956,"v":141,"t":0,"at":1635393677312,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":514053315,"v":296,"t":0,"at":1635393677311,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":448916038,"v":17,"t":0,"at":1635393677310,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":489110016,"v":23,"t":0,"at":1635393677309,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":458496858,"v":5,"t":0,"at":1635393677308,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":16501064,"v":18,"t":0,"at":1635393677307,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":404744101,"v":17,"t":0,"at":1635393677306,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":497223014,"v":21,"t":0,"at":1635393677305,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28828374,"v":7,"t":0,"at":1635393677304,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":412951708,"v":19,"t":0,"at":1635393677303,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32752169,"v":21,"t":0,"at":1635393677302,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":482988471,"v":52,"t":0,"at":1635393677301,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":472219602,"v":84,"t":0,"at":1635393677300,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":483061711,"v":12,"t":0,"at":1635393677299,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":23379820,"v":141,"t":0,"at":1635393677298,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459066182,"v":6,"t":0,"at":1635393677297,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":5047860,"v":42,"t":0,"at":1635393677296,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":416552144,"v":10,"t":0,"at":1635393677295,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27921294,"v":9,"t":0,"at":1635393677294,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459062072,"v":192,"t":0,"at":1635393677293,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29806043,"v":42,"t":0,"at":1635393677292,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27888500,"v":45,"t":0,"at":1635393677291,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28188171,"v":56,"t":0,"at":1635393677290,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34690628,"v":18,"t":0,"at":1635393677289,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":420922950,"v":56,"t":0,"at":1635393677288,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31152570,"v":15,"t":0,"at":1635393677287,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27907557,"v":9,"t":0,"at":1635393677286,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32835004,"v":485,"t":0,"at":1635393677285,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":451703096,"v":140,"t":0,"at":1635393677284,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27691911,"v":149,"t":0,"at":1635393677283,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1300270994,"v":4,"t":0,"at":1635393677282,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":405612296,"v":17,"t":0,"at":1635393677281,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":399354183,"v":12,"t":0,"at":1635393677280,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":16858400,"v":25,"t":0,"at":1635393677279,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17721274,"v":23,"t":0,"at":1635393677278,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17232222,"v":19,"t":0,"at":1635393677277,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1093730,"v":15,"t":0,"at":1635393677276,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29732106,"v":24,"t":0,"at":1635393677275,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":35804696,"v":7,"t":0,"at":1635393677274,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26598815,"v":26,"t":0,"at":1635393677273,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26349704,"v":14,"t":0,"at":1635393677272,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28805825,"v":18,"t":0,"at":1635393677271,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27829077,"v":12,"t":0,"at":1635393677270,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2310409,"v":10,"t":0,"at":1635393677269,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21309473,"v":21,"t":0,"at":1635393677268,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26365350,"v":11,"t":0,"at":1635393677267,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26270153,"v":13,"t":0,"at":1635393677266,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28458116,"v":34,"t":0,"at":1635393677265,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29953681,"v":5,"t":0,"at":1635393677264,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1212320,"v":122,"t":0,"at":1635393677263,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27583305,"v":25,"t":0,"at":1635393677262,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":427595940,"v":8,"t":0,"at":1635393677261,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28729445,"v":146,"t":0,"at":1635393677260,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34228719,"v":56,"t":0,"at":1635393677259,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29753223,"v":29,"t":0,"at":1635393677258,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29133007,"v":18,"t":0,"at":1635393677257,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":423228325,"v":126,"t":0,"at":1635393677256,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34722449,"v":33,"t":0,"at":1635393677255,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26292065,"v":14,"t":0,"at":1635393677254,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":19567986,"v":35,"t":0,"at":1635393677253,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28830767,"v":20,"t":0,"at":1635393677252,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":427142481,"v":25,"t":0,"at":1635393677251,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":18086023,"v":17,"t":0,"at":1635393677250,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21151698,"v":201,"t":0,"at":1635393677249,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31545222,"v":21,"t":0,"at":1635393677248,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":426290682,"v":13,"t":0,"at":1635393677247,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28136576,"v":143,"t":0,"at":1635393677246,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30706066,"v":34,"t":0,"at":1635393677245,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":18513043,"v":16,"t":0,"at":1635393677244,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1754359,"v":26,"t":0,"at":1635393677243,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28103370,"v":40,"t":0,"at":1635393677242,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1069282,"v":16,"t":0,"at":1635393677241,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":22349568,"v":19,"t":0,"at":1635393677240,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":33071205,"v":30,"t":0,"at":1635393677239,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17282443,"v":24,"t":0,"at":1635393677238,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30394891,"v":114,"t":0,"at":1635393677237,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":36198046,"v":227,"t":0,"at":1635393677235,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":25657233,"v":429,"t":0,"at":1635393677232,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34696930,"v":36,"t":0,"at":1635393677231,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null}],"bannedTrackIds":null,"mvResourceInfos":null,"shareCount":0,"commentCount":0,"remixVideo":null,"sharedUsers":null,"historySharedUsers":null,"gradeStatus":"NONE","score":null,"algTags":null}
+     * urls : null
+     * privileges : [{"id":1490617551,"fee":0,"payed":0,"realPayed":0,"st":0,"pl":320000,"dl":999000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":320000,"pc":null,"toast":false,"flag":257,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"exhigh","dlLevel":"lossless","flLevel":"exhigh","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":525574478,"fee":0,"payed":0,"realPayed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":320000,"pc":null,"toast":false,"flag":256,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"exhigh","dlLevel":"exhigh","flLevel":"exhigh","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":19885534,"fee":8,"payed":0,"realPayed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"pc":null,"toast":false,"flag":5,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"standard","dlLevel":"none","flLevel":"standard","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":454698347,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":320000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":409031711,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":320000,"fl":0,"pc":null,"toast":false,"flag":4,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":459063003,"fee":8,"payed":0,"realPayed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"standard","dlLevel":"none","flLevel":"standard","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":423227337,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":999000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":451520805,"fee":8,"payed":0,"realPayed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":128000,"pc":null,"toast":false,"flag":4,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"standard","dlLevel":"none","flLevel":"standard","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":34898373,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":320000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":19192372,"fee":8,"payed":0,"realPayed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"standard","dlLevel":"none","flLevel":"standard","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":544199008,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":999000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":29950506,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":999000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":4125814,"fee":0,"payed":0,"realPayed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":320000,"pc":null,"toast":false,"flag":256,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"exhigh","dlLevel":"exhigh","flLevel":"exhigh","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":410654865,"fee":8,"payed":0,"realPayed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"pc":null,"toast":false,"flag":4,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"standard","dlLevel":"none","flLevel":"standard","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":484700147,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":999000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":422073136,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":320000,"fl":0,"pc":null,"toast":false,"flag":4,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":431085766,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":999000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":2758398,"fee":0,"payed":0,"realPayed":0,"st":0,"pl":320000,"dl":320000,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":320000,"fl":320000,"pc":null,"toast":false,"flag":256,"paidBigBang":false,"preSell":false,"playMaxbr":320000,"downloadMaxbr":320000,"maxBrLevel":"exhigh","playMaxBrLevel":"exhigh","downloadMaxBrLevel":"exhigh","plLevel":"exhigh","dlLevel":"exhigh","flLevel":"exhigh","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":3159053,"fee":8,"payed":0,"realPayed":0,"st":0,"pl":128000,"dl":0,"sp":7,"cp":1,"subp":1,"cs":false,"maxbr":999000,"fl":128000,"pc":null,"toast":false,"flag":4,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"standard","dlLevel":"none","flLevel":"standard","rscl":null,"freeTrialPrivilege":{"resConsumable":false,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]},{"id":481537713,"fee":1,"payed":0,"realPayed":0,"st":0,"pl":0,"dl":0,"sp":0,"cp":0,"subp":1,"cs":false,"maxbr":999000,"fl":0,"pc":null,"toast":false,"flag":260,"paidBigBang":false,"preSell":false,"playMaxbr":999000,"downloadMaxbr":999000,"maxBrLevel":"lossless","playMaxBrLevel":"lossless","downloadMaxBrLevel":"lossless","plLevel":"none","dlLevel":"none","flLevel":"none","rscl":null,"freeTrialPrivilege":{"resConsumable":true,"userConsumable":false,"listenType":null},"chargeInfoList":[{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":1},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]}]
+     * sharedPrivilege : null
+     * resEntrance : null
+     * fromUsers : null
+     * fromUserCount : 0
+     * songFromUsers : null
      */
 
-    private PlaylistBean playlist;
     private int code;
+    private Object relatedVideos;
+    private PlaylistBean playlist;
+    private Object urls;
+    private Object sharedPrivilege;
+    private Object resEntrance;
+    private Object fromUsers;
+    private int fromUserCount;
+    private Object songFromUsers;
     private List<PrivilegesBean> privileges;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public Object getRelatedVideos() {
+        return relatedVideos;
+    }
+
+    public void setRelatedVideos(Object relatedVideos) {
+        this.relatedVideos = relatedVideos;
+    }
 
     public PlaylistBean getPlaylist() {
         return playlist;
@@ -25,12 +55,52 @@ public class PlaylistDetailBean {
         this.playlist = playlist;
     }
 
-    public int getCode() {
-        return code;
+    public Object getUrls() {
+        return urls;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setUrls(Object urls) {
+        this.urls = urls;
+    }
+
+    public Object getSharedPrivilege() {
+        return sharedPrivilege;
+    }
+
+    public void setSharedPrivilege(Object sharedPrivilege) {
+        this.sharedPrivilege = sharedPrivilege;
+    }
+
+    public Object getResEntrance() {
+        return resEntrance;
+    }
+
+    public void setResEntrance(Object resEntrance) {
+        this.resEntrance = resEntrance;
+    }
+
+    public Object getFromUsers() {
+        return fromUsers;
+    }
+
+    public void setFromUsers(Object fromUsers) {
+        this.fromUsers = fromUsers;
+    }
+
+    public int getFromUserCount() {
+        return fromUserCount;
+    }
+
+    public void setFromUserCount(int fromUserCount) {
+        this.fromUserCount = fromUserCount;
+    }
+
+    public Object getSongFromUsers() {
+        return songFromUsers;
+    }
+
+    public void setSongFromUsers(Object songFromUsers) {
+        this.songFromUsers = songFromUsers;
     }
 
     public List<PrivilegesBean> getPrivileges() {
@@ -43,172 +113,125 @@ public class PlaylistDetailBean {
 
     public static class PlaylistBean {
         /**
-         * subscribers : [{"defaultAvatar":false,"province":440000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/S0eMy4iPCsUF3ExOHQhc8w==/109951164198686079.jpg","accountStatus":0,"gender":1,"city":440500,"birthday":1036373671290,"userId":556581045,"userType":0,"nickname":"LE-TRIOMPHANT","signature":"","description":"","detailDescription":"","avatarImgId":109951164198686080,"backgroundImgId":109951164198676500,"backgroundUrl":"http://p1.music.126.net/njFf4NliyjkcQoRL_FBi4Q==/109951164198676497.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951164198686079","backgroundImgIdStr":"109951164198676497","avatarImgId_str":"109951164198686079"},{"defaultAvatar":false,"province":460000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/61OswjC8Qh3FqPeRJSw39A==/109951163449478697.jpg","accountStatus":0,"gender":2,"city":460100,"birthday":-2209017600000,"userId":452268583,"userType":0,"nickname":"光盐可颂","signature":"好听的遇上了也是三生有幸","description":"","detailDescription":"","avatarImgId":109951163449478700,"backgroundImgId":109951163007008960,"backgroundUrl":"http://p1.music.126.net/BkB32BMot5QZBSd9irUZOg==/109951163007008959.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951163449478697","backgroundImgIdStr":"109951163007008959","avatarImgId_str":"109951163449478697"},{"defaultAvatar":false,"province":500000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/pwORf7nZcpo0M8Sba0Zhxw==/3245758326597684.jpg","accountStatus":0,"gender":0,"city":500101,"birthday":631123200000,"userId":48288417,"userType":0,"nickname":"阿阿阿阿超","signature":"","description":"","detailDescription":"","avatarImgId":3245758326597684,"backgroundImgId":2002210674180201,"backgroundUrl":"http://p1.music.126.net/o3G7lWrGBQAvSRt3UuApTw==/2002210674180201.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"3245758326597684","backgroundImgIdStr":"2002210674180201"},{"defaultAvatar":false,"province":1000000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/6nZjaVGt8KtHNgDOrh5Fkg==/109951163471310891.jpg","accountStatus":0,"gender":1,"city":1003100,"birthday":980784000000,"userId":104844666,"userType":0,"nickname":"源于极光的梦","signature":"等你 回来💓","description":"","detailDescription":"","avatarImgId":109951163471310900,"backgroundImgId":109951163471331700,"backgroundUrl":"http://p1.music.126.net/difVXdfwjlCJCy3BnQC5XA==/109951163471331692.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":11,"remarkName":null,"avatarImgIdStr":"109951163471310891","backgroundImgIdStr":"109951163471331692","avatarImgId_str":"109951163471310891"},{"defaultAvatar":false,"province":320000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/YZpRn5Wha5-Z9tJvWOr5YQ==/109951164187138711.jpg","accountStatus":0,"gender":2,"city":320500,"birthday":1002890550260,"userId":1529625206,"userType":0,"nickname":"生于俗世","signature":"","description":"","detailDescription":"","avatarImgId":109951164187138700,"backgroundImgId":109951164187129310,"backgroundUrl":"http://p1.music.126.net/HScBdyIFUOLSEoXoWWHJzA==/109951164187129312.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951164187138711","backgroundImgIdStr":"109951164187129312","avatarImgId_str":"109951164187138711"},{"defaultAvatar":false,"province":520000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/Z8kxNC1VHBAZeCyQLNrhxA==/109951163799162022.jpg","accountStatus":0,"gender":2,"city":520100,"birthday":-2209017600000,"userId":1462180599,"userType":0,"nickname":"梦里梦见梦不见的180519","signature":"","description":"","detailDescription":"","avatarImgId":109951163799162020,"backgroundImgId":109951162868128400,"backgroundUrl":"http://p1.music.126.net/2zSNIqTcpHL2jIvU6hG0EA==/109951162868128395.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951163799162022","backgroundImgIdStr":"109951162868128395","avatarImgId_str":"109951163799162022"},{"defaultAvatar":false,"province":440000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/6MikfYCvRgZ7axP0EXRY3g==/109951163949560568.jpg","accountStatus":0,"gender":2,"city":441800,"birthday":1002043998842,"userId":1348658944,"userType":0,"nickname":"余生想请你指教呀","signature":"","description":"","detailDescription":"","avatarImgId":109951163949560580,"backgroundImgId":109951164084159380,"backgroundUrl":"http://p1.music.126.net/KOsXd33xtiAkxCDQ8QZIAQ==/109951164084159379.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"109951163949560568","backgroundImgIdStr":"109951164084159379","avatarImgId_str":"109951163949560568"},{"defaultAvatar":false,"province":650000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/1rk9_Vn4xjtLZ58ozMtxOA==/18713687906674662.jpg","accountStatus":0,"gender":0,"city":650100,"birthday":-2209017600000,"userId":588367284,"userType":0,"nickname":"知无不为","signature":"","description":"","detailDescription":"","avatarImgId":18713687906674664,"backgroundImgId":109951162868128400,"backgroundUrl":"http://p1.music.126.net/2zSNIqTcpHL2jIvU6hG0EA==/109951162868128395.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":0,"vipType":0,"remarkName":null,"avatarImgIdStr":"18713687906674662","backgroundImgIdStr":"109951162868128395","avatarImgId_str":"18713687906674662"}]
-         * subscribed : false
-         * creator : {"defaultAvatar":false,"province":110000,"authStatus":1,"followed":false,"avatarUrl":"http://p1.music.126.net/QWMV-Ru_6149AKe0mCBXKg==/1420569024374784.jpg","accountStatus":0,"gender":1,"city":110101,"birthday":-2209017600000,"userId":1,"userType":2,"nickname":"网易云音乐","signature":"网易云音乐是6亿人都在使用的音乐平台，致力于帮助用户发现音乐惊喜，帮助音乐人实现梦想。客服@云音乐客服 在线时间：9：00 - 24：00，如您在使用过程中遇到任何问题，欢迎私信咨询，我们会尽快回复。如果仍然不能解决您的问题，与活动相关的疑问请私信@云音乐客服","description":"网易云音乐官方账号","detailDescription":"网易云音乐官方账号","avatarImgId":1420569024374784,"backgroundImgId":2002210674180202,"backgroundUrl":"http://p1.music.126.net/pmHS4fcQtcNEGewNb5HRhg==/2002210674180202.jpg","authority":3,"mutual":false,"expertTags":null,"experts":null,"djStatus":10,"vipType":11,"remarkName":null,"avatarImgIdStr":"1420569024374784","backgroundImgIdStr":"2002210674180202"}
-         * tracks : [{"name":"dark HORSE","id":1234301,"pst":0,"t":0,"ar":[{"id":31286,"name":"The Shanghai Restoration Project","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":8,"v":10,"crbt":null,"cf":"","al":{"id":127441,"name":"Zodiac","picUrl":"http://p2.music.126.net/2UGeR7vME216HNPmKK-pxw==/816937139480821.jpg","tns":[],"pic":816937139480821},"dt":264661,"h":{"br":320000,"fid":0,"size":10586950,"vd":-0.27},"m":{"br":160000,"fid":0,"size":5293498,"vd":-2.65076E-4},"l":{"br":96000,"fid":0,"size":3176116,"vd":-2.65076E-4},"a":null,"cd":"1","no":6,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":412011,"mv":0,"publishTime":1232380800007,"alg":"alg_tag_based"},{"name":"Si Tu Vois Ma Mère","id":3781876,"pst":0,"t":0,"ar":[{"id":83170,"name":"Tina May","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":7,"crbt":null,"cf":"","al":{"id":382615,"name":"Jazz Piquant","picUrl":"http://p2.music.126.net/xGlZt7fSwKmAdinDvONuOQ==/644313813919894.jpg","tns":[],"pic":644313813919894},"dt":256000,"h":null,"m":{"br":192000,"fid":0,"size":6167239,"vd":15648},"l":{"br":128000,"fid":0,"size":4111507,"vd":16650},"a":null,"cd":"1","no":8,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":992275200007,"alg":"alg_tag_based"},{"name":"☁","id":863949788,"pst":0,"t":0,"ar":[{"id":12235146,"name":"FAT TIGER","tns":[],"alias":[]},{"id":12771007,"name":"Steve Tist","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":6,"crbt":null,"cf":"","al":{"id":71714657,"name":"☁","picUrl":"http://p2.music.126.net/9MDnkZmWi5SEJ1LPfa86oQ==/109951163386797534.jpg","tns":[],"pic_str":"109951163386797534","pic":109951163386797540},"dt":157455,"h":{"br":320000,"fid":0,"size":6300778,"vd":-14400},"m":{"br":192000,"fid":0,"size":3780484,"vd":-11900},"l":{"br":128000,"fid":0,"size":2520337,"vd":-10300},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1530489600000,"alg":"alg_tag_based"},{"name":"申请加入你的被窝","id":513193769,"pst":0,"t":0,"ar":[{"id":12395338,"name":"RRAN","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":8,"v":15,"crbt":null,"cf":"","al":{"id":36569425,"name":"申请加入你的被窝","picUrl":"http://p2.music.126.net/Pd94O0KOMBvqfZRIdYfM8w==/109951163043922920.jpg","tns":[],"pic_str":"109951163043922920","pic":109951163043922910},"dt":177293,"h":{"br":320000,"fid":0,"size":7093856,"vd":-2},"m":{"br":192000,"fid":0,"size":4256331,"vd":-2},"l":{"br":128000,"fid":0,"size":2837568,"vd":-2},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":1382818,"mv":0,"publishTime":1508061160772,"alg":"alg_tag_based"},{"name":"嘉 禾 天 橙 国 际 大 影 院","id":441437222,"pst":0,"t":0,"ar":[{"id":768266,"name":"ギャラクシー・騎士","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":15,"crbt":null,"cf":"","al":{"id":34993762,"name":"她 ，就 是 东 京","picUrl":"http://p2.music.126.net/M3ieCBkTn-bYYXvZLzcj-Q==/109951162809695511.jpg","tns":[],"pic_str":"109951162809695511","pic":109951162809695500},"dt":107075,"h":{"br":320000,"fid":0,"size":4285170,"vd":-8400},"m":{"br":192000,"fid":0,"size":2571120,"vd":-5700},"l":{"br":128000,"fid":0,"size":1714094,"vd":-4000},"a":null,"cd":"1","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1479228564980,"alg":"alg_tag_based"},{"name":"Wound Up","id":466126415,"pst":0,"t":0,"ar":[{"id":12273052,"name":"Jordyn Edmonds","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":4,"crbt":null,"cf":"","al":{"id":35287327,"name":"Wound Up","picUrl":"http://p2.music.126.net/tO-tTUqM2Pvbk7cA9uWnNg==/18784056650757999.jpg","tns":[],"pic_str":"18784056650757999","pic":18784056650758000},"dt":155245,"h":{"br":320000,"fid":0,"size":6210917,"vd":-3},"m":{"br":192000,"fid":0,"size":3726568,"vd":-2},"l":{"br":128000,"fid":0,"size":2484393,"vd":-2},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1473264000007,"alg":"alg_tag_based"},{"name":"陈光荣 - First Date俩少无猜(allenvee Bootleg)","id":492256479,"pst":0,"t":0,"ar":[{"id":12259217,"name":"allenvee","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":26,"crbt":null,"cf":"","al":{"id":35810025,"name":"夜班车.(summer night in nanning)","picUrl":"http://p2.music.126.net/yo4vj2z8jJjyxJQsJM1VpA==/109951163060152521.jpg","tns":[],"pic_str":"109951163060152521","pic":109951163060152530},"dt":194514,"h":{"br":320000,"fid":0,"size":7783489,"vd":66800},"m":{"br":192000,"fid":0,"size":4670111,"vd":69300},"l":{"br":128000,"fid":0,"size":3113422,"vd":64018},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1500644498838,"alg":"alg_tag_based"},{"name":"So Cute~","id":433107530,"pst":0,"t":0,"ar":[{"id":12027465,"name":"Lopu$","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":10,"crbt":null,"cf":"","al":{"id":34901157,"name":"So Cute~（当山瞳-Cathy Lopurmx）","picUrl":"http://p2.music.126.net/yFCpD3GrgmcInAbVvVaFUg==/17999005346907556.jpg","tns":[],"pic_str":"17999005346907556","pic":17999005346907556},"dt":184267,"h":{"br":320000,"fid":0,"size":7372844,"vd":0},"m":{"br":192000,"fid":0,"size":4423724,"vd":0},"l":{"br":128000,"fid":0,"size":2949164,"vd":0},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1475515536761,"alg":"alg_tag_based"},{"name":"Espresso","id":547033571,"pst":0,"t":0,"ar":[{"id":12441401,"name":"Jazzinuf","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":8,"v":6,"crbt":null,"cf":"","al":{"id":38003212,"name":"The Harlem Barber Swing","picUrl":"http://p2.music.126.net/NQbd676jeFbse3HB6wKyaw==/109951163201374587.jpg","tns":[],"pic_str":"109951163201374587","pic":109951163201374600},"dt":91500,"h":{"br":320000,"fid":0,"size":3662411,"vd":-23599},"m":{"br":192000,"fid":0,"size":2197464,"vd":-20900},"l":{"br":128000,"fid":0,"size":1464991,"vd":-19100},"a":null,"cd":"1","no":9,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":1416200,"mv":0,"publishTime":1503676800007,"alg":"alg_tag_based"},{"name":"Tea For Two (feat. Beegie Adair)","id":22210176,"pst":0,"t":0,"ar":[{"id":155083,"name":"Jack Jezzro And Friends","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":2,"crbt":null,"cf":"","al":{"id":2042459,"name":"Rio Nights","picUrl":"http://p2.music.126.net/cI-YnYLuOtZ6qaSqRuZzHg==/885106860382035.jpg","tns":[],"pic":885106860382035},"dt":225000,"h":{"br":320000,"fid":0,"size":8989606,"vd":0.041984},"m":{"br":160000,"fid":0,"size":4513787,"vd":0.395072},"l":{"br":96000,"fid":0,"size":2723041,"vd":-2.65076E-4},"a":null,"cd":"1","no":10,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":5003,"mv":0,"publishTime":1266854400007,"alg":"alg_tag_based"},{"name":"Girlfriend","id":27672135,"pst":0,"t":0,"ar":[{"id":812023,"name":"Triathalon","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":0,"v":4,"crbt":null,"cf":"","al":{"id":2652842,"name":"Vibes","picUrl":"http://p2.music.126.net/8WpjmaMxRSsBTO9ifc8Gug==/109951164103571377.jpg","tns":[],"pic_str":"109951164103571377","pic":109951164103571380},"dt":253000,"h":null,"m":{"br":192000,"fid":0,"size":6073915,"vd":-8900},"l":{"br":128000,"fid":0,"size":4049321,"vd":-7100},"a":null,"cd":"1","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1362758400007,"alg":"alg_tag_based"},{"name":"Mondo Bongo","id":5048932,"pst":0,"t":0,"ar":[{"id":136571,"name":"Joe Strummer & The Mescaleros","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":8,"v":39,"crbt":null,"cf":"","al":{"id":501057,"name":"Mr. & Mrs. Smith","picUrl":"http://p2.music.126.net/cqE_grxwx5V21ggoUrEs3w==/2544269907750724.jpg","tns":[],"pic":2544269907750724},"dt":374000,"h":{"br":320000,"fid":0,"size":15019508,"vd":2.23603},"m":{"br":160000,"fid":0,"size":7520799,"vd":2.65615},"l":{"br":96000,"fid":0,"size":4520897,"vd":2.14088},"a":null,"cd":"1","no":6,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":7002,"mv":394082,"publishTime":1118332800007,"alg":"alg_tag_based"},{"name":"你 向 我 索 求 的 都 會 給 你","id":537001563,"pst":0,"t":0,"ar":[{"id":12853998,"name":"别网恋","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":null,"fee":8,"v":10,"crbt":null,"cf":"","al":{"id":37543988,"name":"i'm in love with you sᴀᴇɴ. ʀᴇᴍɪx","picUrl":"http://p2.music.126.net/RIrKMaNKx4zTruk4hFYafA==/109951163139708223.jpg","tns":[],"pic_str":"109951163139708223","pic":109951163139708220},"dt":172408,"h":{"br":320000,"fid":0,"size":6898460,"vd":1794},"m":{"br":192000,"fid":0,"size":4139093,"vd":3582},"l":{"br":128000,"fid":0,"size":2759410,"vd":6096},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1518180647176,"alg":"alg_tag_based"},{"name":"Sex on the Beach","id":40249165,"pst":0,"t":0,"ar":[{"id":1185054,"name":"尚先生","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":8,"v":34,"crbt":null,"cf":"","al":{"id":3440062,"name":"不打烊的小酒馆 壹","picUrl":"http://p2.music.126.net/k46cY96XTg2s539IHKjobw==/17698838672405377.jpg","tns":[],"pic_str":"17698838672405377","pic":17698838672405376},"dt":184058,"h":{"br":320000,"fid":0,"size":7364485,"vd":2.63},"m":{"br":160000,"fid":0,"size":3682265,"vd":3.05155},"l":{"br":96000,"fid":0,"size":2209377,"vd":1.62662},"a":null,"cd":"1","no":8,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1449936000000,"alg":"alg_tag_based"},{"name":"And The Winner Is","id":1383639,"pst":0,"t":0,"ar":[{"id":33899,"name":"Gérard Darmon","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":8,"v":14,"crbt":null,"cf":"","al":{"id":141875,"name":"On S'Aime","picUrl":"http://p2.music.126.net/u9bYfwafB5JfJz0p-Kcd2g==/6664139976155607.jpg","tns":[],"pic":6664139976155607},"dt":232724,"h":{"br":320000,"fid":0,"size":9311129,"vd":-1},"m":{"br":192000,"fid":0,"size":5586695,"vd":-1},"l":{"br":128000,"fid":0,"size":3724478,"vd":-1},"a":null,"cd":"1","no":10,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":8192,"rtype":0,"rurl":null,"mst":9,"cp":7003,"mv":0,"publishTime":1228752000007,"alg":"alg_tag_based"},{"name":"as i sat alone","id":482636135,"pst":0,"t":0,"ar":[{"id":12040094,"name":"Vbnd","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":8,"v":36,"crbt":null,"cf":"","al":{"id":35590037,"name":"colors compilation","picUrl":"http://p2.music.126.net/Cvz4EeFDS9NU00eHwIFstA==/109951163463111510.jpg","tns":[],"pic_str":"109951163463111510","pic":109951163463111500},"dt":125184,"h":{"br":320000,"fid":0,"size":5010329,"vd":0},"m":{"br":192000,"fid":0,"size":3006215,"vd":0},"l":{"br":128000,"fid":0,"size":2004158,"vd":0},"a":null,"cd":"1","no":6,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":8320,"rtype":0,"rurl":null,"mst":9,"cp":743010,"mv":0,"publishTime":1510012800000,"alg":"alg_tag_based"},{"name":"@_@","id":461124107,"pst":0,"t":0,"ar":[{"id":12108345,"name":"IOAH","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":2,"crbt":null,"cf":"","al":{"id":35188431,"name":"@_@","picUrl":"http://p2.music.126.net/5R70EdQJ6dms-8ftIpeg0A==/18814842976297331.jpg","tns":[],"pic_str":"18814842976297331","pic":18814842976297332},"dt":164597,"h":null,"m":null,"l":{"br":96000,"fid":0,"size":1975529,"vd":-2.65076E-4},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1456675200007,"alg":"alg_tag_based"},{"name":"Sunny Day","id":2786189,"pst":0,"t":0,"ar":[{"id":61047,"name":"Joy Williams","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"","fee":0,"v":4,"crbt":null,"cf":"","al":{"id":280872,"name":"Songs from This - EP","picUrl":"http://p2.music.126.net/DuT0q1Y9XtN5lCQoy6t9Bw==/1708641069569258.jpg","tns":[],"pic":1708641069569258},"dt":158929,"h":{"br":320000,"fid":0,"size":6393274,"vd":-1.83},"m":{"br":160000,"fid":0,"size":3217830,"vd":-1.4},"l":{"br":96000,"fid":0,"size":1947234,"vd":-1.48},"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":5003,"mv":0,"publishTime":1252944000007,"alg":"alg_tag_based"},{"name":"if","id":557244721,"pst":0,"t":0,"ar":[{"id":12020017,"name":"阿克江Akin","tns":[],"alias":[]},{"id":789949,"name":"VISUDY","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":0,"v":17,"crbt":null,"cf":"","al":{"id":38534820,"name":"心碎男孩俱乐部","picUrl":"http://p2.music.126.net/5Rlyg7hXYuywrI3dwGheaA==/109951163279429355.jpg","tns":[],"pic_str":"109951163279429355","pic":109951163279429360},"dt":338000,"h":{"br":320000,"fid":0,"size":13523113,"vd":-9200},"m":{"br":192000,"fid":0,"size":8113885,"vd":-6500},"l":{"br":128000,"fid":0,"size":5409271,"vd":-4600},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":64,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":5903039,"publishTime":1525305600000,"alg":"alg_tag_based"},{"name":"午夜心碎俱乐部2.0","id":565794655,"pst":0,"t":0,"ar":[{"id":12114249,"name":"大D(DLyn)","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":8,"v":13,"crbt":null,"cf":"","al":{"id":39112625,"name":"午夜心碎俱乐部2.0","picUrl":"http://p2.music.126.net/NSg1X6Qpc-oi5WAMg3U3ag==/109951163311151254.jpg","tns":[],"pic_str":"109951163311151254","pic":109951163311151250},"dt":154174,"h":{"br":320000,"fid":0,"size":6169121,"vd":-2},"m":{"br":192000,"fid":0,"size":3701490,"vd":-2},"l":{"br":128000,"fid":0,"size":2467675,"vd":-2},"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":0,"rtype":0,"rurl":null,"mst":9,"cp":0,"mv":0,"publishTime":1526918400000,"alg":"alg_tag_based"}]
-         * trackIds : [{"id":1234301,"v":-10000,"alg":"alg_tag_based"},{"id":3781876,"v":-10000,"alg":"alg_tag_based"},{"id":863949788,"v":-10000,"alg":"alg_tag_based"},{"id":513193769,"v":-10000,"alg":"alg_tag_based"},{"id":441437222,"v":-10000,"alg":"alg_tag_based"},{"id":466126415,"v":-10000,"alg":"alg_tag_based"},{"id":492256479,"v":-10000,"alg":"alg_tag_based"},{"id":433107530,"v":-10000,"alg":"alg_tag_based"},{"id":547033571,"v":-10000,"alg":"alg_tag_based"},{"id":22210176,"v":-10000,"alg":"alg_tag_based"},{"id":27672135,"v":-10000,"alg":"alg_tag_based"},{"id":5048932,"v":-10000,"alg":"alg_tag_based"},{"id":537001563,"v":-10000,"alg":"alg_tag_based"},{"id":40249165,"v":-10000,"alg":"alg_tag_based"},{"id":1383639,"v":-10000,"alg":"alg_tag_based"},{"id":482636135,"v":-10000,"alg":"alg_tag_based"},{"id":461124107,"v":-10000,"alg":"alg_tag_based"},{"id":2786189,"v":-10000,"alg":"alg_tag_based"},{"id":557244721,"v":-10000,"alg":"alg_tag_based"},{"id":565794655,"v":-10000,"alg":"alg_tag_based"}]
-         * updateFrequency : 每日更新
-         * backgroundCoverId : 109951164173101600
-         * backgroundCoverUrl : http://p1.music.126.net/fLUeGxU2ybh2zImBiFfHBA==/109951164173101598.jpg
-         * cloudTrackCount : 0
-         * subscribedCount : 4056
-         * trackNumberUpdateTime : 1563400800000
-         * createTime : 1559732650146
-         * highQuality : false
-         * userId : 1
-         * updateTime : 0
-         * coverImgId : 109951164170712420
-         * coverImgUrl : http://p2.music.126.net/xKyXkJ9ZIqov2Frl8C6qwg==/109951164170712411.jpg
-         * specialType : 100
-         * trackCount : 20
-         * commentThreadId : A_PL_0_2829827274
-         * trackUpdateTime : 1563415480405
-         * privacy : 0
-         * newImported : false
-         * playCount : 403895
+         * id : 6913945516
+         * name : 运动
+         * coverImgId : 109951165420630240
+         * coverImgUrl : https://p1.music.126.net/tNeDhj72b3sdZRU7_6eTBA==/109951165420630236.jpg
+         * coverImgId_str : 109951165420630236
          * adType : 0
-         * tags : ["下午茶"]
-         * ordered : false
-         * description : 一杯茶，一块甜点
-         * 搭配着闲适的音乐
-         * 都是生活中触手可及的小确幸
-         * 收藏一下午的好时光，来杯下午茶，每日更新～
+         * userId : 446942908
+         * createTime : 1628745786933
          * status : 0
-         * name : [来杯下午茶] 忙碌之余来点音乐犒劳自己
-         * id : 2829827274
-         * shareCount : 44
-         * commentCount : 32
+         * opRecommend : false
+         * highQuality : false
+         * newImported : false
+         * updateTime : 1635399785633
+         * trackCount : 194
+         * specialType : 0
+         * privacy : 0
+         * trackUpdateTime : 1684170956378
+         * commentThreadId : A_PL_0_6913945516
+         * playCount : 15
+         * trackNumberUpdateTime : 1635399785633
+         * subscribedCount : 0
+         * cloudTrackCount : 0
+         * ordered : false
+         * description : null
+         * tags : []
+         * updateFrequency : null
+         * backgroundCoverId : 0
+         * backgroundCoverUrl : null
+         * titleImage : 0
+         * titleImageUrl : null
+         * englishTitle : null
+         * officialPlaylistType : null
+         * copied : false
+         * relateResType : null
+         * subscribers : []
+         * subscribed : false
+         * creator : {"defaultAvatar":false,"province":140000,"authStatus":0,"followed":false,"avatarUrl":"http://p1.music.126.net/1HqOas-NCtKtjEyZg1dn1w==/109951163778944334.jpg","accountStatus":0,"gender":2,"city":141100,"birthday":0,"userId":446942908,"userType":0,"nickname":"一大只瘦砸","signature":"","description":"","detailDescription":"","avatarImgId":109951163778944340,"backgroundImgId":109951162868126480,"backgroundUrl":"http://p1.music.126.net/_f8R60U9mZ42sSNvdPn2sQ==/109951162868126486.jpg","authority":0,"mutual":false,"expertTags":null,"experts":null,"djStatus":10,"vipType":0,"remarkName":null,"authenticationTypes":0,"avatarDetail":null,"anchor":false,"backgroundImgIdStr":"109951162868126486","avatarImgIdStr":"109951163778944334","avatarImgId_str":"109951163778944334"}
+         * tracks : [{"name":"夜に駆ける","id":1490617551,"pst":0,"t":0,"ar":[{"id":12085569,"name":"李蚊香","tns":[],"alias":[]}],"alia":[],"pop":25,"st":0,"rt":"","fee":0,"v":12,"crbt":null,"cf":"","al":{"id":97410890,"name":"夜に駆ける","picUrl":"http://p4.music.126.net/tNeDhj72b3sdZRU7_6eTBA==/109951165420630236.jpg","tns":[],"pic_str":"109951165420630236","pic":109951165420630240},"dt":261851,"h":{"br":320000,"fid":0,"size":10477236,"vd":-56229},"m":{"br":192000,"fid":0,"size":6286359,"vd":-53733},"l":{"br":128000,"fid":0,"size":4190920,"vd":-52220},"sq":{"br":1732707,"fid":0,"size":56714031,"vd":-56205},"hr":null,"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":262272,"originCoverType":2,"originSongSimpleData":{"songId":1409311773,"name":"夜に駆ける","artists":[{"id":33927412,"name":"YOASOBI"}],"albumMeta":{"id":84072830,"name":"夜に駆ける"}},"tagPicList":null,"resourceState":true,"version":12,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":0,"mv":0,"rtype":0,"rurl":null,"publishTime":0},{"name":"ALIVE（Cover RAM WIRE）","id":525574478,"pst":0,"t":0,"ar":[{"id":12085569,"name":"李蚊香","tns":[],"alias":[]},{"id":12345258,"name":"山竹Mez","tns":[],"alias":[]}],"alia":[],"pop":25,"st":0,"rt":null,"fee":0,"v":11,"crbt":null,"cf":"","al":{"id":37013738,"name":"ALIVE","picUrl":"http://p3.music.126.net/dxp3COJ3HQl4lvr4M5uxUQ==/109951163090123063.jpg","tns":[],"pic_str":"109951163090123063","pic":109951163090123060},"dt":264620,"h":{"br":320000,"fid":0,"size":10585905,"vd":-41002},"m":{"br":192000,"fid":0,"size":6351560,"vd":-41002},"l":{"br":128000,"fid":0,"size":4234388,"vd":-41002},"sq":null,"hr":null,"a":null,"cd":"01","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":262144,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":11,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":663018,"mv":0,"rtype":0,"rurl":null,"publishTime":1513936960253},{"name":"Mr. & Mrs. (I Do This For You)","id":19885534,"pst":0,"t":0,"ar":[{"id":58020,"name":"Group 1 Crew","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":8,"v":40,"crbt":null,"cf":"","al":{"id":1837440,"name":"Fearless","picUrl":"http://p3.music.126.net/EuMHFdwsyU0xbm45rBq-kg==/109951163353091401.jpg","tns":[],"pic_str":"109951163353091401","pic":109951163353091410},"dt":207666,"h":{"br":320000,"fid":0,"size":8309072,"vd":-55506},"m":{"br":192000,"fid":0,"size":4985461,"vd":-52945},"l":{"br":128000,"fid":0,"size":3323655,"vd":-51306},"sq":{"br":971323,"fid":0,"size":25213927,"vd":-13500},"hr":null,"a":null,"cd":"1","no":7,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":270464,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":40,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":743010,"mv":5308233,"rtype":0,"rurl":null,"publishTime":1347235200000},{"name":"In My Foreign","id":454698347,"pst":0,"t":0,"ar":[{"id":12073387,"name":"The Americanos","tns":[],"alias":[]},{"id":789235,"name":"Ty Dolla $ign","tns":[],"alias":[]},{"id":12029208,"name":"Lil Yachty","tns":[],"alias":[]},{"id":69608,"name":"Nicky Jam","tns":[],"alias":[]},{"id":33795,"name":"French Montana","tns":[],"alias":[]}],"alia":["电影《极限特工：终极回归》插曲"],"pop":95,"st":0,"rt":null,"fee":1,"v":20,"crbt":null,"cf":"","al":{"id":35120790,"name":"xXx: Return of Xander Cage (Music from the Motion Picture)","picUrl":"http://p4.music.126.net/QmsW6R3AAFFFyVK4t6cHfw==/18741175697163830.jpg","tns":[],"pic_str":"18741175697163830","pic":18741175697163830},"dt":219098,"h":{"br":320000,"fid":0,"size":8732256,"vd":-72109},"m":{"br":192000,"fid":0,"size":5239371,"vd":-72109},"l":{"br":128000,"fid":0,"size":3492928,"vd":-72109},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":794624,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":20,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5433040,"rtype":0,"rurl":null,"publishTime":1484841600007},{"name":"Give Me Your Love","id":409031711,"pst":0,"t":0,"ar":[{"id":1124282,"name":"Sigala","tns":[],"alias":[]},{"id":195302,"name":"John Newman","tns":[],"alias":[]},{"id":69491,"name":"Nile Rodgers","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":18,"crbt":null,"cf":"","al":{"id":34604123,"name":"Give Me Your Love","picUrl":"http://p4.music.126.net/qfeQAc7muMCh5vVBawdD_Q==/1406275377164557.jpg","tns":[],"pic":1406275377164557},"dt":209057,"h":{"br":320002,"fid":0,"size":8363407,"vd":-82754},"m":{"br":192002,"fid":0,"size":5018062,"vd":-80339},"l":{"br":128002,"fid":0,"size":3345389,"vd":-78983},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":18,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7001,"mv":5323166,"rtype":0,"rurl":null,"publishTime":1460044646469},{"name":"Cloud 9","id":459063003,"pst":0,"t":0,"ar":[{"id":60935,"name":"Jamiroquai","tns":[],"alias":[]}],"alia":[],"pop":85,"st":0,"rt":null,"fee":8,"v":34,"crbt":null,"cf":"","al":{"id":35176109,"name":"Automaton","picUrl":"http://p3.music.126.net/QNPtDMiOEnN5-sS4gO6dsA==/109951163412050621.jpg","tns":[],"pic_str":"109951163412050621","pic":109951163412050620},"dt":236946,"h":{"br":320000,"fid":0,"size":9480403,"vd":-47065},"m":{"br":192000,"fid":0,"size":5688259,"vd":-47065},"l":{"br":128000,"fid":0,"size":3792187,"vd":-47065},"sq":{"br":887280,"fid":0,"size":26279764,"vd":-47065},"hr":null,"a":null,"cd":"01","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":34,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":5496218,"rtype":0,"rurl":null,"publishTime":1490889600000},{"name":"Kiss the Sky","id":423227337,"pst":0,"t":0,"ar":[{"id":35511,"name":"Jason Derulo","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":29,"crbt":null,"cf":"","al":{"id":34796287,"name":"Platinum Hits","picUrl":"http://p3.music.126.net/ETSRurGSYjzJqhYhXTi2PA==/109951166468782835.jpg","tns":[],"pic_str":"109951166468782835","pic":109951166468782830},"dt":222386,"h":{"br":320000,"fid":0,"size":8898395,"vd":-66926},"m":{"br":192000,"fid":0,"size":5339054,"vd":-64479},"l":{"br":128000,"fid":0,"size":3559384,"vd":-63128},"sq":{"br":1011660,"fid":0,"size":28122480,"vd":-66924},"hr":null,"a":null,"cd":"1","no":12,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":29,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5353042,"rtype":0,"rurl":null,"publishTime":1469721600000},{"name":"Delicious","id":451520805,"pst":0,"t":0,"ar":[{"id":31187,"name":"Daniel Powter","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":null,"fee":8,"v":10,"crbt":null,"cf":"","al":{"id":35113153,"name":"Delicious","picUrl":"http://p3.music.126.net/B0NULOAxvP59tFVwHoFCbA==/18754369836667287.jpg","tns":[],"pic_str":"18754369836667287","pic":18754369836667290},"dt":145867,"h":{"br":320000,"fid":0,"size":5835799,"vd":-56888},"m":{"br":192000,"fid":0,"size":3501497,"vd":-56888},"l":{"br":128000,"fid":0,"size":2334346,"vd":-56888},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":10,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7001,"mv":0,"rtype":0,"rurl":null,"publishTime":1483632000007},{"name":"Best Of My Love","id":34898373,"pst":0,"t":0,"ar":[{"id":860517,"name":"Ella Eyre","tns":[],"alias":[]}],"alia":[],"pop":85,"st":0,"rt":null,"fee":1,"v":10,"crbt":null,"cf":"","al":{"id":3304034,"name":"Best Of My Love","picUrl":"http://p3.music.126.net/FKEyyRDVlH58s_AXJ6YRJw==/18348650044355578.jpg","tns":[],"pic_str":"18348650044355578","pic":18348650044355576},"dt":212584,"h":{"br":320000,"fid":0,"size":8505512,"vd":-61520},"m":{"br":192000,"fid":0,"size":5103324,"vd":-61520},"l":{"br":128000,"fid":0,"size":3402230,"vd":-61520},"sq":null,"hr":null,"a":null,"cd":"A","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":10,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":0,"rtype":0,"rurl":null,"publishTime":1443369600000},{"name":"Love You Like A Love Song","id":19192372,"pst":0,"t":0,"ar":[{"id":100213,"name":"Selena Gomez & The Scene","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":"600902000009123571","fee":8,"v":17,"crbt":null,"cf":"","al":{"id":1760178,"name":"Love You Like A Love Song","picUrl":"http://p3.music.126.net/PhGkqkZEPm2oygVN0r72dA==/6639950721071543.jpg","tns":[],"pic":6639950721071543},"dt":188453,"h":{"br":320000,"fid":0,"size":7541072,"vd":-68142},"m":{"br":192000,"fid":0,"size":4524661,"vd":-65619},"l":{"br":128000,"fid":0,"size":3016455,"vd":-63969},"sq":{"br":1050972,"fid":0,"size":24757414,"vd":-68133},"hr":null,"a":null,"cd":"1","no":3,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":17,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":14263205,"rtype":0,"rurl":null,"publishTime":1313942400000},{"name":"Done for Me (feat. Kehlani)","id":544199008,"pst":0,"t":0,"ar":[{"id":90331,"name":"Charlie Puth","tns":[],"alias":[]},{"id":1060155,"name":"Kehlani","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":1,"v":362,"crbt":null,"cf":"","al":{"id":38530129,"name":"Voicenotes","picUrl":"http://p3.music.126.net/RNl__JslenVhRoOvGmdZAg==/109951165991701088.jpg","tns":[],"pic_str":"109951165991701088","pic":109951165991701090},"dt":180493,"h":{"br":320000,"fid":0,"size":7222378,"vd":-70320},"m":{"br":192000,"fid":0,"size":4333444,"vd":-67824},"l":{"br":128000,"fid":0,"size":2888977,"vd":-66343},"sq":{"br":977668,"fid":0,"size":22057835,"vd":-70303},"hr":null,"a":null,"cd":"1","no":5,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":362,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5897033,"rtype":0,"rurl":null,"publishTime":1525968000000},{"name":"Somebody","id":29950506,"pst":0,"t":0,"ar":[{"id":1046073,"name":"Natalie La Rose","tns":[],"alias":[]},{"id":60972,"name":"Jeremih","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":23,"crbt":null,"cf":"","al":{"id":3089052,"name":"Somebody","picUrl":"http://p3.music.126.net/oiFRkZyKYydgx4isr1R6MQ==/2528876746878002.jpg","tns":[],"pic":2528876746878002},"dt":190066,"h":{"br":320002,"fid":0,"size":7604811,"vd":-39776},"m":{"br":192002,"fid":0,"size":4562904,"vd":-37194},"l":{"br":128002,"fid":0,"size":3041951,"vd":-35539},"sq":{"br":860972,"fid":0,"size":20455273,"vd":-39769},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":23,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":385273,"rtype":0,"rurl":null,"publishTime":1420473600000},{"name":"Green grass","id":4125814,"pst":0,"t":0,"ar":[{"id":94649,"name":"I Am Arrows","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":"","fee":0,"v":6,"crbt":null,"cf":"","al":{"id":417220,"name":"Sun Comes Up Again","picUrl":"http://p4.music.126.net/Er6cUOMYQANJAKPOx-ecKQ==/2567359650876192.jpg","tns":[],"pic":2567359650876192},"dt":224000,"h":{"br":320000,"fid":0,"size":8985256,"vd":-2},"m":{"br":192000,"fid":0,"size":5391225,"vd":-2},"l":{"br":128000,"fid":0,"size":3594210,"vd":-2},"sq":null,"hr":null,"a":null,"cd":"1","no":2,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":262144,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":6,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":5003,"mv":0,"rtype":0,"rurl":null,"publishTime":1281888000007},{"name":"GQ","id":410654865,"pst":0,"t":0,"ar":[{"id":12040030,"name":"Lola Coca","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":8,"v":37,"crbt":null,"cf":"","al":{"id":34609808,"name":"GQ","picUrl":"http://p4.music.126.net/dMWLKIfPcX5xOkRPtts4iw==/109951163291357023.jpg","tns":[],"pic_str":"109951163291357023","pic":109951163291357020},"dt":162923,"h":{"br":320000,"fid":0,"size":6519162,"vd":-62102},"m":{"br":192000,"fid":0,"size":3911515,"vd":-62102},"l":{"br":128000,"fid":0,"size":2607691,"vd":-62102},"sq":{"br":945253,"fid":0,"size":19250452,"vd":-62102},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":0,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":37,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":1416177,"mv":0,"rtype":0,"rurl":null,"publishTime":1461283200000},{"name":"All Stars","id":484700147,"pst":0,"t":0,"ar":[{"id":39337,"name":"Martin Solveig","tns":[],"alias":[]},{"id":12049098,"name":"ALMA","tns":[],"alias":[]}],"alia":[],"pop":90,"st":0,"rt":null,"fee":1,"v":26,"crbt":null,"cf":"","al":{"id":35558972,"name":"All Stars","picUrl":"http://p3.music.126.net/Tfe2WLCu9COphdGPqMWuMg==/18350849068324921.jpg","tns":[],"pic_str":"18350849068324921","pic":18350849068324920},"dt":170322,"h":null,"m":null,"l":{"br":128000,"fid":0,"size":2726391,"vd":-70606},"sq":{"br":985243,"fid":0,"size":20976158,"vd":-74743},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":26,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":5588090,"rtype":0,"rurl":null,"publishTime":1497542400000},{"name":"Human","id":422073136,"pst":0,"t":0,"ar":[{"id":1053202,"name":"Rag'N'Bone Man","tns":[],"alias":[]}],"alia":[],"pop":100,"st":0,"rt":null,"fee":1,"v":21,"crbt":null,"cf":"","al":{"id":34784269,"name":"Human","picUrl":"http://p3.music.126.net/30DSPtCnerqQ37iIXcWHTw==/109951165970635437.jpg","tns":[],"pic_str":"109951165970635437","pic":109951165970635440},"dt":199471,"h":{"br":320000,"fid":0,"size":7978885,"vd":-69540},"m":{"br":192000,"fid":0,"size":4787348,"vd":-66981},"l":{"br":128000,"fid":0,"size":3191580,"vd":-65331},"sq":null,"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":21,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7001,"mv":14354849,"rtype":0,"rurl":null,"publishTime":1469030400000},{"name":"All Goes Wrong","id":431085766,"pst":0,"t":0,"ar":[{"id":185237,"name":"Chase & Status","tns":[],"alias":[]},{"id":12098162,"name":"Tom Grennan","tns":[],"alias":[]}],"alia":[],"pop":80,"st":0,"rt":null,"fee":1,"v":25,"crbt":null,"cf":"","al":{"id":34880280,"name":"All Goes Wrong","picUrl":"http://p3.music.126.net/JUQ1LwWgw1oaFSFjmcgxSA==/18570751394599191.jpg","tns":[],"pic_str":"18570751394599191","pic":18570751394599190},"dt":205253,"h":{"br":320000,"fid":0,"size":8212942,"vd":-65782},"m":{"br":192000,"fid":0,"size":4927782,"vd":-63233},"l":{"br":128000,"fid":0,"size":3285203,"vd":-61621},"sq":{"br":1013693,"fid":0,"size":26008009,"vd":-65814},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":270336,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":25,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7003,"mv":5436663,"rtype":0,"rurl":null,"publishTime":1474473600007},{"name":"Get Out","id":2758398,"pst":0,"t":0,"ar":[{"id":60521,"name":"I Nine","tns":[],"alias":[]}],"alia":[],"pop":85,"st":0,"rt":"","fee":0,"v":5,"crbt":null,"cf":"","al":{"id":278288,"name":"Heavy Weighs The King","picUrl":"http://p4.music.126.net/2cp8BEnO_0Ke2Q4VUmtsBQ==/1764716162585718.jpg","tns":[],"pic":1764716162585718},"dt":215000,"h":{"br":320000,"fid":0,"size":8634165,"vd":-43000},"m":{"br":192000,"fid":0,"size":5180568,"vd":-40500},"l":{"br":128000,"fid":0,"size":3453769,"vd":-39200},"sq":null,"hr":null,"a":null,"cd":"1","no":4,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":262144,"originCoverType":0,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":5,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":0,"mv":0,"rtype":0,"rurl":null,"publishTime":1209571200007},{"name":"California","id":3159053,"pst":0,"t":0,"ar":[{"id":69005,"name":"Mindy Gledhill","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":"","fee":8,"v":63,"crbt":null,"cf":"","al":{"id":319676,"name":"Anchor","picUrl":"http://p4.music.126.net/CRZ6x3e85IVr9ipDx5TBpw==/109951164889195255.jpg","tns":[],"pic_str":"109951164889195255","pic":109951164889195250},"dt":180333,"h":{"br":320000,"fid":0,"size":7216109,"vd":-61993},"m":{"br":192000,"fid":0,"size":4329683,"vd":-59413},"l":{"br":128000,"fid":0,"size":2886470,"vd":-57751},"sq":{"br":952634,"fid":0,"size":21473965,"vd":-62006},"hr":null,"a":null,"cd":"1","no":1,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":2,"s_id":0,"mark":270336,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":63,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":1416336,"mv":0,"rtype":0,"rurl":null,"publishTime":1281398400000},{"name":"IDGAF","id":481537713,"pst":0,"t":0,"ar":[{"id":1135086,"name":"Dua Lipa","tns":[],"alias":[]}],"alia":[],"pop":95,"st":0,"rt":null,"fee":1,"v":55,"crbt":null,"cf":"","al":{"id":35423216,"name":"Dua Lipa (Deluxe)","picUrl":"http://p4.music.126.net/npiYf9PQiOQSWelNNKYlhg==/109951166052415639.jpg","tns":[],"pic_str":"109951166052415639","pic":109951166052415630},"dt":217946,"h":{"br":320000,"fid":0,"size":8720762,"vd":-56014},"m":{"br":192000,"fid":0,"size":5232475,"vd":-53479},"l":{"br":128000,"fid":0,"size":3488331,"vd":-52035},"sq":{"br":960494,"fid":0,"size":26167062,"vd":-56014},"hr":null,"a":null,"cd":"1","no":5,"rtUrl":null,"ftype":0,"rtUrls":[],"djId":0,"copyright":1,"s_id":0,"mark":1318912,"originCoverType":1,"originSongSimpleData":null,"tagPicList":null,"resourceState":true,"version":55,"songJumpInfo":null,"entertainmentTags":null,"awardTags":null,"single":0,"noCopyrightRcmd":null,"mst":9,"cp":7002,"mv":5808058,"rtype":0,"rurl":null,"publishTime":1496332800000}]
+         * videoIds : null
+         * videos : null
+         * trackIds : [{"id":1490617551,"v":12,"t":0,"at":1635399785634,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":525574478,"v":11,"t":0,"at":1635399785633,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":19885534,"v":40,"t":0,"at":1635398380681,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":454698347,"v":20,"t":0,"at":1635398380680,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":409031711,"v":18,"t":0,"at":1635398380679,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459063003,"v":34,"t":0,"at":1635398380678,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":423227337,"v":29,"t":0,"at":1635398380677,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":451520805,"v":10,"t":0,"at":1635398380676,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34898373,"v":10,"t":0,"at":1635398380675,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":19192372,"v":17,"t":0,"at":1635398380674,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":544199008,"v":362,"t":0,"at":1635398380673,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29950506,"v":23,"t":0,"at":1635398380672,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4125814,"v":6,"t":0,"at":1635398380671,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":410654865,"v":37,"t":0,"at":1635398380670,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":484700147,"v":26,"t":0,"at":1635398380669,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":422073136,"v":21,"t":0,"at":1635398380668,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":431085766,"v":25,"t":0,"at":1635398380667,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2758398,"v":5,"t":0,"at":1635398380666,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":3159053,"v":63,"t":0,"at":1635398380665,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":481537713,"v":55,"t":0,"at":1635398380664,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":420125898,"v":9,"t":0,"at":1635398380663,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":553904964,"v":16,"t":0,"at":1635398380662,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28191722,"v":143,"t":0,"at":1635398380661,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":442991436,"v":10,"t":0,"at":1635398380660,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":453185808,"v":40,"t":0,"at":1635398380659,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28920011,"v":5,"t":0,"at":1635398380658,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":38014595,"v":22,"t":0,"at":1635398380657,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":478269695,"v":85,"t":0,"at":1635398380656,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17793698,"v":34,"t":0,"at":1635398380655,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":515223490,"v":13,"t":0,"at":1635398380654,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":475597835,"v":19,"t":0,"at":1635398380653,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29592099,"v":30,"t":0,"at":1635398380652,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34248355,"v":19,"t":0,"at":1635398380651,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":509728806,"v":396,"t":0,"at":1635398380650,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":5100769,"v":156,"t":0,"at":1635398380649,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21253806,"v":42,"t":0,"at":1635398380648,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":518895654,"v":378,"t":0,"at":1635398380647,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":521558853,"v":22,"t":0,"at":1635398380646,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":409931611,"v":15,"t":0,"at":1635398380645,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31477363,"v":9,"t":0,"at":1635398380644,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26060065,"v":175,"t":0,"at":1635398380643,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":467344119,"v":24,"t":0,"at":1635398380642,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29343743,"v":33,"t":0,"at":1635398380641,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32341765,"v":24,"t":0,"at":1635398380640,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4199688,"v":8,"t":0,"at":1635398380639,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":16306512,"v":5,"t":0,"at":1635398380638,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29561039,"v":29,"t":0,"at":1635398380637,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1872247,"v":23,"t":0,"at":1635398380636,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":441491080,"v":43,"t":0,"at":1635398380635,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26933374,"v":147,"t":0,"at":1635398380634,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":494865824,"v":52,"t":0,"at":1635398380633,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21563184,"v":45,"t":0,"at":1635398380632,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2122749,"v":17,"t":0,"at":1635398380631,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":410846246,"v":21,"t":0,"at":1635398380630,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4164331,"v":21,"t":0,"at":1635398380629,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31477257,"v":7,"t":0,"at":1635398380628,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1453308606,"v":13,"t":0,"at":1635393677372,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1843950108,"v":8,"t":0,"at":1635393677371,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1857614547,"v":6,"t":0,"at":1635393677370,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1885826111,"v":22,"t":0,"at":1635393677369,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1873780272,"v":15,"t":0,"at":1635393677368,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1314777725,"v":18,"t":0,"at":1635393677367,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34144145,"v":28,"t":0,"at":1635393677366,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":546722490,"v":19,"t":0,"at":1635393677365,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":33891204,"v":8,"t":0,"at":1635393677364,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":499384441,"v":26,"t":0,"at":1635393677363,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":506092035,"v":110,"t":0,"at":1635393677362,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":552145020,"v":10,"t":0,"at":1635393677361,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":570244389,"v":20,"t":0,"at":1635393677360,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":406072775,"v":16,"t":0,"at":1635393677359,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29737541,"v":10,"t":0,"at":1635393677358,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30474546,"v":29,"t":0,"at":1635393677357,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":534540558,"v":26,"t":0,"at":1635393677356,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":40915135,"v":17,"t":0,"at":1635393677355,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":545947135,"v":10,"t":0,"at":1635393677354,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28315618,"v":22,"t":0,"at":1635393677353,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30987703,"v":19,"t":0,"at":1635393677352,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":25704014,"v":35,"t":0,"at":1635393677351,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":557148288,"v":358,"t":0,"at":1635393677350,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":491271737,"v":19,"t":0,"at":1635393677349,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":467953113,"v":14,"t":0,"at":1635393677348,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":511921537,"v":10,"t":0,"at":1635393677347,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":505449407,"v":41,"t":0,"at":1635393677346,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":518895684,"v":22,"t":0,"at":1635393677345,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28649860,"v":139,"t":0,"at":1635393677344,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":444269135,"v":116,"t":0,"at":1635393677343,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":407839677,"v":180,"t":0,"at":1635393677342,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":528270690,"v":9,"t":0,"at":1635393677341,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":529557738,"v":26,"t":0,"at":1635393677340,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":518076434,"v":24,"t":0,"at":1635393677339,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2113299,"v":16,"t":0,"at":1635393677338,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":432457819,"v":11,"t":0,"at":1635393677337,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":453268471,"v":13,"t":0,"at":1635393677336,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29910080,"v":29,"t":0,"at":1635393677335,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":417859039,"v":20,"t":0,"at":1635393677334,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32019002,"v":122,"t":0,"at":1635393677333,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":504717728,"v":12,"t":0,"at":1635393677332,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":451520430,"v":6,"t":0,"at":1635393677330,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":516750031,"v":31,"t":0,"at":1635393677329,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34999489,"v":30,"t":0,"at":1635393677328,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":492144657,"v":13,"t":0,"at":1635393677327,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":466794276,"v":5,"t":0,"at":1635393677326,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":424155394,"v":20,"t":0,"at":1635393677325,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459159098,"v":18,"t":0,"at":1635393677324,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1069265,"v":6,"t":0,"at":1635393677323,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":491271500,"v":16,"t":0,"at":1635393677322,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":412187573,"v":17,"t":0,"at":1635393677321,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31053306,"v":45,"t":0,"at":1635393677320,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":476323620,"v":38,"t":0,"at":1635393677319,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":441612076,"v":9,"t":0,"at":1635393677318,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1491585,"v":19,"t":0,"at":1635393677317,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":430208102,"v":5,"t":0,"at":1635393677316,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":487210825,"v":27,"t":0,"at":1635393677315,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":4109336,"v":24,"t":0,"at":1635393677314,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":473940940,"v":13,"t":0,"at":1635393677313,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28143956,"v":141,"t":0,"at":1635393677312,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":514053315,"v":296,"t":0,"at":1635393677311,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":448916038,"v":17,"t":0,"at":1635393677310,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":489110016,"v":23,"t":0,"at":1635393677309,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":458496858,"v":5,"t":0,"at":1635393677308,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":16501064,"v":18,"t":0,"at":1635393677307,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":404744101,"v":17,"t":0,"at":1635393677306,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":497223014,"v":21,"t":0,"at":1635393677305,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28828374,"v":7,"t":0,"at":1635393677304,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":412951708,"v":19,"t":0,"at":1635393677303,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32752169,"v":21,"t":0,"at":1635393677302,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":482988471,"v":52,"t":0,"at":1635393677301,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":472219602,"v":84,"t":0,"at":1635393677300,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":483061711,"v":12,"t":0,"at":1635393677299,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":23379820,"v":141,"t":0,"at":1635393677298,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459066182,"v":6,"t":0,"at":1635393677297,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":5047860,"v":42,"t":0,"at":1635393677296,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":416552144,"v":10,"t":0,"at":1635393677295,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27921294,"v":9,"t":0,"at":1635393677294,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":459062072,"v":192,"t":0,"at":1635393677293,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29806043,"v":42,"t":0,"at":1635393677292,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27888500,"v":45,"t":0,"at":1635393677291,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28188171,"v":56,"t":0,"at":1635393677290,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34690628,"v":18,"t":0,"at":1635393677289,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":420922950,"v":56,"t":0,"at":1635393677288,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31152570,"v":15,"t":0,"at":1635393677287,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27907557,"v":9,"t":0,"at":1635393677286,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":32835004,"v":485,"t":0,"at":1635393677285,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":451703096,"v":140,"t":0,"at":1635393677284,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27691911,"v":149,"t":0,"at":1635393677283,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1300270994,"v":4,"t":0,"at":1635393677282,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":405612296,"v":17,"t":0,"at":1635393677281,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":399354183,"v":12,"t":0,"at":1635393677280,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":16858400,"v":25,"t":0,"at":1635393677279,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17721274,"v":23,"t":0,"at":1635393677278,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17232222,"v":19,"t":0,"at":1635393677277,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1093730,"v":15,"t":0,"at":1635393677276,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29732106,"v":24,"t":0,"at":1635393677275,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":35804696,"v":7,"t":0,"at":1635393677274,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26598815,"v":26,"t":0,"at":1635393677273,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26349704,"v":14,"t":0,"at":1635393677272,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28805825,"v":18,"t":0,"at":1635393677271,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27829077,"v":12,"t":0,"at":1635393677270,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":2310409,"v":10,"t":0,"at":1635393677269,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21309473,"v":21,"t":0,"at":1635393677268,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26365350,"v":11,"t":0,"at":1635393677267,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26270153,"v":13,"t":0,"at":1635393677266,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28458116,"v":34,"t":0,"at":1635393677265,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29953681,"v":5,"t":0,"at":1635393677264,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1212320,"v":122,"t":0,"at":1635393677263,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":27583305,"v":25,"t":0,"at":1635393677262,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":427595940,"v":8,"t":0,"at":1635393677261,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28729445,"v":146,"t":0,"at":1635393677260,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34228719,"v":56,"t":0,"at":1635393677259,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29753223,"v":29,"t":0,"at":1635393677258,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":29133007,"v":18,"t":0,"at":1635393677257,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":423228325,"v":126,"t":0,"at":1635393677256,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34722449,"v":33,"t":0,"at":1635393677255,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":26292065,"v":14,"t":0,"at":1635393677254,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":19567986,"v":35,"t":0,"at":1635393677253,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28830767,"v":20,"t":0,"at":1635393677252,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":427142481,"v":25,"t":0,"at":1635393677251,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":18086023,"v":17,"t":0,"at":1635393677250,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":21151698,"v":201,"t":0,"at":1635393677249,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":31545222,"v":21,"t":0,"at":1635393677248,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":426290682,"v":13,"t":0,"at":1635393677247,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28136576,"v":143,"t":0,"at":1635393677246,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30706066,"v":34,"t":0,"at":1635393677245,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":18513043,"v":16,"t":0,"at":1635393677244,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1754359,"v":26,"t":0,"at":1635393677243,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":28103370,"v":40,"t":0,"at":1635393677242,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":1069282,"v":16,"t":0,"at":1635393677241,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":22349568,"v":19,"t":0,"at":1635393677240,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":33071205,"v":30,"t":0,"at":1635393677239,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":17282443,"v":24,"t":0,"at":1635393677238,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":30394891,"v":114,"t":0,"at":1635393677237,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":36198046,"v":227,"t":0,"at":1635393677235,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":25657233,"v":429,"t":0,"at":1635393677232,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null},{"id":34696930,"v":36,"t":0,"at":1635393677231,"alg":null,"uid":446942908,"rcmdReason":"","sc":null,"f":null,"sr":null}]
+         * bannedTrackIds : null
+         * mvResourceInfos : null
+         * shareCount : 0
+         * commentCount : 0
+         * remixVideo : null
+         * sharedUsers : null
+         * historySharedUsers : null
+         * gradeStatus : NONE
+         * score : null
+         * algTags : null
          */
 
-        private boolean subscribed;
-        private CreatorBean creator;
-        private String updateFrequency;
-        private long backgroundCoverId;
-        private String backgroundCoverUrl;
-        private int cloudTrackCount;
-        private int subscribedCount;
-        private long trackNumberUpdateTime;
-        private long createTime;
-        private boolean highQuality;
-        private int userId;
-        private long updateTime;
+        private long id;
+        private String name;
         private long coverImgId;
         private String coverImgUrl;
-        private int specialType;
-        private int trackCount;
-        private String commentThreadId;
-        private long trackUpdateTime;
-        private int privacy;
-        private boolean newImported;
-        private long playCount;
+        private String coverImgId_str;
         private int adType;
-        private boolean ordered;
-        private String description;
+        private long userId;
+        private long createTime;
         private int status;
-        private String name;
-        private long id;
+        private boolean opRecommend;
+        private boolean highQuality;
+        private boolean newImported;
+        private long updateTime;
+        private int trackCount;
+        private int specialType;
+        private int privacy;
+        private long trackUpdateTime;
+        private String commentThreadId;
+        private int playCount;
+        private long trackNumberUpdateTime;
+        private int subscribedCount;
+        private int cloudTrackCount;
+        private boolean ordered;
+        private Object description;
+        private Object updateFrequency;
+        private int backgroundCoverId;
+        private Object backgroundCoverUrl;
+        private int titleImage;
+        private Object titleImageUrl;
+        private Object englishTitle;
+        private Object officialPlaylistType;
+        private boolean copied;
+        private Object relateResType;
+        private boolean subscribed;
+        private CreatorBean creator;
+        private Object videoIds;
+        private Object videos;
+        private Object bannedTrackIds;
+        private Object mvResourceInfos;
         private int shareCount;
         private int commentCount;
-        private List<SubscribersBean> subscribers;
+        private Object remixVideo;
+        private Object sharedUsers;
+        private Object historySharedUsers;
+        private String gradeStatus;
+        private Object score;
+        private Object algTags;
+        private List<?> tags;
+        private List<?> subscribers;
         private List<TracksBean> tracks;
         private List<TrackIdsBean> trackIds;
-        private List<String> tags;
 
-        public boolean isSubscribed() {
-            return subscribed;
+        public long getId() {
+            return id;
         }
 
-        public void setSubscribed(boolean subscribed) {
-            this.subscribed = subscribed;
+        public void setId(long id) {
+            this.id = id;
         }
 
-        public CreatorBean getCreator() {
-            return creator;
+        public String getName() {
+            return name;
         }
 
-        public void setCreator(CreatorBean creator) {
-            this.creator = creator;
-        }
-
-        public String getUpdateFrequency() {
-            return updateFrequency;
-        }
-
-        public void setUpdateFrequency(String updateFrequency) {
-            this.updateFrequency = updateFrequency;
-        }
-
-        public long getBackgroundCoverId() {
-            return backgroundCoverId;
-        }
-
-        public void setBackgroundCoverId(long backgroundCoverId) {
-            this.backgroundCoverId = backgroundCoverId;
-        }
-
-        public String getBackgroundCoverUrl() {
-            return backgroundCoverUrl;
-        }
-
-        public void setBackgroundCoverUrl(String backgroundCoverUrl) {
-            this.backgroundCoverUrl = backgroundCoverUrl;
-        }
-
-        public int getCloudTrackCount() {
-            return cloudTrackCount;
-        }
-
-        public void setCloudTrackCount(int cloudTrackCount) {
-            this.cloudTrackCount = cloudTrackCount;
-        }
-
-        public int getSubscribedCount() {
-            return subscribedCount;
-        }
-
-        public void setSubscribedCount(int subscribedCount) {
-            this.subscribedCount = subscribedCount;
-        }
-
-        public long getTrackNumberUpdateTime() {
-            return trackNumberUpdateTime;
-        }
-
-        public void setTrackNumberUpdateTime(long trackNumberUpdateTime) {
-            this.trackNumberUpdateTime = trackNumberUpdateTime;
-        }
-
-        public long getCreateTime() {
-            return createTime;
-        }
-
-        public void setCreateTime(long createTime) {
-            this.createTime = createTime;
-        }
-
-        public boolean isHighQuality() {
-            return highQuality;
-        }
-
-        public void setHighQuality(boolean highQuality) {
-            this.highQuality = highQuality;
-        }
-
-        public int getUserId() {
-            return userId;
-        }
-
-        public void setUserId(int userId) {
-            this.userId = userId;
-        }
-
-        public long getUpdateTime() {
-            return updateTime;
-        }
-
-        public void setUpdateTime(long updateTime) {
-            this.updateTime = updateTime;
+        public void setName(String name) {
+            this.name = name;
         }
 
         public long getCoverImgId() {
@@ -227,60 +250,12 @@ public class PlaylistDetailBean {
             this.coverImgUrl = coverImgUrl;
         }
 
-        public int getSpecialType() {
-            return specialType;
+        public String getCoverImgId_str() {
+            return coverImgId_str;
         }
 
-        public void setSpecialType(int specialType) {
-            this.specialType = specialType;
-        }
-
-        public int getTrackCount() {
-            return trackCount;
-        }
-
-        public void setTrackCount(int trackCount) {
-            this.trackCount = trackCount;
-        }
-
-        public String getCommentThreadId() {
-            return commentThreadId;
-        }
-
-        public void setCommentThreadId(String commentThreadId) {
-            this.commentThreadId = commentThreadId;
-        }
-
-        public long getTrackUpdateTime() {
-            return trackUpdateTime;
-        }
-
-        public void setTrackUpdateTime(long trackUpdateTime) {
-            this.trackUpdateTime = trackUpdateTime;
-        }
-
-        public int getPrivacy() {
-            return privacy;
-        }
-
-        public void setPrivacy(int privacy) {
-            this.privacy = privacy;
-        }
-
-        public boolean isNewImported() {
-            return newImported;
-        }
-
-        public void setNewImported(boolean newImported) {
-            this.newImported = newImported;
-        }
-
-        public long getPlayCount() {
-            return playCount;
-        }
-
-        public void setPlayCount(long playCount) {
-            this.playCount = playCount;
+        public void setCoverImgId_str(String coverImgId_str) {
+            this.coverImgId_str = coverImgId_str;
         }
 
         public int getAdType() {
@@ -291,20 +266,20 @@ public class PlaylistDetailBean {
             this.adType = adType;
         }
 
-        public boolean isOrdered() {
-            return ordered;
+        public Long getUserId() {
+            return userId;
         }
 
-        public void setOrdered(boolean ordered) {
-            this.ordered = ordered;
+        public void setUserId(Long userId) {
+            this.userId = userId;
         }
 
-        public String getDescription() {
-            return description;
+        public long getCreateTime() {
+            return createTime;
         }
 
-        public void setDescription(String description) {
-            this.description = description;
+        public void setCreateTime(long createTime) {
+            this.createTime = createTime;
         }
 
         public int getStatus() {
@@ -315,20 +290,244 @@ public class PlaylistDetailBean {
             this.status = status;
         }
 
-        public String getName() {
-            return name;
+        public boolean isOpRecommend() {
+            return opRecommend;
         }
 
-        public void setName(String name) {
-            this.name = name;
+        public void setOpRecommend(boolean opRecommend) {
+            this.opRecommend = opRecommend;
         }
 
-        public long getId() {
-            return id;
+        public boolean isHighQuality() {
+            return highQuality;
         }
 
-        public void setId(long id) {
-            this.id = id;
+        public void setHighQuality(boolean highQuality) {
+            this.highQuality = highQuality;
+        }
+
+        public boolean isNewImported() {
+            return newImported;
+        }
+
+        public void setNewImported(boolean newImported) {
+            this.newImported = newImported;
+        }
+
+        public long getUpdateTime() {
+            return updateTime;
+        }
+
+        public void setUpdateTime(long updateTime) {
+            this.updateTime = updateTime;
+        }
+
+        public int getTrackCount() {
+            return trackCount;
+        }
+
+        public void setTrackCount(int trackCount) {
+            this.trackCount = trackCount;
+        }
+
+        public int getSpecialType() {
+            return specialType;
+        }
+
+        public void setSpecialType(int specialType) {
+            this.specialType = specialType;
+        }
+
+        public int getPrivacy() {
+            return privacy;
+        }
+
+        public void setPrivacy(int privacy) {
+            this.privacy = privacy;
+        }
+
+        public long getTrackUpdateTime() {
+            return trackUpdateTime;
+        }
+
+        public void setTrackUpdateTime(long trackUpdateTime) {
+            this.trackUpdateTime = trackUpdateTime;
+        }
+
+        public String getCommentThreadId() {
+            return commentThreadId;
+        }
+
+        public void setCommentThreadId(String commentThreadId) {
+            this.commentThreadId = commentThreadId;
+        }
+
+        public int getPlayCount() {
+            return playCount;
+        }
+
+        public void setPlayCount(int playCount) {
+            this.playCount = playCount;
+        }
+
+        public long getTrackNumberUpdateTime() {
+            return trackNumberUpdateTime;
+        }
+
+        public void setTrackNumberUpdateTime(long trackNumberUpdateTime) {
+            this.trackNumberUpdateTime = trackNumberUpdateTime;
+        }
+
+        public int getSubscribedCount() {
+            return subscribedCount;
+        }
+
+        public void setSubscribedCount(int subscribedCount) {
+            this.subscribedCount = subscribedCount;
+        }
+
+        public int getCloudTrackCount() {
+            return cloudTrackCount;
+        }
+
+        public void setCloudTrackCount(int cloudTrackCount) {
+            this.cloudTrackCount = cloudTrackCount;
+        }
+
+        public boolean isOrdered() {
+            return ordered;
+        }
+
+        public void setOrdered(boolean ordered) {
+            this.ordered = ordered;
+        }
+
+        public Object getDescription() {
+            return description;
+        }
+
+        public void setDescription(Object description) {
+            this.description = description;
+        }
+
+        public Object getUpdateFrequency() {
+            return updateFrequency;
+        }
+
+        public void setUpdateFrequency(Object updateFrequency) {
+            this.updateFrequency = updateFrequency;
+        }
+
+        public int getBackgroundCoverId() {
+            return backgroundCoverId;
+        }
+
+        public void setBackgroundCoverId(int backgroundCoverId) {
+            this.backgroundCoverId = backgroundCoverId;
+        }
+
+        public Object getBackgroundCoverUrl() {
+            return backgroundCoverUrl;
+        }
+
+        public void setBackgroundCoverUrl(Object backgroundCoverUrl) {
+            this.backgroundCoverUrl = backgroundCoverUrl;
+        }
+
+        public int getTitleImage() {
+            return titleImage;
+        }
+
+        public void setTitleImage(int titleImage) {
+            this.titleImage = titleImage;
+        }
+
+        public Object getTitleImageUrl() {
+            return titleImageUrl;
+        }
+
+        public void setTitleImageUrl(Object titleImageUrl) {
+            this.titleImageUrl = titleImageUrl;
+        }
+
+        public Object getEnglishTitle() {
+            return englishTitle;
+        }
+
+        public void setEnglishTitle(Object englishTitle) {
+            this.englishTitle = englishTitle;
+        }
+
+        public Object getOfficialPlaylistType() {
+            return officialPlaylistType;
+        }
+
+        public void setOfficialPlaylistType(Object officialPlaylistType) {
+            this.officialPlaylistType = officialPlaylistType;
+        }
+
+        public boolean isCopied() {
+            return copied;
+        }
+
+        public void setCopied(boolean copied) {
+            this.copied = copied;
+        }
+
+        public Object getRelateResType() {
+            return relateResType;
+        }
+
+        public void setRelateResType(Object relateResType) {
+            this.relateResType = relateResType;
+        }
+
+        public boolean isSubscribed() {
+            return subscribed;
+        }
+
+        public void setSubscribed(boolean subscribed) {
+            this.subscribed = subscribed;
+        }
+
+        public CreatorBean getCreator() {
+            return creator;
+        }
+
+        public void setCreator(CreatorBean creator) {
+            this.creator = creator;
+        }
+
+        public Object getVideoIds() {
+            return videoIds;
+        }
+
+        public void setVideoIds(Object videoIds) {
+            this.videoIds = videoIds;
+        }
+
+        public Object getVideos() {
+            return videos;
+        }
+
+        public void setVideos(Object videos) {
+            this.videos = videos;
+        }
+
+        public Object getBannedTrackIds() {
+            return bannedTrackIds;
+        }
+
+        public void setBannedTrackIds(Object bannedTrackIds) {
+            this.bannedTrackIds = bannedTrackIds;
+        }
+
+        public Object getMvResourceInfos() {
+            return mvResourceInfos;
+        }
+
+        public void setMvResourceInfos(Object mvResourceInfos) {
+            this.mvResourceInfos = mvResourceInfos;
         }
 
         public int getShareCount() {
@@ -347,11 +546,67 @@ public class PlaylistDetailBean {
             this.commentCount = commentCount;
         }
 
-        public List<SubscribersBean> getSubscribers() {
+        public Object getRemixVideo() {
+            return remixVideo;
+        }
+
+        public void setRemixVideo(Object remixVideo) {
+            this.remixVideo = remixVideo;
+        }
+
+        public Object getSharedUsers() {
+            return sharedUsers;
+        }
+
+        public void setSharedUsers(Object sharedUsers) {
+            this.sharedUsers = sharedUsers;
+        }
+
+        public Object getHistorySharedUsers() {
+            return historySharedUsers;
+        }
+
+        public void setHistorySharedUsers(Object historySharedUsers) {
+            this.historySharedUsers = historySharedUsers;
+        }
+
+        public String getGradeStatus() {
+            return gradeStatus;
+        }
+
+        public void setGradeStatus(String gradeStatus) {
+            this.gradeStatus = gradeStatus;
+        }
+
+        public Object getScore() {
+            return score;
+        }
+
+        public void setScore(Object score) {
+            this.score = score;
+        }
+
+        public Object getAlgTags() {
+            return algTags;
+        }
+
+        public void setAlgTags(Object algTags) {
+            this.algTags = algTags;
+        }
+
+        public List<?> getTags() {
+            return tags;
+        }
+
+        public void setTags(List<?> tags) {
+            this.tags = tags;
+        }
+
+        public List<?> getSubscribers() {
             return subscribers;
         }
 
-        public void setSubscribers(List<SubscribersBean> subscribers) {
+        public void setSubscribers(List<?> subscribers) {
             this.subscribers = subscribers;
         }
 
@@ -371,320 +626,39 @@ public class PlaylistDetailBean {
             this.trackIds = trackIds;
         }
 
-        public List<String> getTags() {
-            return tags;
-        }
-
-        public void setTags(List<String> tags) {
-            this.tags = tags;
-        }
-
         public static class CreatorBean {
             /**
              * defaultAvatar : false
-             * province : 110000
-             * authStatus : 1
-             * followed : false
-             * avatarUrl : http://p1.music.126.net/QWMV-Ru_6149AKe0mCBXKg==/1420569024374784.jpg
-             * accountStatus : 0
-             * gender : 1
-             * city : 110101
-             * birthday : -2209017600000
-             * userId : 1
-             * userType : 2
-             * nickname : 网易云音乐
-             * signature : 网易云音乐是6亿人都在使用的音乐平台，致力于帮助用户发现音乐惊喜，帮助音乐人实现梦想。客服@云音乐客服 在线时间：9：00 - 24：00，如您在使用过程中遇到任何问题，欢迎私信咨询，我们会尽快回复。如果仍然不能解决您的问题，与活动相关的疑问请私信@云音乐客服
-             * description : 网易云音乐官方账号
-             * detailDescription : 网易云音乐官方账号
-             * avatarImgId : 1420569024374784
-             * backgroundImgId : 2002210674180202
-             * backgroundUrl : http://p1.music.126.net/pmHS4fcQtcNEGewNb5HRhg==/2002210674180202.jpg
-             * authority : 3
-             * mutual : false
-             * expertTags : null
-             * experts : null
-             * djStatus : 10
-             * vipType : 11
-             * remarkName : null
-             * avatarImgIdStr : 1420569024374784
-             * backgroundImgIdStr : 2002210674180202
-             */
-
-            private boolean defaultAvatar;
-            private int province;
-            private int authStatus;
-            private boolean followed;
-            private String avatarUrl;
-            private int accountStatus;
-            private int gender;
-            private int city;
-            private long birthday;
-            private int userId;
-            private int userType;
-            private String nickname;
-            private String signature;
-            private String description;
-            private String detailDescription;
-            private long avatarImgId;
-            private long backgroundImgId;
-            private String backgroundUrl;
-            private int authority;
-            private boolean mutual;
-            private Object expertTags;
-            private Object experts;
-            private int djStatus;
-            private int vipType;
-            private Object remarkName;
-            private String avatarImgIdStr;
-            private String backgroundImgIdStr;
-
-            public boolean isDefaultAvatar() {
-                return defaultAvatar;
-            }
-
-            public void setDefaultAvatar(boolean defaultAvatar) {
-                this.defaultAvatar = defaultAvatar;
-            }
-
-            public int getProvince() {
-                return province;
-            }
-
-            public void setProvince(int province) {
-                this.province = province;
-            }
-
-            public int getAuthStatus() {
-                return authStatus;
-            }
-
-            public void setAuthStatus(int authStatus) {
-                this.authStatus = authStatus;
-            }
-
-            public boolean isFollowed() {
-                return followed;
-            }
-
-            public void setFollowed(boolean followed) {
-                this.followed = followed;
-            }
-
-            public String getAvatarUrl() {
-                return avatarUrl;
-            }
-
-            public void setAvatarUrl(String avatarUrl) {
-                this.avatarUrl = avatarUrl;
-            }
-
-            public int getAccountStatus() {
-                return accountStatus;
-            }
-
-            public void setAccountStatus(int accountStatus) {
-                this.accountStatus = accountStatus;
-            }
-
-            public int getGender() {
-                return gender;
-            }
-
-            public void setGender(int gender) {
-                this.gender = gender;
-            }
-
-            public int getCity() {
-                return city;
-            }
-
-            public void setCity(int city) {
-                this.city = city;
-            }
-
-            public long getBirthday() {
-                return birthday;
-            }
-
-            public void setBirthday(long birthday) {
-                this.birthday = birthday;
-            }
-
-            public int getUserId() {
-                return userId;
-            }
-
-            public void setUserId(int userId) {
-                this.userId = userId;
-            }
-
-            public int getUserType() {
-                return userType;
-            }
-
-            public void setUserType(int userType) {
-                this.userType = userType;
-            }
-
-            public String getNickname() {
-                return nickname;
-            }
-
-            public void setNickname(String nickname) {
-                this.nickname = nickname;
-            }
-
-            public String getSignature() {
-                return signature;
-            }
-
-            public void setSignature(String signature) {
-                this.signature = signature;
-            }
-
-            public String getDescription() {
-                return description;
-            }
-
-            public void setDescription(String description) {
-                this.description = description;
-            }
-
-            public String getDetailDescription() {
-                return detailDescription;
-            }
-
-            public void setDetailDescription(String detailDescription) {
-                this.detailDescription = detailDescription;
-            }
-
-            public long getAvatarImgId() {
-                return avatarImgId;
-            }
-
-            public void setAvatarImgId(long avatarImgId) {
-                this.avatarImgId = avatarImgId;
-            }
-
-            public long getBackgroundImgId() {
-                return backgroundImgId;
-            }
-
-            public void setBackgroundImgId(long backgroundImgId) {
-                this.backgroundImgId = backgroundImgId;
-            }
-
-            public String getBackgroundUrl() {
-                return backgroundUrl;
-            }
-
-            public void setBackgroundUrl(String backgroundUrl) {
-                this.backgroundUrl = backgroundUrl;
-            }
-
-            public int getAuthority() {
-                return authority;
-            }
-
-            public void setAuthority(int authority) {
-                this.authority = authority;
-            }
-
-            public boolean isMutual() {
-                return mutual;
-            }
-
-            public void setMutual(boolean mutual) {
-                this.mutual = mutual;
-            }
-
-            public Object getExpertTags() {
-                return expertTags;
-            }
-
-            public void setExpertTags(Object expertTags) {
-                this.expertTags = expertTags;
-            }
-
-            public Object getExperts() {
-                return experts;
-            }
-
-            public void setExperts(Object experts) {
-                this.experts = experts;
-            }
-
-            public int getDjStatus() {
-                return djStatus;
-            }
-
-            public void setDjStatus(int djStatus) {
-                this.djStatus = djStatus;
-            }
-
-            public int getVipType() {
-                return vipType;
-            }
-
-            public void setVipType(int vipType) {
-                this.vipType = vipType;
-            }
-
-            public Object getRemarkName() {
-                return remarkName;
-            }
-
-            public void setRemarkName(Object remarkName) {
-                this.remarkName = remarkName;
-            }
-
-            public String getAvatarImgIdStr() {
-                return avatarImgIdStr;
-            }
-
-            public void setAvatarImgIdStr(String avatarImgIdStr) {
-                this.avatarImgIdStr = avatarImgIdStr;
-            }
-
-            public String getBackgroundImgIdStr() {
-                return backgroundImgIdStr;
-            }
-
-            public void setBackgroundImgIdStr(String backgroundImgIdStr) {
-                this.backgroundImgIdStr = backgroundImgIdStr;
-            }
-        }
-
-        public static class SubscribersBean {
-            /**
-             * defaultAvatar : false
-             * province : 440000
+             * province : 140000
              * authStatus : 0
              * followed : false
-             * avatarUrl : http://p1.music.126.net/S0eMy4iPCsUF3ExOHQhc8w==/109951164198686079.jpg
+             * avatarUrl : http://p1.music.126.net/1HqOas-NCtKtjEyZg1dn1w==/109951163778944334.jpg
              * accountStatus : 0
-             * gender : 1
-             * city : 440500
-             * birthday : 1036373671290
-             * userId : 556581045
+             * gender : 2
+             * city : 141100
+             * birthday : 0
+             * userId : 446942908
              * userType : 0
-             * nickname : LE-TRIOMPHANT
+             * nickname : 一大只瘦砸
              * signature :
              * description :
              * detailDescription :
-             * avatarImgId : 109951164198686080
-             * backgroundImgId : 109951164198676500
-             * backgroundUrl : http://p1.music.126.net/njFf4NliyjkcQoRL_FBi4Q==/109951164198676497.jpg
+             * avatarImgId : 109951163778944340
+             * backgroundImgId : 109951162868126480
+             * backgroundUrl : http://p1.music.126.net/_f8R60U9mZ42sSNvdPn2sQ==/109951162868126486.jpg
              * authority : 0
              * mutual : false
              * expertTags : null
              * experts : null
-             * djStatus : 0
+             * djStatus : 10
              * vipType : 0
              * remarkName : null
-             * avatarImgIdStr : 109951164198686079
-             * backgroundImgIdStr : 109951164198676497
-             * avatarImgId_str : 109951164198686079
+             * authenticationTypes : 0
+             * avatarDetail : null
+             * anchor : false
+             * backgroundImgIdStr : 109951162868126486
+             * avatarImgIdStr : 109951163778944334
+             * avatarImgId_str : 109951163778944334
              */
 
             private boolean defaultAvatar;
@@ -695,7 +669,7 @@ public class PlaylistDetailBean {
             private int accountStatus;
             private int gender;
             private int city;
-            private long birthday;
+            private int birthday;
             private int userId;
             private int userType;
             private String nickname;
@@ -712,8 +686,11 @@ public class PlaylistDetailBean {
             private int djStatus;
             private int vipType;
             private Object remarkName;
-            private String avatarImgIdStr;
+            private int authenticationTypes;
+            private Object avatarDetail;
+            private boolean anchor;
             private String backgroundImgIdStr;
+            private String avatarImgIdStr;
             private String avatarImgId_str;
 
             public boolean isDefaultAvatar() {
@@ -780,11 +757,11 @@ public class PlaylistDetailBean {
                 this.city = city;
             }
 
-            public long getBirthday() {
+            public int getBirthday() {
                 return birthday;
             }
 
-            public void setBirthday(long birthday) {
+            public void setBirthday(int birthday) {
                 this.birthday = birthday;
             }
 
@@ -916,12 +893,28 @@ public class PlaylistDetailBean {
                 this.remarkName = remarkName;
             }
 
-            public String getAvatarImgIdStr() {
-                return avatarImgIdStr;
+            public int getAuthenticationTypes() {
+                return authenticationTypes;
             }
 
-            public void setAvatarImgIdStr(String avatarImgIdStr) {
-                this.avatarImgIdStr = avatarImgIdStr;
+            public void setAuthenticationTypes(int authenticationTypes) {
+                this.authenticationTypes = authenticationTypes;
+            }
+
+            public Object getAvatarDetail() {
+                return avatarDetail;
+            }
+
+            public void setAvatarDetail(Object avatarDetail) {
+                this.avatarDetail = avatarDetail;
+            }
+
+            public boolean isAnchor() {
+                return anchor;
+            }
+
+            public void setAnchor(boolean anchor) {
+                this.anchor = anchor;
             }
 
             public String getBackgroundImgIdStr() {
@@ -930,6 +923,14 @@ public class PlaylistDetailBean {
 
             public void setBackgroundImgIdStr(String backgroundImgIdStr) {
                 this.backgroundImgIdStr = backgroundImgIdStr;
+            }
+
+            public String getAvatarImgIdStr() {
+                return avatarImgIdStr;
+            }
+
+            public void setAvatarImgIdStr(String avatarImgIdStr) {
+                this.avatarImgIdStr = avatarImgIdStr;
             }
 
             public String getAvatarImgId_str() {
@@ -943,45 +944,56 @@ public class PlaylistDetailBean {
 
         public static class TracksBean {
             /**
-             * name : dark HORSE
-             * id : 1234301
+             * name : 夜に駆ける
+             * id : 1490617551
              * pst : 0
              * t : 0
-             * ar : [{"id":31286,"name":"The Shanghai Restoration Project","tns":[],"alias":[]}]
+             * ar : [{"id":12085569,"name":"李蚊香","tns":[],"alias":[]}]
              * alia : []
-             * pop : 100
+             * pop : 25
              * st : 0
              * rt :
-             * fee : 8
-             * v : 10
+             * fee : 0
+             * v : 12
              * crbt : null
              * cf :
-             * al : {"id":127441,"name":"Zodiac","picUrl":"http://p2.music.126.net/2UGeR7vME216HNPmKK-pxw==/816937139480821.jpg","tns":[],"pic":816937139480821}
-             * dt : 264661
-             * h : {"br":320000,"fid":0,"size":10586950,"vd":-0.27}
-             * m : {"br":160000,"fid":0,"size":5293498,"vd":-2.65076E-4}
-             * l : {"br":96000,"fid":0,"size":3176116,"vd":-2.65076E-4}
+             * al : {"id":97410890,"name":"夜に駆ける","picUrl":"http://p4.music.126.net/tNeDhj72b3sdZRU7_6eTBA==/109951165420630236.jpg","tns":[],"pic_str":"109951165420630236","pic":109951165420630240}
+             * dt : 261851
+             * h : {"br":320000,"fid":0,"size":10477236,"vd":-56229}
+             * m : {"br":192000,"fid":0,"size":6286359,"vd":-53733}
+             * l : {"br":128000,"fid":0,"size":4190920,"vd":-52220}
+             * sq : {"br":1732707,"fid":0,"size":56714031,"vd":-56205}
+             * hr : null
              * a : null
-             * cd : 1
-             * no : 6
+             * cd : 01
+             * no : 1
              * rtUrl : null
              * ftype : 0
              * rtUrls : []
              * djId : 0
-             * copyright : 2
+             * copyright : 0
              * s_id : 0
-             * mark : 0
+             * mark : 262272
+             * originCoverType : 2
+             * originSongSimpleData : {"songId":1409311773,"name":"夜に駆ける","artists":[{"id":33927412,"name":"YOASOBI"}],"albumMeta":{"id":84072830,"name":"夜に駆ける"}}
+             * tagPicList : null
+             * resourceState : true
+             * version : 12
+             * songJumpInfo : null
+             * entertainmentTags : null
+             * awardTags : null
+             * single : 0
+             * noCopyrightRcmd : null
+             * mst : 9
+             * cp : 0
+             * mv : 0
              * rtype : 0
              * rurl : null
-             * mst : 9
-             * cp : 412011
-             * mv : 0
-             * publishTime : 1232380800007
-             * alg : alg_tag_based
+             * publishTime : 0
              */
 
             private String name;
-            private int id;
+            private Long id;
             private int pst;
             private int t;
             private int pop;
@@ -996,6 +1008,8 @@ public class PlaylistDetailBean {
             private HBean h;
             private MBean m;
             private LBean l;
+            private SqBean sq;
+            private Object hr;
             private Object a;
             private String cd;
             private int no;
@@ -1004,14 +1018,23 @@ public class PlaylistDetailBean {
             private int djId;
             private int copyright;
             private int s_id;
-            private long mark;
-            private int rtype;
-            private Object rurl;
+            private Long mark;
+            private int originCoverType;
+            private OriginSongSimpleDataBean originSongSimpleData;
+            private Object tagPicList;
+            private boolean resourceState;
+            private int version;
+            private Object songJumpInfo;
+            private Object entertainmentTags;
+            private Object awardTags;
+            private int single;
+            private Object noCopyrightRcmd;
             private int mst;
             private int cp;
             private int mv;
-            private long publishTime;
-            private String alg;
+            private int rtype;
+            private Object rurl;
+            private String publishTime;
             private List<ArBean> ar;
             private List<?> alia;
             private List<?> rtUrls;
@@ -1024,11 +1047,11 @@ public class PlaylistDetailBean {
                 this.name = name;
             }
 
-            public int getId() {
+            public Long getId() {
                 return id;
             }
 
-            public void setId(int id) {
+            public void setId(Long id) {
                 this.id = id;
             }
 
@@ -1144,6 +1167,22 @@ public class PlaylistDetailBean {
                 this.l = l;
             }
 
+            public SqBean getSq() {
+                return sq;
+            }
+
+            public void setSq(SqBean sq) {
+                this.sq = sq;
+            }
+
+            public Object getHr() {
+                return hr;
+            }
+
+            public void setHr(Object hr) {
+                this.hr = hr;
+            }
+
             public Object getA() {
                 return a;
             }
@@ -1208,28 +1247,92 @@ public class PlaylistDetailBean {
                 this.s_id = s_id;
             }
 
-            public long getMark() {
+            public Long getMark() {
                 return mark;
             }
 
-            public void setMark(long mark) {
+            public void setMark(Long mark) {
                 this.mark = mark;
             }
 
-            public int getRtype() {
-                return rtype;
+            public int getOriginCoverType() {
+                return originCoverType;
             }
 
-            public void setRtype(int rtype) {
-                this.rtype = rtype;
+            public void setOriginCoverType(int originCoverType) {
+                this.originCoverType = originCoverType;
             }
 
-            public Object getRurl() {
-                return rurl;
+            public OriginSongSimpleDataBean getOriginSongSimpleData() {
+                return originSongSimpleData;
             }
 
-            public void setRurl(Object rurl) {
-                this.rurl = rurl;
+            public void setOriginSongSimpleData(OriginSongSimpleDataBean originSongSimpleData) {
+                this.originSongSimpleData = originSongSimpleData;
+            }
+
+            public Object getTagPicList() {
+                return tagPicList;
+            }
+
+            public void setTagPicList(Object tagPicList) {
+                this.tagPicList = tagPicList;
+            }
+
+            public boolean isResourceState() {
+                return resourceState;
+            }
+
+            public void setResourceState(boolean resourceState) {
+                this.resourceState = resourceState;
+            }
+
+            public int getVersion() {
+                return version;
+            }
+
+            public void setVersion(int version) {
+                this.version = version;
+            }
+
+            public Object getSongJumpInfo() {
+                return songJumpInfo;
+            }
+
+            public void setSongJumpInfo(Object songJumpInfo) {
+                this.songJumpInfo = songJumpInfo;
+            }
+
+            public Object getEntertainmentTags() {
+                return entertainmentTags;
+            }
+
+            public void setEntertainmentTags(Object entertainmentTags) {
+                this.entertainmentTags = entertainmentTags;
+            }
+
+            public Object getAwardTags() {
+                return awardTags;
+            }
+
+            public void setAwardTags(Object awardTags) {
+                this.awardTags = awardTags;
+            }
+
+            public int getSingle() {
+                return single;
+            }
+
+            public void setSingle(int single) {
+                this.single = single;
+            }
+
+            public Object getNoCopyrightRcmd() {
+                return noCopyrightRcmd;
+            }
+
+            public void setNoCopyrightRcmd(Object noCopyrightRcmd) {
+                this.noCopyrightRcmd = noCopyrightRcmd;
             }
 
             public int getMst() {
@@ -1256,20 +1359,28 @@ public class PlaylistDetailBean {
                 this.mv = mv;
             }
 
-            public long getPublishTime() {
+            public int getRtype() {
+                return rtype;
+            }
+
+            public void setRtype(int rtype) {
+                this.rtype = rtype;
+            }
+
+            public Object getRurl() {
+                return rurl;
+            }
+
+            public void setRurl(Object rurl) {
+                this.rurl = rurl;
+            }
+
+            public String getPublishTime() {
                 return publishTime;
             }
 
-            public void setPublishTime(long publishTime) {
+            public void setPublishTime(String publishTime) {
                 this.publishTime = publishTime;
-            }
-
-            public String getAlg() {
-                return alg;
-            }
-
-            public void setAlg(String alg) {
-                this.alg = alg;
             }
 
             public List<ArBean> getAr() {
@@ -1298,16 +1409,18 @@ public class PlaylistDetailBean {
 
             public static class AlBean {
                 /**
-                 * id : 127441
-                 * name : Zodiac
-                 * picUrl : http://p2.music.126.net/2UGeR7vME216HNPmKK-pxw==/816937139480821.jpg
+                 * id : 97410890
+                 * name : 夜に駆ける
+                 * picUrl : http://p4.music.126.net/tNeDhj72b3sdZRU7_6eTBA==/109951165420630236.jpg
                  * tns : []
-                 * pic : 816937139480821
+                 * pic_str : 109951165420630236
+                 * pic : 109951165420630240
                  */
 
                 private int id;
                 private String name;
                 private String picUrl;
+                private String pic_str;
                 private long pic;
                 private List<?> tns;
 
@@ -1335,6 +1448,14 @@ public class PlaylistDetailBean {
                     this.picUrl = picUrl;
                 }
 
+                public String getPic_str() {
+                    return pic_str;
+                }
+
+                public void setPic_str(String pic_str) {
+                    this.pic_str = pic_str;
+                }
+
                 public long getPic() {
                     return pic;
                 }
@@ -1356,14 +1477,14 @@ public class PlaylistDetailBean {
                 /**
                  * br : 320000
                  * fid : 0
-                 * size : 10586950
-                 * vd : -0.27
+                 * size : 10477236
+                 * vd : -56229
                  */
 
                 private int br;
                 private int fid;
                 private int size;
-                private double vd;
+                private int vd;
 
                 public int getBr() {
                     return br;
@@ -1389,27 +1510,27 @@ public class PlaylistDetailBean {
                     this.size = size;
                 }
 
-                public double getVd() {
+                public int getVd() {
                     return vd;
                 }
 
-                public void setVd(double vd) {
+                public void setVd(int vd) {
                     this.vd = vd;
                 }
             }
 
             public static class MBean {
                 /**
-                 * br : 160000
+                 * br : 192000
                  * fid : 0
-                 * size : 5293498
-                 * vd : -2.65076E-4
+                 * size : 6286359
+                 * vd : -53733
                  */
 
                 private int br;
                 private int fid;
                 private int size;
-                private double vd;
+                private int vd;
 
                 public int getBr() {
                     return br;
@@ -1435,27 +1556,27 @@ public class PlaylistDetailBean {
                     this.size = size;
                 }
 
-                public double getVd() {
+                public int getVd() {
                     return vd;
                 }
 
-                public void setVd(double vd) {
+                public void setVd(int vd) {
                     this.vd = vd;
                 }
             }
 
             public static class LBean {
                 /**
-                 * br : 96000
+                 * br : 128000
                  * fid : 0
-                 * size : 3176116
-                 * vd : -2.65076E-4
+                 * size : 4190920
+                 * vd : -52220
                  */
 
                 private int br;
                 private int fid;
                 private int size;
-                private double vd;
+                private int vd;
 
                 public int getBr() {
                     return br;
@@ -1481,19 +1602,163 @@ public class PlaylistDetailBean {
                     this.size = size;
                 }
 
-                public double getVd() {
+                public int getVd() {
                     return vd;
                 }
 
-                public void setVd(double vd) {
+                public void setVd(int vd) {
                     this.vd = vd;
+                }
+            }
+
+            public static class SqBean {
+                /**
+                 * br : 1732707
+                 * fid : 0
+                 * size : 56714031
+                 * vd : -56205
+                 */
+
+                private int br;
+                private int fid;
+                private int size;
+                private int vd;
+
+                public int getBr() {
+                    return br;
+                }
+
+                public void setBr(int br) {
+                    this.br = br;
+                }
+
+                public int getFid() {
+                    return fid;
+                }
+
+                public void setFid(int fid) {
+                    this.fid = fid;
+                }
+
+                public int getSize() {
+                    return size;
+                }
+
+                public void setSize(int size) {
+                    this.size = size;
+                }
+
+                public int getVd() {
+                    return vd;
+                }
+
+                public void setVd(int vd) {
+                    this.vd = vd;
+                }
+            }
+
+            public static class OriginSongSimpleDataBean {
+                /**
+                 * songId : 1409311773
+                 * name : 夜に駆ける
+                 * artists : [{"id":33927412,"name":"YOASOBI"}]
+                 * albumMeta : {"id":84072830,"name":"夜に駆ける"}
+                 */
+
+                private int songId;
+                private String name;
+                private AlbumMetaBean albumMeta;
+                private List<ArtistsBean> artists;
+
+                public int getSongId() {
+                    return songId;
+                }
+
+                public void setSongId(int songId) {
+                    this.songId = songId;
+                }
+
+                public String getName() {
+                    return name;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+                public AlbumMetaBean getAlbumMeta() {
+                    return albumMeta;
+                }
+
+                public void setAlbumMeta(AlbumMetaBean albumMeta) {
+                    this.albumMeta = albumMeta;
+                }
+
+                public List<ArtistsBean> getArtists() {
+                    return artists;
+                }
+
+                public void setArtists(List<ArtistsBean> artists) {
+                    this.artists = artists;
+                }
+
+                public static class AlbumMetaBean {
+                    /**
+                     * id : 84072830
+                     * name : 夜に駆ける
+                     */
+
+                    private int id;
+                    private String name;
+
+                    public int getId() {
+                        return id;
+                    }
+
+                    public void setId(int id) {
+                        this.id = id;
+                    }
+
+                    public String getName() {
+                        return name;
+                    }
+
+                    public void setName(String name) {
+                        this.name = name;
+                    }
+                }
+
+                public static class ArtistsBean {
+                    /**
+                     * id : 33927412
+                     * name : YOASOBI
+                     */
+
+                    private int id;
+                    private String name;
+
+                    public int getId() {
+                        return id;
+                    }
+
+                    public void setId(int id) {
+                        this.id = id;
+                    }
+
+                    public String getName() {
+                        return name;
+                    }
+
+                    public void setName(String name) {
+                        this.name = name;
+                    }
                 }
             }
 
             public static class ArBean {
                 /**
-                 * id : 31286
-                 * name : The Shanghai Restoration Project
+                 * id : 12085569
+                 * name : 李蚊香
                  * tns : []
                  * alias : []
                  */
@@ -1539,14 +1804,28 @@ public class PlaylistDetailBean {
 
         public static class TrackIdsBean {
             /**
-             * id : 1234301
-             * v : -10000
-             * alg : alg_tag_based
+             * id : 1490617551
+             * v : 12
+             * t : 0
+             * at : 1635399785634
+             * alg : null
+             * uid : 446942908
+             * rcmdReason :
+             * sc : null
+             * f : null
+             * sr : null
              */
 
             private int id;
             private int v;
-            private String alg;
+            private int t;
+            private long at;
+            private Object alg;
+            private int uid;
+            private String rcmdReason;
+            private Object sc;
+            private Object f;
+            private Object sr;
 
             public int getId() {
                 return id;
@@ -1564,38 +1843,109 @@ public class PlaylistDetailBean {
                 this.v = v;
             }
 
-            public String getAlg() {
+            public int getT() {
+                return t;
+            }
+
+            public void setT(int t) {
+                this.t = t;
+            }
+
+            public long getAt() {
+                return at;
+            }
+
+            public void setAt(long at) {
+                this.at = at;
+            }
+
+            public Object getAlg() {
                 return alg;
             }
 
-            public void setAlg(String alg) {
+            public void setAlg(Object alg) {
                 this.alg = alg;
+            }
+
+            public int getUid() {
+                return uid;
+            }
+
+            public void setUid(int uid) {
+                this.uid = uid;
+            }
+
+            public String getRcmdReason() {
+                return rcmdReason;
+            }
+
+            public void setRcmdReason(String rcmdReason) {
+                this.rcmdReason = rcmdReason;
+            }
+
+            public Object getSc() {
+                return sc;
+            }
+
+            public void setSc(Object sc) {
+                this.sc = sc;
+            }
+
+            public Object getF() {
+                return f;
+            }
+
+            public void setF(Object f) {
+                this.f = f;
+            }
+
+            public Object getSr() {
+                return sr;
+            }
+
+            public void setSr(Object sr) {
+                this.sr = sr;
             }
         }
     }
 
     public static class PrivilegesBean {
         /**
-         * id : 1234301
-         * fee : 8
+         * id : 1490617551
+         * fee : 0
          * payed : 0
+         * realPayed : 0
          * st : 0
-         * pl : 128000
-         * dl : 0
+         * pl : 320000
+         * dl : 999000
          * sp : 7
          * cp : 1
          * subp : 1
          * cs : false
-         * maxbr : 320000
-         * fl : 128000
+         * maxbr : 999000
+         * fl : 320000
+         * pc : null
          * toast : false
-         * flag : 0
+         * flag : 257
+         * paidBigBang : false
          * preSell : false
+         * playMaxbr : 999000
+         * downloadMaxbr : 999000
+         * maxBrLevel : lossless
+         * playMaxBrLevel : lossless
+         * downloadMaxBrLevel : lossless
+         * plLevel : exhigh
+         * dlLevel : lossless
+         * flLevel : exhigh
+         * rscl : null
+         * freeTrialPrivilege : {"resConsumable":false,"userConsumable":false,"listenType":null}
+         * chargeInfoList : [{"rate":128000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":192000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":320000,"chargeUrl":null,"chargeMessage":null,"chargeType":0},{"rate":999000,"chargeUrl":null,"chargeMessage":null,"chargeType":1}]
          */
 
         private int id;
         private int fee;
         private int payed;
+        private int realPayed;
         private int st;
         private int pl;
         private int dl;
@@ -1605,9 +1955,22 @@ public class PlaylistDetailBean {
         private boolean cs;
         private int maxbr;
         private int fl;
+        private Object pc;
         private boolean toast;
         private int flag;
+        private boolean paidBigBang;
         private boolean preSell;
+        private int playMaxbr;
+        private int downloadMaxbr;
+        private String maxBrLevel;
+        private String playMaxBrLevel;
+        private String downloadMaxBrLevel;
+        private String plLevel;
+        private String dlLevel;
+        private String flLevel;
+        private Object rscl;
+        private FreeTrialPrivilegeBean freeTrialPrivilege;
+        private List<ChargeInfoListBean> chargeInfoList;
 
         public int getId() {
             return id;
@@ -1631,6 +1994,14 @@ public class PlaylistDetailBean {
 
         public void setPayed(int payed) {
             this.payed = payed;
+        }
+
+        public int getRealPayed() {
+            return realPayed;
+        }
+
+        public void setRealPayed(int realPayed) {
+            this.realPayed = realPayed;
         }
 
         public int getSt() {
@@ -1705,6 +2076,14 @@ public class PlaylistDetailBean {
             this.fl = fl;
         }
 
+        public Object getPc() {
+            return pc;
+        }
+
+        public void setPc(Object pc) {
+            this.pc = pc;
+        }
+
         public boolean isToast() {
             return toast;
         }
@@ -1721,6 +2100,14 @@ public class PlaylistDetailBean {
             this.flag = flag;
         }
 
+        public boolean isPaidBigBang() {
+            return paidBigBang;
+        }
+
+        public void setPaidBigBang(boolean paidBigBang) {
+            this.paidBigBang = paidBigBang;
+        }
+
         public boolean isPreSell() {
             return preSell;
         }
@@ -1729,26 +2116,174 @@ public class PlaylistDetailBean {
             this.preSell = preSell;
         }
 
-        @Override
-        public String toString() {
-            return "PrivilegesBean{" +
-                    "id=" + id +
-                    ", fee=" + fee +
-                    ", payed=" + payed +
-                    ", st=" + st +
-                    ", pl=" + pl +
-                    ", dl=" + dl +
-                    ", sp=" + sp +
-                    ", cp=" + cp +
-                    ", subp=" + subp +
-                    ", cs=" + cs +
-                    ", maxbr=" + maxbr +
-                    ", fl=" + fl +
-                    ", toast=" + toast +
-                    ", flag=" + flag +
-                    ", preSell=" + preSell +
-                    '}';
+        public int getPlayMaxbr() {
+            return playMaxbr;
+        }
+
+        public void setPlayMaxbr(int playMaxbr) {
+            this.playMaxbr = playMaxbr;
+        }
+
+        public int getDownloadMaxbr() {
+            return downloadMaxbr;
+        }
+
+        public void setDownloadMaxbr(int downloadMaxbr) {
+            this.downloadMaxbr = downloadMaxbr;
+        }
+
+        public String getMaxBrLevel() {
+            return maxBrLevel;
+        }
+
+        public void setMaxBrLevel(String maxBrLevel) {
+            this.maxBrLevel = maxBrLevel;
+        }
+
+        public String getPlayMaxBrLevel() {
+            return playMaxBrLevel;
+        }
+
+        public void setPlayMaxBrLevel(String playMaxBrLevel) {
+            this.playMaxBrLevel = playMaxBrLevel;
+        }
+
+        public String getDownloadMaxBrLevel() {
+            return downloadMaxBrLevel;
+        }
+
+        public void setDownloadMaxBrLevel(String downloadMaxBrLevel) {
+            this.downloadMaxBrLevel = downloadMaxBrLevel;
+        }
+
+        public String getPlLevel() {
+            return plLevel;
+        }
+
+        public void setPlLevel(String plLevel) {
+            this.plLevel = plLevel;
+        }
+
+        public String getDlLevel() {
+            return dlLevel;
+        }
+
+        public void setDlLevel(String dlLevel) {
+            this.dlLevel = dlLevel;
+        }
+
+        public String getFlLevel() {
+            return flLevel;
+        }
+
+        public void setFlLevel(String flLevel) {
+            this.flLevel = flLevel;
+        }
+
+        public Object getRscl() {
+            return rscl;
+        }
+
+        public void setRscl(Object rscl) {
+            this.rscl = rscl;
+        }
+
+        public FreeTrialPrivilegeBean getFreeTrialPrivilege() {
+            return freeTrialPrivilege;
+        }
+
+        public void setFreeTrialPrivilege(FreeTrialPrivilegeBean freeTrialPrivilege) {
+            this.freeTrialPrivilege = freeTrialPrivilege;
+        }
+
+        public List<ChargeInfoListBean> getChargeInfoList() {
+            return chargeInfoList;
+        }
+
+        public void setChargeInfoList(List<ChargeInfoListBean> chargeInfoList) {
+            this.chargeInfoList = chargeInfoList;
+        }
+
+        public static class FreeTrialPrivilegeBean {
+            /**
+             * resConsumable : false
+             * userConsumable : false
+             * listenType : null
+             */
+
+            private boolean resConsumable;
+            private boolean userConsumable;
+            private Object listenType;
+
+            public boolean isResConsumable() {
+                return resConsumable;
+            }
+
+            public void setResConsumable(boolean resConsumable) {
+                this.resConsumable = resConsumable;
+            }
+
+            public boolean isUserConsumable() {
+                return userConsumable;
+            }
+
+            public void setUserConsumable(boolean userConsumable) {
+                this.userConsumable = userConsumable;
+            }
+
+            public Object getListenType() {
+                return listenType;
+            }
+
+            public void setListenType(Object listenType) {
+                this.listenType = listenType;
+            }
+        }
+
+        public static class ChargeInfoListBean {
+            /**
+             * rate : 128000
+             * chargeUrl : null
+             * chargeMessage : null
+             * chargeType : 0
+             */
+
+            private int rate;
+            private Object chargeUrl;
+            private Object chargeMessage;
+            private int chargeType;
+
+            public int getRate() {
+                return rate;
+            }
+
+            public void setRate(int rate) {
+                this.rate = rate;
+            }
+
+            public Object getChargeUrl() {
+                return chargeUrl;
+            }
+
+            public void setChargeUrl(Object chargeUrl) {
+                this.chargeUrl = chargeUrl;
+            }
+
+            public Object getChargeMessage() {
+                return chargeMessage;
+            }
+
+            public void setChargeMessage(Object chargeMessage) {
+                this.chargeMessage = chargeMessage;
+            }
+
+            public int getChargeType() {
+                return chargeType;
+            }
+
+            public void setChargeType(int chargeType) {
+                this.chargeType = chargeType;
+            }
         }
     }
-
 }

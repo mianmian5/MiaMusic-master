@@ -12,7 +12,7 @@ import com.example.miamusic_master.bean.PlaylistDetailBean;
 import com.example.miamusic_master.bean.RecommendPlayListBean;
 import com.example.miamusic_master.bean.TopListBean;
 import com.example.miamusic_master.contract.WowContract;
-import com.example.miamusic_master.model.WowModel;
+
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -25,7 +25,7 @@ public class FindPresenter extends WowContract.Presenter {
 
     public FindPresenter(WowContract.View view) {
         this.mView = view;
-        this.mModel = (WowContract.Model) new WowModel();
+//        this.mModel = (WowContract.Model) new WowModel();
     }
 
 

@@ -5,23 +5,23 @@ package com.example.miamusic_master.bean;
  */
 public class PlaylistBean {
 
-    private String playlistCoverUrl;
+    private String picUrl;
 
-    private String playlistName;
+    private String name;
 
     public String getPlaylistCoverUrl() {
-        return playlistCoverUrl;
+        return picUrl;
     }
 
-    public void setPlaylistCoverUrl(String playlistCoverUrl) {
-        this.playlistCoverUrl = playlistCoverUrl;
+    public void setPlaylistCoverUrl(String picUrl) {
+        this.picUrl = picUrl;
     }
 
     public String getPlaylistName() {
-        return playlistName;
+        return name;
     }
 
-    public void setPlaylistName(String playlistName) {
-        this.playlistName = playlistName;
+    public void setPlaylistName(String name) {
+        this.name = name;
     }
 }

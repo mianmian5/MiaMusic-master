@@ -1,5 +1,7 @@
 package com.example.miamusic_master;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -8,17 +10,29 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.miamusic_master.adapter.MultiFragmentPagerAdapter;
 import com.example.miamusic_master.base.BaseFragment;
 import com.example.miamusic_master.util.ClickUtil;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.lzx.starrysky.SongInfo;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
     //viewPager会缓存的Fragment数量
     private static final int VIEWPAGER_OFF_SCREEN_PAGE_LIMIT = 2;
     public static final String LOGIN_BEAN = "loginBean";
-
+    String BASE_URL = "https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/";
+//    private RequestQueue mRequestQueue;
     @BindView(R.id.iv_avatar)
     CircleImageView ivAvatar;
     @BindView(R.id.tv_username)
@@ -71,13 +86,48 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this); // 黄油刀绑定视图 千万别漏掉
         mPagerAdapter = new MultiFragmentPagerAdapter(getSupportFragmentManager());
         fragments.add(new FindFragment());
         mPagerAdapter.init(fragments);
+//        fetchImagesWithVolley();
         initData();
+    }
+
+    //使用Volley从服务端获取轮播图url
+    private void fetchImagesWithVolley() {
+        RequestQueue mRequestQueue = Volley.newRequestQueue(this);
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, BASE_URL + "banner/", null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                Toast.makeText(MainActivity.this, "成功！", Toast.LENGTH_LONG).show();
+                //获取成功，输出轮播图url
+                for (int i = 0; i < response.length(); i++) {
+                    try {
+                        Log.d("Volley", response.getJSONObject(i).getString("url"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                //获取失败，输出错误信息
+                Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
+                Log.d("Volley", error.getMessage());
+            }
+        });
+
+        // 设置重试策略
+        jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(
+                5000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        mRequestQueue.add(jsonArrayRequest);
     }
 
 
@@ -86,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 //        loginBean = GsonUtil.fromJSON(userLoginInfo, LoginBean.class);
 
         viewPager.setAdapter(mPagerAdapter);
-        viewPager.setOffscreenPageLimit(VIEWPAGER_OFF_SCREEN_PAGE_LIMIT);
+//        viewPager.setOffscreenPageLimit(VIEWPAGER_OFF_SCREEN_PAGE_LIMIT);
         viewPager.setCurrentItem(1);
 //        mPagerAdapter.getItem(1).setUserVisibleHint(true);
 //        tabTitle.setupWithViewPager(viewPager);
