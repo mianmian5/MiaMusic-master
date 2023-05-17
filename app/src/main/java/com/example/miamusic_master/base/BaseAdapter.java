@@ -8,11 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 
-//import android.support.v7.widget.RecyclerView;
 
-/**
- * Created By Rikka on 2019/7/12
- */
 public abstract class BaseAdapter<VH extends RecyclerView.ViewHolder, T> extends RecyclerView.Adapter<VH> {
 
     protected static final int VIEW_TYPE_EMPETY = 0;

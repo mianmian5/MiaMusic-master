@@ -20,9 +20,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.example.miamusic_master.R;
+import com.example.miamusic_master.SongActivity;
+import com.example.miamusic_master.SongDetailActivity;
 import com.example.miamusic_master.base.BaseAdapter;
 import com.example.miamusic_master.widget.RikkaRoundRectView;
 import com.lzx.starrysky.SongInfo;
+import com.lzx.starrysky.StarrySky;
 
 
 import java.util.List;
@@ -163,18 +166,23 @@ public class SongListAdapter extends BaseAdapter<RecyclerView.ViewHolder, SongIn
                 if (type == 3) {
 //                    SongPlayManager.getInstance().clickASong(songInfo);
                 } else {
+//                    StarrySky.with().playMusic(list,position);
+                    System.out.println("listqqq"+list);
+                    System.out.println("songinfo111"+songInfo);
+                    System.out.println("songinfoUrl"+songInfo.getSongUrl());
+//                    StarrySky.with().playMusicById(songInfo.getSongId());
 //                    SongPlayManager.getInstance().clickPlayAll(list, position);
                 }
-//                Intent intent = new Intent(mContext, SongActivity.class);
-//                intent.putExtra(SongActivity.SONG_INFO, songInfo);
-//                mContext.startActivity(intent);
+                Intent intent = new Intent(mContext, SongActivity.class);
+                intent.putExtra(SongActivity.SONG_INFO, songInfo);
+                mContext.startActivity(intent);
             });
 
             ivSongDetail.setOnClickListener(v -> {
-//                Intent intent = new Intent(mContext, SongDetailActivity.class);
-//                intent.putExtra(SongActivity.SONG_INFO, songInfo);
-//                mContext.startActivity(intent);
-//                ((Activity) mContext).overridePendingTransition(R.anim.bottom_in, R.anim.bottom_silent);
+                Intent intent = new Intent(mContext, SongDetailActivity.class);
+                intent.putExtra(SongActivity.SONG_INFO, songInfo);
+                mContext.startActivity(intent);
+                ((Activity) mContext).overridePendingTransition(R.anim.bottom_in, R.anim.bottom_silent);
             });
         }
 

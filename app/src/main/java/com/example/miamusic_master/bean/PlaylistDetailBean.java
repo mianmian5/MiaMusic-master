@@ -191,7 +191,7 @@ public class PlaylistDetailBean {
         private boolean ordered;
         private Object description;
         private Object updateFrequency;
-        private int backgroundCoverId;
+        private long backgroundCoverId;
         private Object backgroundCoverUrl;
         private int titleImage;
         private Object titleImageUrl;
@@ -418,11 +418,11 @@ public class PlaylistDetailBean {
             this.updateFrequency = updateFrequency;
         }
 
-        public int getBackgroundCoverId() {
+        public long getBackgroundCoverId() {
             return backgroundCoverId;
         }
 
-        public void setBackgroundCoverId(int backgroundCoverId) {
+        public void setBackgroundCoverId(long backgroundCoverId) {
             this.backgroundCoverId = backgroundCoverId;
         }
 
@@ -670,7 +670,7 @@ public class PlaylistDetailBean {
             private int gender;
             private int city;
             private int birthday;
-            private int userId;
+            private long userId;
             private int userType;
             private String nickname;
             private String signature;
@@ -765,11 +765,11 @@ public class PlaylistDetailBean {
                 this.birthday = birthday;
             }
 
-            public int getUserId() {
+            public long getUserId() {
                 return userId;
             }
 
-            public void setUserId(int userId) {
+            public void setUserId(long userId) {
                 this.userId = userId;
             }
 
@@ -1484,7 +1484,7 @@ public class PlaylistDetailBean {
                 private int br;
                 private int fid;
                 private int size;
-                private int vd;
+                private float vd;
 
                 public int getBr() {
                     return br;
@@ -1510,11 +1510,11 @@ public class PlaylistDetailBean {
                     this.size = size;
                 }
 
-                public int getVd() {
+                public float getVd() {
                     return vd;
                 }
 
-                public void setVd(int vd) {
+                public void setVd(float vd) {
                     this.vd = vd;
                 }
             }
@@ -1530,7 +1530,7 @@ public class PlaylistDetailBean {
                 private int br;
                 private int fid;
                 private int size;
-                private int vd;
+                private float vd;
 
                 public int getBr() {
                     return br;
@@ -1556,11 +1556,11 @@ public class PlaylistDetailBean {
                     this.size = size;
                 }
 
-                public int getVd() {
+                public float getVd() {
                     return vd;
                 }
 
-                public void setVd(int vd) {
+                public void setVd(float vd) {
                     this.vd = vd;
                 }
             }
@@ -1576,7 +1576,7 @@ public class PlaylistDetailBean {
                 private int br;
                 private int fid;
                 private int size;
-                private int vd;
+                private float vd;
 
                 public int getBr() {
                     return br;
@@ -1602,11 +1602,11 @@ public class PlaylistDetailBean {
                     this.size = size;
                 }
 
-                public int getVd() {
+                public float getVd() {
                     return vd;
                 }
 
-                public void setVd(int vd) {
+                public void setVd(float vd) {
                     this.vd = vd;
                 }
             }

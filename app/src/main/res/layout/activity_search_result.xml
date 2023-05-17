@@ -2,22 +2,53 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
     tools:context=".SearchResultActivity">
 
-    <RelativeLayout
-        android:id="@+id/rl_title"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_75"
-        android:background="@color/colorPrimary">
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_75"-->
+<!--        android:background="@color/colorPrimary">-->
+
 
         <include
             layout="@layout/common_title"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_45"
             android:layout_marginTop="@dimen/dp_30" />
-    </RelativeLayout>
+
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl_title1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_75"-->
+<!--        android:orientation="vertical">-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tl_head"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="90dp">
+            <!-- 注意TabLayout节点需要使用完整路径 -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:tabIndicatorColor="@color/black"
+                app:tabIndicatorHeight="4dp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"/>
+<!--    </RelativeLayout>-->
+
 
 <!--    <com.flyco.tablayout.SlidingTabLayout-->
 <!--        android:id="@+id/tablayout"-->

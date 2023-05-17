@@ -18,8 +18,7 @@ import java.util.Objects;
 
 
 /**
- * 考虑是用懒加载来加载Fragment
- * Created By Rikka on 2019/7/14
+ * 用懒加载来加载Fragment
  */
 public abstract class BaseFragment<P extends BasePresenter> extends Fragment implements View.OnClickListener {
     private static final String TAG = "BaseFragment";

@@ -96,58 +96,16 @@ public class MainActivity extends AppCompatActivity {
         initData();
     }
 
-    //使用Volley从服务端获取轮播图url
-    private void fetchImagesWithVolley() {
-        RequestQueue mRequestQueue = Volley.newRequestQueue(this);
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, BASE_URL + "banner/", null, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                Toast.makeText(MainActivity.this, "成功！", Toast.LENGTH_LONG).show();
-                //获取成功，输出轮播图url
-                for (int i = 0; i < response.length(); i++) {
-                    try {
-                        Log.d("Volley", response.getJSONObject(i).getString("url"));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                //获取失败，输出错误信息
-                Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_LONG).show();
-                Log.d("Volley", error.getMessage());
-            }
-        });
 
-        // 设置重试策略
-        jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(
-                5000,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
-        mRequestQueue.add(jsonArrayRequest);
-    }
 
 
     protected void initData() {
-//        String userLoginInfo = SharePreferenceUtil.getInstance(this).getUserInfo("");
-//        loginBean = GsonUtil.fromJSON(userLoginInfo, LoginBean.class);
+
 
         viewPager.setAdapter(mPagerAdapter);
-//        viewPager.setOffscreenPageLimit(VIEWPAGER_OFF_SCREEN_PAGE_LIMIT);
+
         viewPager.setCurrentItem(1);
-//        mPagerAdapter.getItem(1).setUserVisibleHint(true);
-//        tabTitle.setupWithViewPager(viewPager);
-//        tabTitle.setTabTextColors(Color.parseColor("#e78c86"), Color.parseColor("#FFFDFD"));
-//        assert loginBean != null;
-//        initView(loginBean);
 
-
-//        setSelectTextBoldAndBig(Objects.requireNonNull(tabTitle.getTabAt(1)));
-//        initTabListener();
-//        mPresenter.getLikeList(loginBean.getAccount().getId());
     }
 
 //    @Override

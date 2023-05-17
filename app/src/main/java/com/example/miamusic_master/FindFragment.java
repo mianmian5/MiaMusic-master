@@ -136,16 +136,16 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 
 
 //        // 创建Retrofit实例
-        OkHttpClient client = new OkHttpClient.Builder()
-                .connectTimeout(20, TimeUnit.SECONDS)
-                .readTimeout(20, TimeUnit.SECONDS)
-                .writeTimeout(20, TimeUnit.SECONDS)
-
-//                .cache(cache)
-                .build();
+//        OkHttpClient client = new OkHttpClient.Builder()
+//                .connectTimeout(20, TimeUnit.SECONDS)
+//                .readTimeout(20, TimeUnit.SECONDS)
+//                .writeTimeout(20, TimeUnit.SECONDS)
+//
+////                .cache(cache)
+//                .build();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
-                .client(client)
+//                .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();

@@ -6,12 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,10 +21,15 @@ import android.widget.Toast;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.miamusic_master.adapter.HotSearchAdapter;
+import com.example.miamusic_master.adapter.MyPagerAdapter;
+import com.example.miamusic_master.bean.BannerBean;
+import com.example.miamusic_master.bean.HotSearchDetailBean;
+import com.example.miamusic_master.bean.MainRecomListBean;
+import com.example.miamusic_master.bean.SongSearchBean;
 import com.example.miamusic_master.util.ClickUtil;
 import com.example.miamusic_master.widget.SearchEditText;
 
@@ -39,37 +46,98 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-//import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class SearchActivity extends AppCompatActivity {
     private static final String TAG = "SearchActivity";
     public static final String KEYWORDS = "keywords";
+    private HotSearchAdapter adapter;
+    private HotSearchDetailBean searchDetailBean;
     @BindView(R.id.et_search)
     EditText etSearch;
     @BindView(R.id.btn_search)
     TextView btnSearch;
+    @BindView(R.id.rv_hotsearch)
+    RecyclerView rvHotSearch;
 
-    EditText editTextTextPersonName;
 //    private TextView etsearch;
 //    private TextView btnsearch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        Toast.makeText(this, "111", Toast.LENGTH_SHORT).show();
+
         ButterKnife.bind(this); // 黄油刀绑定视图
-        editTextTextPersonName=findViewById(R.id.editTextTextPersonName);
-//        etsearch=findViewById(R.id.et_search);
-//        btnsearch=findViewById(R.id.btn_search);
-//        btnsearch.setOnClickListener(this);
+        initData();
+        etSearch.setFocusable(true);
+        etSearch.setFocusableInTouchMode(true);
+        etSearch.requestFocus();
+        //调用系统输入法
+        InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.showSoftInput(etSearch, 0);
+
     }
 
-//    @Override
-//    public void onClick(View v) {
-//        if (v.getId() == R.id.btn_search) {
-//
-//
-//        }
+    protected void initData() {
+
+
+        adapter = new HotSearchAdapter(this);
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        rvHotSearch.setLayoutManager(manager);
+        rvHotSearch.setAdapter(adapter);
+        adapter.setListener(searchListener);
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+//                .client(client)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .build();
+        // 创建API接口实例
+        HotSearchService hotSearchService = retrofit.create(HotSearchService.class);
+
+
+        Call<HotSearchDetailBean> call = hotSearchService.getSearchHotDetail();
+
+
+        call.enqueue(new Callback<HotSearchDetailBean>() {
+            @Override
+            public void onResponse(Call<HotSearchDetailBean> call, Response<HotSearchDetailBean> response) {
+                Toast.makeText(SearchActivity.this, "热搜词请求成功！", Toast.LENGTH_SHORT).show();
+
+                System.out.println(response.body().getData());
+                searchDetailBean = response.body();
+                List<HotSearchDetailBean> adapterList = new ArrayList<>();
+                adapterList.add(searchDetailBean);
+                adapter.notifyDataSetChanged(adapterList);
+
+
+            }
+
+
+            @Override
+            public void onFailure(Call<HotSearchDetailBean> call, Throwable t) {
+
+                Log.e(TAG, "onFailure: " + t.getMessage());
+            }
+
+
+        });
+
+    }
+    private HotSearchAdapter.OnHotSearchAdapterClickListener searchListener = position -> {
+        if (searchDetailBean != null) {
+            String keywords = searchDetailBean.getData().get(position).getSearchWord();
+            searchSong(keywords);
+        }
+    };
+
+
 
     @OnClick({R.id.btn_search})
     public void onClick(View v) {
@@ -79,7 +147,7 @@ public class SearchActivity extends AppCompatActivity {
 //        }
         switch (v.getId()) {
             case R.id.btn_search:
-                Toast.makeText(this, "222", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "222", Toast.LENGTH_SHORT).show();
                 String keywords = etSearch.getText().toString();
 //                String keywords = etSearch.
                 if (!TextUtils.isEmpty(keywords)) {
@@ -94,93 +162,18 @@ public class SearchActivity extends AppCompatActivity {
     }
     //根据关键字去搜索
     private void searchSong(String keywords) {
-        new GetDataTask().execute();
-
-
-
-
-
-//        Intent intent = new Intent(SearchActivity.this, SearchResultActivity.class);
-//        intent.putExtra(KEYWORDS, keywords);
-//        startActivity(intent);
+//        new GetDataTask().execute();
+//
+        Intent intent = new Intent(SearchActivity.this, SearchResultActivity.class);
+        intent.putExtra(KEYWORDS, keywords);
+        startActivity(intent);
     }
 
 
 
-//zanshishandiao
-    // 定义一个AsyncTask类，在子线程中执行请求
-    private class GetDataTask extends AsyncTask<Void, Void, String> {
-
-//        @Override
-//        protected String doInBackground(Void... voids) {
-//            OkHttpClient client = new OkHttpClient();
-//            String url = "http://127.0.0.1:3000/search?keywords=海阔天空";
-//            Request request = new Request.Builder().url(url).build();
-//            // 执行请求并获取响应结果
-//            try (Response response = client.newCall(request).execute()) {
-//                return response.body().string();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            return null;
-//        }
-        @Override
-        protected String doInBackground(Void... voids) {
-            RequestQueue queue = Volley.newRequestQueue(getApplication());
-            JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, "https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/search?keywords=cry1", null,new com.android.volley.Response.Listener<JSONArray>() {
-
-                @Override
-                public void onResponse(JSONArray response) {
-                    try {
-
-                        for (int i = 0; i < response.length(); i++) {
-                            JSONObject object = response.getJSONObject(i);
-                            System.out.println(object);
-                            Toast.makeText(getContext(), "请求成功!", Toast.LENGTH_SHORT).show();
-                        }
 
 
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-
-                    }
-
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    error.printStackTrace();
-                }
-
-
-            })
-            ;
-
-            queue.add(jsonArrayRequest);
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
-            // 更新UI
-            if (result != null) {
-                try {
-                    // 解析JSON响应并显示到界面上
-                    JSONObject jsonObject = new JSONObject(result);
-                    String data = jsonObject.getString("data");
-                    editTextTextPersonName.setText(data);
-                    System.out.println("有返回结果");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    System.out.println("无返回结果");
-
-                }
-            }
-        }
-    }
 
 
 }
