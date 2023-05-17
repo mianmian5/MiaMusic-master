@@ -190,39 +190,39 @@ public class SongActivity extends AppCompatActivity {
                 public void onResponse(Call<LyricBean> call, Response<LyricBean> response) {
 //                    Toast.makeText(SongActivity.class, "歌词请求成功！", Toast.LENGTH_SHORT).show();
                     System.out.println(response.body().getTlyric());
-                    if (response.body().getLrc().getLyric() !=null){
-                        if (response.body().getLrc().getLyric() != null) {
-                            String lyrics = response.body().getLrc().getLyric(); // 从服务器获取到的歌词
-                            //将歌词写入文件
-                            File file = new File(getExternalFilesDir(null).getAbsolutePath() + File.separator + "lyrics.lrc");
-                            LyricView lrc = findViewById(R.id.lrc);
 
-                            try {
-                                FileOutputStream fos = new FileOutputStream(file);
-                                fos.write(lyrics.getBytes());
-                                fos.close();
-                                lrc.setLyricFile(file.getAbsoluteFile());
-                                Toast.makeText(SongActivity.this, "歌词请求成功！", Toast.LENGTH_SHORT).show();
-                                lrc.setOnPlayerClickListener(new LyricView.OnPlayerClickListener() {
-                                    @Override
-                                    public void onPlayerClicked(long progress, String content) {
-                                        Toast.makeText(SongActivity.this, "你点击了歌词", Toast.LENGTH_SHORT).show();
+                    if (response.body().getLrc().getLyric() != null) {
+                        String lyrics = response.body().getLrc().getLyric(); // 从服务器获取到的歌词
+                        //将歌词写入文件
+                        File file = new File(getExternalFilesDir(null).getAbsolutePath() + File.separator + "lyrics.lrc");
+                        LyricView lrc = findViewById(R.id.lrc);
+
+                        try {
+                            FileOutputStream fos = new FileOutputStream(file);
+                            fos.write(lyrics.getBytes());
+                            fos.close();
+                            lrc.setLyricFile(file.getAbsoluteFile());
+                            Toast.makeText(SongActivity.this, "歌词请求成功！", Toast.LENGTH_SHORT).show();
+                            lrc.setOnPlayerClickListener(new LyricView.OnPlayerClickListener() {
+                                @Override
+                                public void onPlayerClicked(long progress, String content) {
+                                    Toast.makeText(SongActivity.this, "你点击了歌词", Toast.LENGTH_SHORT).show();
 
 
-                                    }
-                                });
+                                }
+                            });
 //                                lrc.play(); // 显示歌词
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
 //                            lrc.setLyricFile(lyricFile);
 
 //                            lrc.setLyricFile(file);
-                        } else {
+                    } else {
 //                            lrc.loadLrc(bean.getLrc().getLyric(), "");
                         }
 
-                    }
+
 
                 }
 

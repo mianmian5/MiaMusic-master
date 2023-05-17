@@ -107,7 +107,6 @@ public class SongSearchFragment extends Fragment {
         if (keywords != null) {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
-//                .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .build();

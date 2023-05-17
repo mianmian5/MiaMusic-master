@@ -9,12 +9,6 @@ import retrofit2.http.Query;
 
 public interface BannerService {
 
-
-//    @GET("banner")
-//    Call<List<BannerData>> getBannerData(@Query("type") String type);
-//    @GET("banner")
-//    Call<BannerData> getBanners();
     @GET("banner")
-    //    Call<List<BannerBean>> getBanner();
     Call<BannerBean> getBanner();
 }

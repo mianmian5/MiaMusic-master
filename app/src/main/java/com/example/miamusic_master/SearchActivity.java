@@ -94,16 +94,13 @@ public class SearchActivity extends AppCompatActivity {
         adapter.setListener(searchListener);
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
-//                .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
         // 创建API接口实例
         HotSearchService hotSearchService = retrofit.create(HotSearchService.class);
 
-
         Call<HotSearchDetailBean> call = hotSearchService.getSearchHotDetail();
-
 
         call.enqueue(new Callback<HotSearchDetailBean>() {
             @Override

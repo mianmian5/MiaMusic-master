@@ -153,7 +153,6 @@ public class PlayListActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<PlaylistDetailBean> call, Response<PlaylistDetailBean> response) {
                     Toast.makeText(getApplication(), "歌单详情获取成功", Toast.LENGTH_SHORT).show();
-//                List<BannerBean.BannersBean> bannersnew = new ArrayList<>();
                     System.out.println("歌单详情："+response.body());
                     beanList.addAll(response.body().getPlaylist().getTracks());
                     for (int i = 0; i < beanList.size(); i++) {

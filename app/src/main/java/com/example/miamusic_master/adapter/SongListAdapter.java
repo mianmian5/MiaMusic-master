@@ -121,15 +121,12 @@ public class SongListAdapter extends BaseAdapter<RecyclerView.ViewHolder, SongIn
 
 
         void setSongInfo(Context context, SongInfo bean, int position, int type) {
-//            LogUtil.d(TAG, "setSongBean : " + tvName + " ," + tvSinger);
             tvName.setText(bean.getSongName());
             tvSinger.setText(bean.getArtist());
             if (type == 1) {
-//                ivCover.setVisibility(View.VISIBLE);
                 Glide.with(context).load(bean.getSongCover()).transition(new DrawableTransitionOptions().crossFade()).into(ivCover);
             } else if (type == 2) {
                 tvSongNumber.setVisibility(View.VISIBLE);
-//                LogUtil.d(TAG, "position : " + position);
                 tvSongNumber.setText((position + 1) + "");
             } else if (type == 4) {
                 ivPhone.setVisibility(View.VISIBLE);
@@ -170,8 +167,7 @@ public class SongListAdapter extends BaseAdapter<RecyclerView.ViewHolder, SongIn
                     System.out.println("listqqq"+list);
                     System.out.println("songinfo111"+songInfo);
                     System.out.println("songinfoUrl"+songInfo.getSongUrl());
-//                    StarrySky.with().playMusicById(songInfo.getSongId());
-//                    SongPlayManager.getInstance().clickPlayAll(list, position);
+
                 }
                 Intent intent = new Intent(mContext, SongActivity.class);
                 intent.putExtra(SongActivity.SONG_INFO, songInfo);

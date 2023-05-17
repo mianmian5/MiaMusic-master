@@ -73,19 +73,19 @@ EditText etSearch;
     protected void initData() {
         if (getIntent().getStringExtra(KEYWORDS) != null) {
             keywords = getIntent().getStringExtra(KEYWORDS);
-//            EventBus.getDefault().postSticky(new KeywordsEvent(keywords));
             etSearch.setText(keywords);
-            // 传递数据给Fragment
-//            SongSearchFragment mysongFragment;
-            SongSearchFragment mysongFragment = new SongSearchFragment();
-            Bundle bundle = new Bundle();
-            bundle.putString("myData", keywords);
-            mysongFragment.setArguments(bundle);
 
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.vp_content, mysongFragment);
-            fragmentTransaction.commit();
+//            // 传递数据给Fragment
+////            SongSearchFragment mysongFragment;
+//            SongSearchFragment mysongFragment = new SongSearchFragment();
+//            Bundle bundle = new Bundle();
+//            bundle.putString("myData", keywords);
+//            mysongFragment.setArguments(bundle);
+//
+//            FragmentManager fragmentManager = getSupportFragmentManager();
+//            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//            fragmentTransaction.replace(R.id.vp_content, mysongFragment);
+//            fragmentTransaction.commit();
 //            getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, fragment)commit();
 //            Retrofit retrofit = new Retrofit.Builder()
 //                    .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
@@ -119,7 +119,8 @@ EditText etSearch;
 
         }
     }
-    public  String toValue(){//利用Fragment的生命周期onAttach()方法，获取activity的keyword
+    public  String toValue(){
+        //利用Fragment的生命周期onAttach()方法，获取activity的keyword
         return  keywords;
     }
 

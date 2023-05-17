@@ -128,24 +128,14 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 
 
     protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        LogUtil.d(TAG, "initView  isPrepared：" + isPrepared() + " isFragmentVisible：" + isFragmentVisible());
+
         View rootView = inflater.inflate(R.layout.fragment_find, container, false);
         ButterKnife.bind(this, rootView);
         Banner banner = rootView.findViewById(R.id.wow_banner);
         mViewPager = rootView.findViewById(R.id.view_pager);
 
-
-//        // 创建Retrofit实例
-//        OkHttpClient client = new OkHttpClient.Builder()
-//                .connectTimeout(20, TimeUnit.SECONDS)
-//                .readTimeout(20, TimeUnit.SECONDS)
-//                .writeTimeout(20, TimeUnit.SECONDS)
-//
-////                .cache(cache)
-//                .build();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
-//                .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
@@ -163,14 +153,6 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 //                List<BannerBean.BannersBean> bannersnew = new ArrayList<>();
                 System.out.println(response.body().getBanners());
                 banners.addAll(response.body().getBanners());
-//                for (int i = 0; i < banners.size(); i++) {
-//                    try {
-//                        URL url = new URL(banners.get(i).getPic());
-//                        bannerImageList.add(url);
-//                    } catch (MalformedURLException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
                 loadImageToList();
                 System.out.println(bannerImageList);
                 MyPagerAdapter adapter = new MyPagerAdapter(getContext(), bannerImageList);
@@ -225,36 +207,6 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 
 
 
-
-//    }
-//使用Volley从服务端获取轮播图url
-//private void fetchImagesWithVolley() {
-//    JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, BASE_URL + "banner", null, new Response.Listener<JSONArray>() {
-//
-//        public void onResponse(JSONArray response) {
-//            //获取成功，输出轮播图url
-//            for (int i = 0; i < response.length(); i++) {
-//                try {
-//                    Log.d("Volley", response.getJSONObject(i).getString("url"));
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//    });
-//
-//    // 设置重试策略
-//    jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(
-//            5000,
-//            DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-//            DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-//
-//    mRequestQueue.add(jsonArrayRequest);
-//}
-
-    //使用Retrofit2从服务端获取轮播图url
-
-
     protected void initData() {
 
         list.clear();
@@ -278,10 +230,6 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
             intent.putExtra(PLAYLIST_NAME, playlistName);
             String playlistPicUrl = bean.getPicUrl();
             intent.putExtra(PLAYLIST_PICURL, playlistPicUrl);
-//            String playlistCreatorNickname = bean.getCopywriter();
-//            intent.putExtra(PLAYLIST_CREATOR_NICKNAME, playlistCreatorNickname);
-//            String playlistCreatorAvatarUrl = bean.getCreator().getAvatarUrl();
-//            intent.putExtra(PLAYLIST_CREATOR_AVATARURL, playlistCreatorAvatarUrl);
             Long playlistId = bean.getId();
             intent.putExtra(PLAYLIST_ID, playlistId);
             startActivity(intent);
