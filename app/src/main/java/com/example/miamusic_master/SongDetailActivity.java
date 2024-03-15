@@ -24,8 +24,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 歌曲详情界面
- * Created By Rikka on 2019/7/24
+ * 歌曲详情界面 包含：歌单封面，歌曲列表
  */
 public class SongDetailActivity extends AppCompatActivity {
 
@@ -35,8 +34,6 @@ public class SongDetailActivity extends AppCompatActivity {
     TextView tvSongName;
     @BindView(R.id.tv_singer)
     TextView tvSinger;
-//    @BindView(R.id.md_singer)
-//    MusicDrawerItemView mdSinger;
     @BindView(R.id.view)
     View view;
     @BindView(R.id.fl_view)
@@ -49,8 +46,7 @@ public class SongDetailActivity extends AppCompatActivity {
     private String singerName;
     private long singerId;
     private String singerPicUrl;
-    private Animation toTranslateIn;
-    private Animation toTranslateOut;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,25 +55,13 @@ public class SongDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_song_detail);
         getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         ButterKnife.bind(this);
-//        getWindow().setFlags(
-//                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-//                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        if (toTranslateIn == null) {
-            toTranslateIn = AnimationUtils.loadAnimation(this, R.anim.view_to_translate_in);
-            toTranslateIn.setFillAfter(true);
-            toTranslateIn.setStartOffset(200);
-        }
-        if (toTranslateOut == null) {
-            toTranslateOut = AnimationUtils.loadAnimation(this, R.anim.view_to_translate_out);
-            toTranslateOut.setFillAfter(true);
-        }
+
     }
 
 
     @Override
     protected void onStart() {
         super.onStart();
-        view.startAnimation(toTranslateIn);
     }
 
     @Override
@@ -126,7 +110,6 @@ public class SongDetailActivity extends AppCompatActivity {
     @Override
     public void finish() {
         super.finish();
-        view.startAnimation(toTranslateOut);
         overridePendingTransition(R.anim.bottom_silent, R.anim.bottom_out);
     }
 //    @Override

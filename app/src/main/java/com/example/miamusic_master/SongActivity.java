@@ -10,6 +10,8 @@ import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -33,10 +35,13 @@ import com.example.miamusic_master.adapter.MyPagerAdapter;
 import com.example.miamusic_master.bean.BannerBean;
 import com.example.miamusic_master.bean.LyricBean;
 import com.example.miamusic_master.bean.MainRecomListBean;
+import com.example.miamusic_master.bean.PlaylistDetailBean;
 import com.example.miamusic_master.bean.SongDetailBean;
+import com.example.miamusic_master.bean.SongUrlBean;
 import com.google.common.eventbus.EventBus;
 import com.lzx.starrysky.SongInfo;
 //import com.lzx.starrysky.StarrySky;
+import com.lzx.starrysky.StarrySky;
 import com.lzx.starrysky.utils.TimerTaskManager;
 //import com.tobery.musicplay.MusicPlay;
 //import com.tobery.musicplay.util.PermissionChecks;
@@ -97,7 +102,7 @@ public class SongActivity extends AppCompatActivity {
     private int playMode;
     private ObjectAnimator rotateAnimator;
     private ObjectAnimator alphaAnimator;
-    private boolean isShowLyrics = false;
+    public MediaPlayer mediaPlayer;
 
 
 
@@ -122,20 +127,12 @@ public class SongActivity extends AppCompatActivity {
                 .load(coverUrl)
                 .transition(new DrawableTransitionOptions().crossFade(1500))
                 .into(ivBg);
-        String a =currentSongInfo.getSongUrl();
+//        String a =currentSongInfo.getSongUrl();
 //        StarrySky.with().playMusicByUrl(a);
+         mediaPlayer = new MediaPlayer();
 
 
     }
-//    checks.requestPermissions(APP_PERMISSIONS, it ->{
-//        if (it){
-//            //  MusicPlay.initConfig(this,new PlayConfig());
-//        }else {
-//
-//        }
-//        return null;
-//    });
-
 
 
 
@@ -170,20 +167,23 @@ public class SongActivity extends AppCompatActivity {
 //        StarrySky.with().playMusicByInfo(currentSongInfo);
 //        LogUtil.d(TAG, "currentSongInfo : " + currentSongInfo);
         setSongInfo(currentSongInfo.getSongName(), currentSongInfo.getArtist());
-        if (judgeContainsStr(currentSongInfo.getSongId())) {
-            llInfo.setVisibility(View.GONE);
-        } else {
+//        if (judgeContainsStr(currentSongInfo.getSongId())) {
+//            llInfo.setVisibility(View.GONE);
+//        } else {
 //            获取歌词
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+                    .baseUrl("https://service-m99y4afi-1323400135.gz.tencentapigw.com/release/")
 //                .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .build();
             // 创建API接口实例
             LyricService LyricService = retrofit.create(LyricService.class);
+            SongUrlService songUrlService = retrofit.create(SongUrlService.class);
+
 
             Call<LyricBean> call = LyricService.getLyric(Long.parseLong(currentSongInfo.getSongId()));
+            Call<SongUrlBean> call2 =songUrlService.getSongUrl(Long.parseLong(currentSongInfo.getSongId()));
 
             call.enqueue(new Callback<LyricBean>() {
                 @Override
@@ -215,9 +215,7 @@ public class SongActivity extends AppCompatActivity {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-//                            lrc.setLyricFile(lyricFile);
 
-//                            lrc.setLyricFile(file);
                     } else {
 //                            lrc.loadLrc(bean.getLrc().getLyric(), "");
                         }
@@ -235,20 +233,43 @@ public class SongActivity extends AppCompatActivity {
 
 
             });
-//            if (lyricBean == null) {
-////                mPresenter.getLyric(Long.parseLong(currentSongInfo.getSongId()));
-//            }
-//            llInfo.setVisibility(View.VISIBLE);
-//            ids = Long.parseLong(currentSongInfo.getSongId());
-//            String songId = currentSongInfo.getSongId();
+        call2.enqueue(new Callback<SongUrlBean>() {
+            @Override
+            public void onResponse(Call<SongUrlBean> call, Response<SongUrlBean> response) {
+                Toast.makeText(getApplication(), "歌曲url获取成功", Toast.LENGTH_SHORT).show();
+                System.out.println("歌曲url："+response.body().getData().get(0).getUrl());
+                currentSongInfo.setSongUrl(response.body().getData().get(0).getUrl());
 
-//            if (SongPlayManager.getInstance().getSongDetail(ids) == null) {
-//                mPresenter.getSongDetail(ids);
-//            } else {
-//                songDetail = SongPlayManager.getInstance().getSongDetail(ids);
-//                setSongDetailBean(songDetail);
-//            }
-        }
+                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                try {
+                    mediaPlayer.setDataSource(response.body().getData().get(0).getUrl());
+                    mediaPlayer.prepareAsync();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                    @Override
+                    public void onPrepared(MediaPlayer mp) {
+                        mp.start();
+                    }
+                });
+
+
+
+            }
+
+
+            @Override
+            public void onFailure(Call<SongUrlBean> call, Throwable t) {
+
+                Log.e(TAG, "onFailure: " + t.getMessage());
+            }
+
+
+        });
+
+
 
         long duration = currentSongInfo.getDuration();
 
@@ -256,20 +277,10 @@ public class SongActivity extends AppCompatActivity {
     }
     public void setSongInfo(String songName, String singerName) {
         RelativeLayout rlSong = findViewById(R.id.rl_song_info);
-//        rlSong.setVisibility(View.VISIBLE);
         TextView tvSongName = findViewById(R.id.tv_songname);
         TextView tvSingerName = findViewById(R.id.tv_singername);
         tvSongName.setText(songName);
         tvSingerName.setText(singerName);
-    }
-
-    /**
-     * 该方法主要使用正则表达式来判断字符串中是否包含字母
-     */
-    public boolean judgeContainsStr(String cardNum) {
-        String regex = ".*[a-zA-Z]+.*";
-        Matcher m = Pattern.compile(regex).matcher(cardNum);
-        return m.matches();
     }
 
 
@@ -282,40 +293,36 @@ public class SongActivity extends AppCompatActivity {
         Intent intent = new Intent();
         switch (v.getId()) {
             case R.id.rl_center:
-                isShowLyrics = true;
                 showLyrics(true);
                 break;
             case R.id.iv_play:
-//                if (SongPlayManager.getInstance().isPlaying()) {
-//                    SongPlayManager.getInstance().pauseMusic();
-//                } else if (SongPlayManager.getInstance().isPaused()) {
-//                    SongPlayManager.getInstance().playMusic();
-//                } else if (SongPlayManager.getInstance().isIdle()) {
-//                    SongPlayManager.getInstance().clickASong(currentSongInfo);
-//                }
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.pause();
+                }
+                else{
+                    mediaPlayer.start();
+                }
+
                 break;
             case R.id.iv_like:
                 if (isLike) {
-//                    ToastUtils.show("Sorry啊，我没有找到取消喜欢的接口");
+                    Toast.makeText(SongActivity.this, "暂时无法取消喜欢", Toast.LENGTH_SHORT).show();
                 } else {
-//                    mPresenter.likeMusic(ids);
+                    Toast.makeText(SongActivity.this, "未登录无法喜欢该音乐", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.iv_download:
-//                ToastUtils.show("Sorry啊，歌都不是我的，不能下载的");
+                Toast.makeText(SongActivity.this, "暂时无法下载", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.iv_comment:
-//                if (songDetail == null) {
-//                    ToastUtils.show("获取不到歌曲信息，稍后再试");
-//                    return;
-//                }
-//                intent.setClass(SongActivity.this, CommentActivity.class);
-//                intent.putExtra(CommentActivity.ID, songDetail.getSongs().get(0).getId());
-//                intent.putExtra(CommentActivity.NAME, songDetail.getSongs().get(0).getName());
-//                intent.putExtra(CommentActivity.ARTIST, songDetail.getSongs().get(0).getAr().get(0).getName());
-//                intent.putExtra(CommentActivity.COVER, songDetail.getSongs().get(0).getAl().getPicUrl());
-//                intent.putExtra(CommentActivity.FROM, CommentActivity.SONG_COMMENT);
-//                startActivity(intent);
+
+                intent.setClass(SongActivity.this, CommentActivity.class);
+                intent.putExtra(CommentActivity.ID, Long.parseLong(currentSongInfo.getSongId()));
+                intent.putExtra(CommentActivity.NAME, currentSongInfo.getSongName());
+                intent.putExtra(CommentActivity.ARTIST, currentSongInfo.getArtist());
+                intent.putExtra(CommentActivity.COVER, currentSongInfo.getSongCover());
+                intent.putExtra(CommentActivity.FROM, CommentActivity.SONG_COMMENT);
+                startActivity(intent);
                 break;
             case R.id.iv_info:
                 intent.setClass(SongActivity.this, SongDetailActivity.class);
@@ -324,33 +331,15 @@ public class SongActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.bottom_in, R.anim.bottom_silent);
                 break;
             case R.id.iv_play_mode:
-//                if (playMode == SongPlayManager.MODE_LIST_LOOP_PLAY) {
-//                    SongPlayManager.getInstance().setMode(SongPlayManager.MODE_SINGLE_LOOP_PLAY);
-//                    ivPlayMode.setImageResource(R.drawable.shape_single_cycle);
-//                    playMode = SongPlayManager.MODE_SINGLE_LOOP_PLAY;
-//                    ToastUtils.show("切换到单曲循环模式");
-//                } else if (playMode == SongPlayManager.MODE_SINGLE_LOOP_PLAY) {
-//                    SongPlayManager.getInstance().setMode(SongPlayManager.MODE_RANDOM);
-//                    ivPlayMode.setImageResource(R.drawable.shape_list_random);
-//                    playMode = SongPlayManager.MODE_RANDOM;
-//                    ToastUtils.show("切换到随机播放模式");
-//                } else if (playMode == SongPlayManager.MODE_RANDOM) {
-//                    SongPlayManager.getInstance().setMode(SongPlayManager.MODE_LIST_LOOP_PLAY);
-//                    ivPlayMode.setImageResource(R.drawable.shape_list_cycle);
-//                    playMode = SongPlayManager.MODE_LIST_LOOP_PLAY;
-//                    ToastUtils.show("切换到列表循环模式");
-//                }
                 break;
             case R.id.iv_pre:
-//                SongPlayManager.getInstance().playPreMusic();
+
                 break;
             case R.id.iv_next:
-//                SongPlayManager.getInstance().playNextMusic();
+
                 break;
             case R.id.iv_list:
-//                intent.setClass(SongActivity.this, SongListActivity.class);
-//                startActivity(intent);
-//                overridePendingTransition(R.anim.bottom_in, R.anim.bottom_silent);
+
                 break;
         }
     }
@@ -358,24 +347,12 @@ public class SongActivity extends AppCompatActivity {
     //根据isShowLyrics来判断是否展示歌词
     private void showLyrics(boolean isShowLyrics) {
         ivRecord.setVisibility(isShowLyrics ? View.GONE : View.VISIBLE);
-//        lrc.setVisibility(isShowLyrics ? View.VISIBLE : View.GONE);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (rotateAnimator != null) {
-            if (rotateAnimator.isRunning()) {
-                rotateAnimator.cancel();
-            }
-            rotateAnimator = null;
-        }
-        if (alphaAnimator != null) {
-            if (alphaAnimator.isRunning()) {
-                alphaAnimator.cancel();
-            }
-            alphaAnimator = null;
-        }
+
     }
 
 

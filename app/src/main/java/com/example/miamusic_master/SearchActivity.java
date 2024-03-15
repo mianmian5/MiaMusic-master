@@ -31,7 +31,7 @@ import com.example.miamusic_master.bean.HotSearchDetailBean;
 import com.example.miamusic_master.bean.MainRecomListBean;
 import com.example.miamusic_master.bean.SongSearchBean;
 import com.example.miamusic_master.util.ClickUtil;
-import com.example.miamusic_master.widget.SearchEditText;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -66,8 +66,6 @@ public class SearchActivity extends AppCompatActivity {
     @BindView(R.id.rv_hotsearch)
     RecyclerView rvHotSearch;
 
-//    private TextView etsearch;
-//    private TextView btnsearch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +76,7 @@ public class SearchActivity extends AppCompatActivity {
         etSearch.setFocusable(true);
         etSearch.setFocusableInTouchMode(true);
         etSearch.requestFocus();
+        etSearch.setText("");
         //调用系统输入法
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.showSoftInput(etSearch, 0);
@@ -93,7 +92,7 @@ public class SearchActivity extends AppCompatActivity {
         rvHotSearch.setAdapter(adapter);
         adapter.setListener(searchListener);
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+                .baseUrl("https://service-m99y4afi-1323400135.gz.tencentapigw.com/release/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();

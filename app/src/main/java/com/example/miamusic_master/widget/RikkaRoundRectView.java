@@ -13,7 +13,7 @@ import com.example.miamusic_master.R;
 
 
 /**
- * 歌单封面的view,是一个圆角矩形
+ * 歌单封面的view,一个圆角矩形
  */
 public class RikkaRoundRectView extends androidx.appcompat.widget.AppCompatImageView {
 

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 多Fragment切换、高复用的PagerAdapter
+ * 多个Fragment切换，复用的PagerAdapter
  */
 public class MultiFragmentPagerAdapter extends FragmentStatePagerAdapter {
     private static final String TAG = "MultiFragmentPagerAdapt";

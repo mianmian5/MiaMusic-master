@@ -25,7 +25,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /**
  * 界面底部的歌曲遥控器
  * 用EventBus来控制它
- * Created By Rikka on 2019/7/22
  */
 public class BottomSongPlayBar extends RelativeLayout {
     private static final String TAG = "BottomSongPlayBar";

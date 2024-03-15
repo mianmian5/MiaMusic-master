@@ -95,13 +95,11 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class FindFragment extends BaseFragment<FindPresenter> implements WowContract.View {
+public class FindFragment extends BaseFragment  {
     private static final String TAG = "WowFragment";
     String BASE_URL = "https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/";
     public static final String PLAYLIST_NAME = "playlistName";
     public static final String PLAYLIST_PICURL = "playlistPicUrl";
-    public static final String PLAYLIST_CREATOR_NICKNAME = "playlistCreatorNickname";
-    public static final String PLAYLIST_CREATOR_AVATARURL = "playlistCreatorAvatarUrl";
     public static final String PLAYLIST_ID = "playlistId";
     private RequestQueue mRequestQueue;
     @BindView(R.id.wow_banner)
@@ -109,23 +107,18 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
     @BindView(R.id.rv_recommend_playlist)
     RecyclerView rvRecommendPlayList;
 
-
     private PlayListAdapter recommendPlayListAdapter;
     //banner的图片集合
     List bannerImageList = new ArrayList<>();
-//    private List<BannerItem> bannerItems;
     //banner集合
     List<BannerBean.BannersBean> banners = new ArrayList<>();
     //推荐歌单集合
     List<MainRecomListBean.ResultBean> recommends = new ArrayList<>();
     List<PlaylistBean> list = new ArrayList<>();
-//    private static ApiService apiService;
     private ViewPager mViewPager;
     public FindFragment() {
         setFragmentTitle("发现");
     }
-
-
 
     protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -135,7 +128,7 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         mViewPager = rootView.findViewById(R.id.view_pager);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+                .baseUrl("https://service-m99y4afi-1323400135.gz.tencentapigw.com/release/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
@@ -153,16 +146,13 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 //                List<BannerBean.BannersBean> bannersnew = new ArrayList<>();
                 System.out.println(response.body().getBanners());
                 banners.addAll(response.body().getBanners());
-                loadImageToList();
+                loadImageToList();//存入图片
                 System.out.println(bannerImageList);
                 MyPagerAdapter adapter = new MyPagerAdapter(getContext(), bannerImageList);
                 mViewPager.setAdapter(adapter);
                 mViewPager.setCurrentItem(0); // 设置当前要显示的图片的位置
 
-
-
             }
-
 
             @Override
             public void onFailure(Call<BannerBean> call, Throwable t) {
@@ -176,7 +166,6 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
             @Override
             public void onResponse(Call<MainRecomListBean> call2, Response<MainRecomListBean> response) {
                 Toast.makeText(getContext(), "推荐歌单请求成功！", Toast.LENGTH_SHORT).show();
-//                List<BannerBean.BannersBean> bannersnew = new ArrayList<>();
                 System.out.println(response.body());
                 recommends.addAll(response.body().getResult());
                 System.out.println(recommends);
@@ -189,9 +178,7 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
                 recommendPlayListAdapter.setListener(listClickListener);
                 recommendPlayListAdapter.notifyDataSetChanged(list);
 
-
             }
-
 
             @Override
             public void onFailure(Call<MainRecomListBean> call2, Throwable t) {
@@ -217,8 +204,6 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         rvRecommendPlayList.setLayoutManager(manager);
         rvRecommendPlayList.setHasFixedSize(true);
         rvRecommendPlayList.setAdapter(recommendPlayListAdapter);
-//        fetchImagesWithRetrofit();
-
 
     }
     private PlayListAdapter.OnPlayListClickListener listClickListener = position -> {
@@ -246,20 +231,6 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
 
     }
 
-
-    @Override
-    public void onGetBannerSuccess(BannerBean bean) {
-
-        banners.addAll(bean.getBanners());
-        loadImageToList();
-        banner.setDatas(bannerImageList).start();
-        Toast.makeText(getContext(), "请求成功", Toast.LENGTH_SHORT).show();
-//        loadImageToList();
-        System.out.println(bannerImageList);
-
-
-    }
-
     //将图片装到BannerList中
     private void loadImageToList() {
         for (int i = 0; i < banners.size(); i++) {
@@ -281,134 +252,14 @@ public class FindFragment extends BaseFragment<FindPresenter> implements WowCont
         }
         switch (v.getId()) {
             case R.id.rl_day_rec:
-//                startActivity(new Intent(activity, DailyRecommendActivity.class));
-                break;
             case R.id.rl_play_list:
-//                startActivity(new Intent(activity, PlayListRecommendActivity.class));
-                break;
             case R.id.rl_rank:
-//                startActivity(new Intent(activity, RankActivity.class));
-                break;
             case R.id.rl_radio:
-//                startActivity(new Intent(activity, RadioRecommendActivity.class));
-                break;
             case R.id.rl_live:
-//                ToastUtils.show("没有提供直播接口哦，你想看我跳舞也行");
-                break;
             case R.id.tv_playlist_playground:
-//                startActivity(new Intent(activity, PlayListRecommendActivity.class));
+                Toast.makeText(getContext(), "功能开发中！", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
-
-
-
-    @Override
-    public void onGetBannerFail(String e) {
-        Toast.makeText(banner.getContext(), e, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getContext(), "请求失败", Toast.LENGTH_SHORT).show();
-//        LogUtil.e(TAG, "onGetBannerFail : " + e);
-    }
-
-//    @Override
-//    public void onGetRecommendPlayListSuccess(MainRecommendPlayListBean bean) {
-//
-//    }
-
-    @Override
-    public void onGetRecommendPlayListSuccess(MainRecommendPlayListBean bean) {
-//        hideDialog();
-//        LogUtil.d(TAG, "onGetRecommendPlayListSuccess" + bean);
-//        recommends.addAll(bean.getRecommend());
-//        for (int i = 0; i < recommends.size(); i++) {
-//            PlaylistBean beanInfo = new PlaylistBean();
-//            beanInfo.setPlaylistName(recommends.get(i).getName());
-//            beanInfo.setPlaylistCoverUrl(recommends.get(i).getPicUrl());
-//            list.add(beanInfo);
-//        }
-//        recommendPlayListAdapter.setListener(listClickListener);
-//        recommendPlayListAdapter.notifyDataSetChanged(list);
-    }
-
-//    private PlayListAdapter.OnPlayListClickListener listClickListener = position -> {
-//        if (recommends != null && !recommends.isEmpty()) {
-//            //进入歌单详情页面
-////            Intent intent = new Intent(getActivity(), PlayListActivity.class);
-//            MainRecommendPlayListBean.RecommendBean bean = recommends.get(position);
-//            String playlistName = bean.getName();
-//            intent.putExtra(PLAYLIST_NAME, playlistName);
-//            String playlistPicUrl = bean.getPicUrl();
-//            intent.putExtra(PLAYLIST_PICURL, playlistPicUrl);
-//            String playlistCreatorNickname = bean.getCreator().getNickname();
-//            intent.putExtra(PLAYLIST_CREATOR_NICKNAME, playlistCreatorNickname);
-//            String playlistCreatorAvatarUrl = bean.getCreator().getAvatarUrl();
-//            intent.putExtra(PLAYLIST_CREATOR_AVATARURL, playlistCreatorAvatarUrl);
-//            long playlistId = bean.getId();
-//            intent.putExtra(PLAYLIST_ID, playlistId);
-//            startActivity(intent);
-//        }
-//    };
-
-    @Override
-    public void onGetRecommendPlayListFail(String e) {
-//        hideDialog();
-
-    }
-
-    @Override
-    public void onGetDailyRecommendSuccess(DailyRecommendBean bean) {
-
-    }
-
-    @Override
-    public void onGetDailyRecommendFail(String e) {
-
-    }
-
-    @Override
-    public void onGetTopListSuccess(TopListBean bean) {
-
-    }
-
-    @Override
-    public void onGetTopListFail(String e) {
-
-    }
-
-    @Override
-    public void onGetPlayListSuccess(RecommendPlayListBean bean) {
-
-    }
-
-    @Override
-    public void onGetPlayListFail(String e) {
-
-    }
-
-    @Override
-    public void onGetPlaylistDetailSuccess(PlaylistDetailBean bean) {
-
-    }
-
-    @Override
-    public void onGetPlaylistDetailFail(String e) {
-
-    }
-
-    @Override
-    public void onGetMusicCanPlayFail(String e) {
-
-    }
-
-    @Override
-    public void onGetHighQualitySuccess(HighQualityPlayListBean bean) {
-
-    }
-
-    @Override
-    public void onGetHighQualityFail(String e) {
-
-    }
-
 
 }

@@ -39,7 +39,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * 单曲搜索结果 type = 1
  */
-@SuppressLint("ValidFragment")
 public class SongSearchFragment extends Fragment {
     private static final String TAG = "SongSearchFragment";
     private String SONG_URL="http://music.163.com/song/media/outer/url?id=";
@@ -54,21 +53,6 @@ public class SongSearchFragment extends Fragment {
     private List<SongSearchBean.ResultBean.SongsBean> resultBeans = new ArrayList<>();
     private boolean needRefresh = false;
     private List<SongInfo> songInfos = new ArrayList<>();
-//    private SearchResultActivity.MyListener myListener;
-
-//    @Override
-//    public void onAttach(@NonNull Context context) {
-//        super.onAttach(context);
-//
-//        if (context instanceof SearchResultActivity.MyListener) {
-//            myListener = (SearchResultActivity.MyListener) context;
-//        } else {
-//            throw new RuntimeException(context.toString() + " must implement MyListener");
-//        }
-//    }
-
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -106,7 +90,7 @@ public class SongSearchFragment extends Fragment {
 
         if (keywords != null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://service-n9pb0may-1318194552.gz.apigw.tencentcs.com/release/")
+                    .baseUrl("https://service-m99y4afi-1323400135.gz.tencentapigw.com/release/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .build();
@@ -171,7 +155,7 @@ public class SongSearchFragment extends Fragment {
         }
         switch (v.getId()) {
             case R.id.rl_playall:
-                StarrySky.with().playMusic(songInfos,0);
+//                StarrySky.with().playMusic(songInfos,0);
 
 //                SongPlayManager.getInstance().clickPlayAll(songInfos, 0);
                 break;

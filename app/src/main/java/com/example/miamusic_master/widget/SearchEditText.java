@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.example.miamusic_master.R;
 
 /**
- * 搜索的editText,点击回车后直接进入搜索
+ * 搜索的editText （没用到这个
  */
 public class SearchEditText extends RelativeLayout {
     private static final String TAG = "SearchEditText";

@@ -7,7 +7,7 @@ import com.lzx.starrysky.manager.*;
 
 public class App extends Application {
     private static final String TAG = "App";
-    public static final String DATA_BASE_NAME = "RikkaMusicDao";
+    public static final String DATA_BASE_NAME = "MiaMusic";
 
     private static App mContext;
 
